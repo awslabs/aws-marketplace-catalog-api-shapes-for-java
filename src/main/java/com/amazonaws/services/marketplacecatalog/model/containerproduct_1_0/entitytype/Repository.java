@@ -1,5 +1,5 @@
 /*
- * AmiProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -25,26 +25,52 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * Resource
+ * Repository
  */
 @JsonPropertyOrder({
-  Resource.JSON_PROPERTY_TYPE,
-  Resource.JSON_PROPERTY_VALUE
+  Repository.JSON_PROPERTY_URL,
+  Repository.JSON_PROPERTY_TYPE
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class Resource implements Serializable {
+public class Repository implements Serializable {
   private static final long serialVersionUID = 1L;
+
+  public static final String JSON_PROPERTY_URL = "Url";
+  private String url;
 
   public static final String JSON_PROPERTY_TYPE = "Type";
   private String type;
 
-  public static final String JSON_PROPERTY_VALUE = "Value";
-  private String value;
-
-  public Resource() {
+  public Repository() {
   }
 
-  public Resource type(String type) {
+  public Repository url(String url) {
+    
+    this.url = url;
+    return this;
+  }
+
+   /**
+   * Get url
+   * @return url
+  **/
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getUrl() {
+    return url;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setUrl(String url) {
+    this.url = url;
+  }
+
+
+  public Repository type(String type) {
     
     this.type = type;
     return this;
@@ -69,32 +95,6 @@ public class Resource implements Serializable {
     this.type = type;
   }
 
-
-  public Resource value(String value) {
-    
-    this.value = value;
-    return this;
-  }
-
-   /**
-   * Get value
-   * @return value
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public String getValue() {
-    return value;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_VALUE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
-    this.value = value;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -103,22 +103,22 @@ public class Resource implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Resource resource = (Resource) o;
-    return Objects.equals(this.type, resource.type) &&
-        Objects.equals(this.value, resource.value);
+    Repository repository = (Repository) o;
+    return Objects.equals(this.url, repository.url) &&
+        Objects.equals(this.type, repository.type);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, value);
+    return Objects.hash(url, type);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Resource {\n");
+    sb.append("class Repository {\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
   }

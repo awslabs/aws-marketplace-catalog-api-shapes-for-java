@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -25,74 +25,74 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * Resource
+ * DeploymentResource
  */
 @JsonPropertyOrder({
-  Resource.JSON_PROPERTY_TYPE,
-  Resource.JSON_PROPERTY_VALUE
+  DeploymentResource.JSON_PROPERTY_TEXT,
+  DeploymentResource.JSON_PROPERTY_URL
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class Resource implements Serializable {
+public class DeploymentResource implements Serializable {
   private static final long serialVersionUID = 1L;
 
-  public static final String JSON_PROPERTY_TYPE = "Type";
-  private String type;
+  public static final String JSON_PROPERTY_TEXT = "Text";
+  private String text;
 
-  public static final String JSON_PROPERTY_VALUE = "Value";
-  private String value;
+  public static final String JSON_PROPERTY_URL = "Url";
+  private String url;
 
-  public Resource() {
+  public DeploymentResource() {
   }
 
-  public Resource type(String type) {
+  public DeploymentResource text(String text) {
     
-    this.type = type;
+    this.text = text;
     return this;
   }
 
    /**
-   * Get type
-   * @return type
+   * Get text
+   * @return text
   **/
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getType() {
-    return type;
+  public String getText() {
+    return text;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(String type) {
-    this.type = type;
+  public void setText(String text) {
+    this.text = text;
   }
 
 
-  public Resource value(String value) {
+  public DeploymentResource url(String url) {
     
-    this.value = value;
+    this.url = url;
     return this;
   }
 
    /**
-   * Get value
-   * @return value
+   * Get url
+   * @return url
   **/
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getValue() {
-    return value;
+  public String getUrl() {
+    return url;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
-    this.value = value;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
   @Override
@@ -103,22 +103,22 @@ public class Resource implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Resource resource = (Resource) o;
-    return Objects.equals(this.type, resource.type) &&
-        Objects.equals(this.value, resource.value);
+    DeploymentResource deploymentResource = (DeploymentResource) o;
+    return Objects.equals(this.text, deploymentResource.text) &&
+        Objects.equals(this.url, deploymentResource.url);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, value);
+    return Objects.hash(text, url);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Resource {\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("class DeploymentResource {\n");
+    sb.append("    text: ").append(toIndentedString(text)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");
     return sb.toString();
   }

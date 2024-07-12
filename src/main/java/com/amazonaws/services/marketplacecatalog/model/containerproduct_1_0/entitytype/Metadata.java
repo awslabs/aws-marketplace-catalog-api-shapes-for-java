@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -25,22 +25,56 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * SupportInformation
+ * Metadata
  */
 @JsonPropertyOrder({
-  SupportInformation.JSON_PROPERTY_DESCRIPTION
+  Metadata.JSON_PROPERTY_LABEL,
+  Metadata.JSON_PROPERTY_DESCRIPTION,
+  Metadata.JSON_PROPERTY_OBFUSCATE
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class SupportInformation implements Serializable {
+public class Metadata implements Serializable {
   private static final long serialVersionUID = 1L;
+
+  public static final String JSON_PROPERTY_LABEL = "Label";
+  private String label;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "Description";
   private String description;
 
-  public SupportInformation() {
+  public static final String JSON_PROPERTY_OBFUSCATE = "Obfuscate";
+  private Boolean obfuscate;
+
+  public Metadata() {
   }
 
-  public SupportInformation description(String description) {
+  public Metadata label(String label) {
+    
+    this.label = label;
+    return this;
+  }
+
+   /**
+   * Get label
+   * @return label
+  **/
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getLabel() {
+    return label;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setLabel(String label) {
+    this.label = label;
+  }
+
+
+  public Metadata description(String description) {
     
     this.description = description;
     return this;
@@ -65,6 +99,32 @@ public class SupportInformation implements Serializable {
     this.description = description;
   }
 
+
+  public Metadata obfuscate(Boolean obfuscate) {
+    
+    this.obfuscate = obfuscate;
+    return this;
+  }
+
+   /**
+   * Get obfuscate
+   * @return obfuscate
+  **/
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_OBFUSCATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getObfuscate() {
+    return obfuscate;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_OBFUSCATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setObfuscate(Boolean obfuscate) {
+    this.obfuscate = obfuscate;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -73,20 +133,24 @@ public class SupportInformation implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SupportInformation supportInformation = (SupportInformation) o;
-    return Objects.equals(this.description, supportInformation.description);
+    Metadata metadata = (Metadata) o;
+    return Objects.equals(this.label, metadata.label) &&
+        Objects.equals(this.description, metadata.description) &&
+        Objects.equals(this.obfuscate, metadata.obfuscate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description);
+    return Objects.hash(label, description, obfuscate);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SupportInformation {\n");
+    sb.append("class Metadata {\n");
+    sb.append("    label: ").append(toIndentedString(label)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    obfuscate: ").append(toIndentedString(obfuscate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

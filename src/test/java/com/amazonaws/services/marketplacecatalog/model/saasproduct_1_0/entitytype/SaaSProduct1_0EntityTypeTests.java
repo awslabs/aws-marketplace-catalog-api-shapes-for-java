@@ -27,7 +27,6 @@ public class SaaSProduct1_0EntityTypeTests {
                 "    \"ProductTitle\": \"Test Product\",\n" +
                 "    \"ProductCode\": \"5cqs4jta6m2iuh6jak7s7bjsy\",\n" +
                 "    \"ShortDescription\": \"Test Product\",\n" +
-                "    \"Manufacturer\": \"SaaS seller name\",\n" +
                 "    \"LongDescription\": \"SaaS test product\",\n" +
                 "    \"Sku\": \"SKU\",\n" +
                 "    \"Highlights\": [\"Config adds no run-time overheads\"],\n" +
@@ -49,8 +48,7 @@ public class SaaSProduct1_0EntityTypeTests {
                 "      \"Type\": \"Link\",\n" +
                 "      \"Text\": \"Sample Resource\",\n" +
                 "      \"Url\": \"https://amazon.com\"\n" +
-                "    }],\n" +
-                "    \"PromotionalMedia\": null\n" +
+                "    }]\n" +
                 "  },\n" +
                 "  \"SupportInformation\": {\n" +
                 "    \"Description\": \"Product support information\"\n" +
@@ -133,7 +131,6 @@ public class SaaSProduct1_0EntityTypeTests {
                         .productTitle("Test Product")
                         .productCode("5cqs4jta6m2iuh6jak7s7bjsy")
                         .shortDescription("Test Product")
-                        .manufacturer("SaaS seller name")
                         .longDescription("SaaS test product")
                         .highlights(Collections.singletonList("Config adds no run-time overheads"))
                         .searchKeywords(Arrays.asList("example", "keywords"))

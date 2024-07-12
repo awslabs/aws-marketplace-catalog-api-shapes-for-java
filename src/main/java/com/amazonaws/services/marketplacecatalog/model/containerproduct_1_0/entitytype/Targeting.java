@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,10 +11,11 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype.PositiveTargeting;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -25,44 +26,44 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * SupportInformation
+ * Targeting
  */
 @JsonPropertyOrder({
-  SupportInformation.JSON_PROPERTY_DESCRIPTION
+  Targeting.JSON_PROPERTY_POSITIVE_TARGETING
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class SupportInformation implements Serializable {
+public class Targeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
-  public static final String JSON_PROPERTY_DESCRIPTION = "Description";
-  private String description;
+  public static final String JSON_PROPERTY_POSITIVE_TARGETING = "PositiveTargeting";
+  private PositiveTargeting positiveTargeting;
 
-  public SupportInformation() {
+  public Targeting() {
   }
 
-  public SupportInformation description(String description) {
+  public Targeting positiveTargeting(PositiveTargeting positiveTargeting) {
     
-    this.description = description;
+    this.positiveTargeting = positiveTargeting;
     return this;
   }
 
    /**
-   * Get description
-   * @return description
+   * Get positiveTargeting
+   * @return positiveTargeting
   **/
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getDescription() {
-    return description;
+  public PositiveTargeting getPositiveTargeting() {
+    return positiveTargeting;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDescription(String description) {
-    this.description = description;
+  public void setPositiveTargeting(PositiveTargeting positiveTargeting) {
+    this.positiveTargeting = positiveTargeting;
   }
 
   @Override
@@ -73,20 +74,20 @@ public class SupportInformation implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SupportInformation supportInformation = (SupportInformation) o;
-    return Objects.equals(this.description, supportInformation.description);
+    Targeting targeting = (Targeting) o;
+    return Objects.equals(this.positiveTargeting, targeting.positiveTargeting);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description);
+    return Objects.hash(positiveTargeting);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SupportInformation {\n");
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("class Targeting {\n");
+    sb.append("    positiveTargeting: ").append(toIndentedString(positiveTargeting)).append("\n");
     sb.append("}");
     return sb.toString();
   }
