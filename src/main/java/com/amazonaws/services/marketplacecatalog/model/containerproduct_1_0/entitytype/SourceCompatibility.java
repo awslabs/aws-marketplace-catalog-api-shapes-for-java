@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -25,44 +25,44 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * SupportInformation
+ * SourceCompatibility
  */
 @JsonPropertyOrder({
-  SupportInformation.JSON_PROPERTY_DESCRIPTION
+  SourceCompatibility.JSON_PROPERTY_PLATFORM
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class SupportInformation implements Serializable {
+public class SourceCompatibility implements Serializable {
   private static final long serialVersionUID = 1L;
 
-  public static final String JSON_PROPERTY_DESCRIPTION = "Description";
-  private String description;
+  public static final String JSON_PROPERTY_PLATFORM = "Platform";
+  private String platform;
 
-  public SupportInformation() {
+  public SourceCompatibility() {
   }
 
-  public SupportInformation description(String description) {
+  public SourceCompatibility platform(String platform) {
     
-    this.description = description;
+    this.platform = platform;
     return this;
   }
 
    /**
-   * Get description
-   * @return description
+   * Get platform
+   * @return platform
   **/
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_PLATFORM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getDescription() {
-    return description;
+  public String getPlatform() {
+    return platform;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_PLATFORM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDescription(String description) {
-    this.description = description;
+  public void setPlatform(String platform) {
+    this.platform = platform;
   }
 
   @Override
@@ -73,20 +73,20 @@ public class SupportInformation implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SupportInformation supportInformation = (SupportInformation) o;
-    return Objects.equals(this.description, supportInformation.description);
+    SourceCompatibility sourceCompatibility = (SourceCompatibility) o;
+    return Objects.equals(this.platform, sourceCompatibility.platform);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description);
+    return Objects.hash(platform);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SupportInformation {\n");
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("class SourceCompatibility {\n");
+    sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
     sb.append("}");
     return sb.toString();
   }

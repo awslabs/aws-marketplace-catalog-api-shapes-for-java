@@ -34,15 +34,15 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Description.JSON_PROPERTY_PRODUCT_TITLE,
   Description.JSON_PROPERTY_PRODUCT_CODE,
   Description.JSON_PROPERTY_SHORT_DESCRIPTION,
-  Description.JSON_PROPERTY_MANUFACTURER,
   Description.JSON_PROPERTY_LONG_DESCRIPTION,
   Description.JSON_PROPERTY_SKU,
   Description.JSON_PROPERTY_HIGHLIGHTS,
   Description.JSON_PROPERTY_ASSOCIATED_PRODUCTS,
   Description.JSON_PROPERTY_SEARCH_KEYWORDS,
   Description.JSON_PROPERTY_VISIBILITY,
-  Description.JSON_PROPERTY_CATEGORIES,
-  Description.JSON_PROPERTY_PRODUCT_STATE
+  Description.JSON_PROPERTY_PRODUCT_STATE,
+  Description.JSON_PROPERTY_REPLACEMENT_PRODUCT_ID,
+  Description.JSON_PROPERTY_CATEGORIES
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Description implements Serializable {
@@ -56,9 +56,6 @@ public class Description implements Serializable {
 
   public static final String JSON_PROPERTY_SHORT_DESCRIPTION = "ShortDescription";
   private String shortDescription;
-
-  public static final String JSON_PROPERTY_MANUFACTURER = "Manufacturer";
-  private String manufacturer;
 
   public static final String JSON_PROPERTY_LONG_DESCRIPTION = "LongDescription";
   private String longDescription;
@@ -78,11 +75,14 @@ public class Description implements Serializable {
   public static final String JSON_PROPERTY_VISIBILITY = "Visibility";
   private String visibility;
 
-  public static final String JSON_PROPERTY_CATEGORIES = "Categories";
-  private List<String> categories;
-
   public static final String JSON_PROPERTY_PRODUCT_STATE = "ProductState";
   private String productState;
+
+  public static final String JSON_PROPERTY_REPLACEMENT_PRODUCT_ID = "ReplacementProductId";
+  private String replacementProductId;
+
+  public static final String JSON_PROPERTY_CATEGORIES = "Categories";
+  private List<String> categories;
 
   public Description() {
   }
@@ -162,32 +162,6 @@ public class Description implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setShortDescription(String shortDescription) {
     this.shortDescription = shortDescription;
-  }
-
-
-  public Description manufacturer(String manufacturer) {
-    
-    this.manufacturer = manufacturer;
-    return this;
-  }
-
-   /**
-   * Get manufacturer
-   * @return manufacturer
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MANUFACTURER)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public String getManufacturer() {
-    return manufacturer;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MANUFACTURER)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setManufacturer(String manufacturer) {
-    this.manufacturer = manufacturer;
   }
 
 
@@ -292,9 +266,11 @@ public class Description implements Serializable {
   }
 
    /**
-   * Get associatedProducts
+   * This shape is deprecated: AssociatedProducts is not supported for this entity type
    * @return associatedProducts
+   * @deprecated
   **/
+  @Deprecated
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSOCIATED_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -371,6 +347,58 @@ public class Description implements Serializable {
   }
 
 
+  public Description productState(String productState) {
+    
+    this.productState = productState;
+    return this;
+  }
+
+   /**
+   * Get productState
+   * @return productState
+  **/
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PRODUCT_STATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getProductState() {
+    return productState;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PRODUCT_STATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setProductState(String productState) {
+    this.productState = productState;
+  }
+
+
+  public Description replacementProductId(String replacementProductId) {
+    
+    this.replacementProductId = replacementProductId;
+    return this;
+  }
+
+   /**
+   * Get replacementProductId
+   * @return replacementProductId
+  **/
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_REPLACEMENT_PRODUCT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getReplacementProductId() {
+    return replacementProductId;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_REPLACEMENT_PRODUCT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setReplacementProductId(String replacementProductId) {
+    this.replacementProductId = replacementProductId;
+  }
+
+
   public Description categories(List<String> categories) {
     
     this.categories = categories;
@@ -404,32 +432,6 @@ public class Description implements Serializable {
     this.categories = categories;
   }
 
-
-  public Description productState(String productState) {
-    
-    this.productState = productState;
-    return this;
-  }
-
-   /**
-   * Get productState
-   * @return productState
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRODUCT_STATE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public String getProductState() {
-    return productState;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PRODUCT_STATE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setProductState(String productState) {
-    this.productState = productState;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -442,20 +444,20 @@ public class Description implements Serializable {
     return Objects.equals(this.productTitle, description.productTitle) &&
         Objects.equals(this.productCode, description.productCode) &&
         Objects.equals(this.shortDescription, description.shortDescription) &&
-        Objects.equals(this.manufacturer, description.manufacturer) &&
         Objects.equals(this.longDescription, description.longDescription) &&
         Objects.equals(this.sku, description.sku) &&
         Objects.equals(this.highlights, description.highlights) &&
         Objects.equals(this.associatedProducts, description.associatedProducts) &&
         Objects.equals(this.searchKeywords, description.searchKeywords) &&
         Objects.equals(this.visibility, description.visibility) &&
-        Objects.equals(this.categories, description.categories) &&
-        Objects.equals(this.productState, description.productState);
+        Objects.equals(this.productState, description.productState) &&
+        Objects.equals(this.replacementProductId, description.replacementProductId) &&
+        Objects.equals(this.categories, description.categories);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(productTitle, productCode, shortDescription, manufacturer, longDescription, sku, highlights, associatedProducts, searchKeywords, visibility, categories, productState);
+    return Objects.hash(productTitle, productCode, shortDescription, longDescription, sku, highlights, associatedProducts, searchKeywords, visibility, productState, replacementProductId, categories);
   }
 
   @Override
@@ -465,15 +467,15 @@ public class Description implements Serializable {
     sb.append("    productTitle: ").append(toIndentedString(productTitle)).append("\n");
     sb.append("    productCode: ").append(toIndentedString(productCode)).append("\n");
     sb.append("    shortDescription: ").append(toIndentedString(shortDescription)).append("\n");
-    sb.append("    manufacturer: ").append(toIndentedString(manufacturer)).append("\n");
     sb.append("    longDescription: ").append(toIndentedString(longDescription)).append("\n");
     sb.append("    sku: ").append(toIndentedString(sku)).append("\n");
     sb.append("    highlights: ").append(toIndentedString(highlights)).append("\n");
     sb.append("    associatedProducts: ").append(toIndentedString(associatedProducts)).append("\n");
     sb.append("    searchKeywords: ").append(toIndentedString(searchKeywords)).append("\n");
     sb.append("    visibility: ").append(toIndentedString(visibility)).append("\n");
-    sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    productState: ").append(toIndentedString(productState)).append("\n");
+    sb.append("    replacementProductId: ").append(toIndentedString(replacementProductId)).append("\n");
+    sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("}");
     return sb.toString();
   }

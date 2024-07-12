@@ -15,15 +15,11 @@ package com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.entitytyp
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.entitytype.Resource;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -32,8 +28,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  * SupportInformation
  */
 @JsonPropertyOrder({
-  SupportInformation.JSON_PROPERTY_DESCRIPTION,
-  SupportInformation.JSON_PROPERTY_RESOURCES
+  SupportInformation.JSON_PROPERTY_DESCRIPTION
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SupportInformation implements Serializable {
@@ -41,9 +36,6 @@ public class SupportInformation implements Serializable {
 
   public static final String JSON_PROPERTY_DESCRIPTION = "Description";
   private String description;
-
-  public static final String JSON_PROPERTY_RESOURCES = "Resources";
-  private List<Resource> resources;
 
   public SupportInformation() {
   }
@@ -73,40 +65,6 @@ public class SupportInformation implements Serializable {
     this.description = description;
   }
 
-
-  public SupportInformation resources(List<Resource> resources) {
-    
-    this.resources = resources;
-    return this;
-  }
-
-  public SupportInformation addResourcesItem(Resource resourcesItem) {
-    if (this.resources == null) {
-      this.resources = new ArrayList<>();
-    }
-    this.resources.add(resourcesItem);
-    return this;
-  }
-
-   /**
-   * Get resources
-   * @return resources
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RESOURCES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public List<Resource> getResources() {
-    return resources;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_RESOURCES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setResources(List<Resource> resources) {
-    this.resources = resources;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -116,13 +74,12 @@ public class SupportInformation implements Serializable {
       return false;
     }
     SupportInformation supportInformation = (SupportInformation) o;
-    return Objects.equals(this.description, supportInformation.description) &&
-        Objects.equals(this.resources, supportInformation.resources);
+    return Objects.equals(this.description, supportInformation.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description, resources);
+    return Objects.hash(description);
   }
 
   @Override
@@ -130,7 +87,6 @@ public class SupportInformation implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class SupportInformation {\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    resources: ").append(toIndentedString(resources)).append("\n");
     sb.append("}");
     return sb.toString();
   }

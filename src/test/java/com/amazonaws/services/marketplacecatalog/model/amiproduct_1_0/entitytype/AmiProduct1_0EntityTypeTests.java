@@ -97,7 +97,6 @@ public class AmiProduct1_0EntityTypeTests {
                 "    \"ProductTitle\": \"AMI Test Product\",\n" +
                 "    \"ProductCode\": \"9abcdefg9bw4k0zssg7thx123\",\n" +
                 "    \"ShortDescription\": \"Product description\",\n" +
-                "    \"Manufacturer\": \"AWS-Tester\",\n" +
                 "    \"LongDescription\": \"Long product description\",\n" +
                 "    \"Sku\": \"SKU\",\n" +
                 "    \"Highlights\": [\"Test product\"],\n" +
@@ -123,8 +122,7 @@ public class AmiProduct1_0EntityTypeTests {
                 "      \"Type\": \"Link\",\n" +
                 "      \"Text\": \"Additional Resource\",\n" +
                 "      \"Url\": \"amazon.com\"\n" +
-                "    }],\n" +
-                "    \"PromotionalMedia\": null\n" +
+                "    }]\n" +
                 "  },\n" +
                 "  \"Dimensions\": [{\n" +
                 "    \"Name\": \"t2.2xlarge\",\n" +
@@ -211,7 +209,6 @@ public class AmiProduct1_0EntityTypeTests {
                         .productTitle("AMI Test Product")
                         .productCode("9abcdefg9bw4k0zssg7thx123")
                         .shortDescription("Product description")
-                        .manufacturer("AWS-Tester")
                         .longDescription("Long product description")
                         .sku("SKU")
                         .highlights(Collections.singletonList("Test product"))

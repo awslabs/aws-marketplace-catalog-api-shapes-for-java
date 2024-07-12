@@ -16,7 +16,6 @@ package com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.changetyp
 import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.changetypes.AdditionalResource;
-import com.amazonaws.services.marketplacecatalog.model.amiproduct_1_0.changetypes.PromotionalMedia;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -39,11 +38,9 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateInformationChangeDetail.JSON_PROPERTY_SKU,
   UpdateInformationChangeDetail.JSON_PROPERTY_LOGO_URL,
   UpdateInformationChangeDetail.JSON_PROPERTY_VIDEO_URLS,
-  UpdateInformationChangeDetail.JSON_PROPERTY_PROMOTIONAL_MEDIA,
   UpdateInformationChangeDetail.JSON_PROPERTY_HIGHLIGHTS,
   UpdateInformationChangeDetail.JSON_PROPERTY_ADDITIONAL_RESOURCES,
   UpdateInformationChangeDetail.JSON_PROPERTY_SUPPORT_DESCRIPTION,
-  UpdateInformationChangeDetail.JSON_PROPERTY_SUPPORT_RESOURCES,
   UpdateInformationChangeDetail.JSON_PROPERTY_CATEGORIES,
   UpdateInformationChangeDetail.JSON_PROPERTY_ASSOCIATED_PRODUCTS,
   UpdateInformationChangeDetail.JSON_PROPERTY_SEARCH_KEYWORDS
@@ -70,9 +67,6 @@ public class UpdateInformationChangeDetail implements Serializable {
   public static final String JSON_PROPERTY_VIDEO_URLS = "VideoUrls";
   private List<String> videoUrls;
 
-  public static final String JSON_PROPERTY_PROMOTIONAL_MEDIA = "PromotionalMedia";
-  private List<PromotionalMedia> promotionalMedia;
-
   public static final String JSON_PROPERTY_HIGHLIGHTS = "Highlights";
   private List<String> highlights;
 
@@ -81,9 +75,6 @@ public class UpdateInformationChangeDetail implements Serializable {
 
   public static final String JSON_PROPERTY_SUPPORT_DESCRIPTION = "SupportDescription";
   private String supportDescription;
-
-  public static final String JSON_PROPERTY_SUPPORT_RESOURCES = "SupportResources";
-  private List<String> supportResources;
 
   public static final String JSON_PROPERTY_CATEGORIES = "Categories";
   private List<String> categories;
@@ -261,40 +252,6 @@ public class UpdateInformationChangeDetail implements Serializable {
   }
 
 
-  public UpdateInformationChangeDetail promotionalMedia(List<PromotionalMedia> promotionalMedia) {
-    
-    this.promotionalMedia = promotionalMedia;
-    return this;
-  }
-
-  public UpdateInformationChangeDetail addPromotionalMediaItem(PromotionalMedia promotionalMediaItem) {
-    if (this.promotionalMedia == null) {
-      this.promotionalMedia = new ArrayList<>();
-    }
-    this.promotionalMedia.add(promotionalMediaItem);
-    return this;
-  }
-
-   /**
-   * Get promotionalMedia
-   * @return promotionalMedia
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PROMOTIONAL_MEDIA)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public List<PromotionalMedia> getPromotionalMedia() {
-    return promotionalMedia;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PROMOTIONAL_MEDIA)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPromotionalMedia(List<PromotionalMedia> promotionalMedia) {
-    this.promotionalMedia = promotionalMedia;
-  }
-
-
   public UpdateInformationChangeDetail highlights(List<String> highlights) {
     
     this.highlights = highlights;
@@ -389,40 +346,6 @@ public class UpdateInformationChangeDetail implements Serializable {
   }
 
 
-  public UpdateInformationChangeDetail supportResources(List<String> supportResources) {
-    
-    this.supportResources = supportResources;
-    return this;
-  }
-
-  public UpdateInformationChangeDetail addSupportResourcesItem(String supportResourcesItem) {
-    if (this.supportResources == null) {
-      this.supportResources = new ArrayList<>();
-    }
-    this.supportResources.add(supportResourcesItem);
-    return this;
-  }
-
-   /**
-   * Get supportResources
-   * @return supportResources
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUPPORT_RESOURCES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public List<String> getSupportResources() {
-    return supportResources;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SUPPORT_RESOURCES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSupportResources(List<String> supportResources) {
-    this.supportResources = supportResources;
-  }
-
-
   public UpdateInformationChangeDetail categories(List<String> categories) {
     
     this.categories = categories;
@@ -472,9 +395,11 @@ public class UpdateInformationChangeDetail implements Serializable {
   }
 
    /**
-   * Get associatedProducts
+   * This shape is deprecated: AssociatedProducts is not supported for this change type
    * @return associatedProducts
+   * @deprecated
   **/
+  @Deprecated
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSOCIATED_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -539,11 +464,9 @@ public class UpdateInformationChangeDetail implements Serializable {
         Objects.equals(this.sku, updateInformationChangeDetail.sku) &&
         Objects.equals(this.logoUrl, updateInformationChangeDetail.logoUrl) &&
         Objects.equals(this.videoUrls, updateInformationChangeDetail.videoUrls) &&
-        Objects.equals(this.promotionalMedia, updateInformationChangeDetail.promotionalMedia) &&
         Objects.equals(this.highlights, updateInformationChangeDetail.highlights) &&
         Objects.equals(this.additionalResources, updateInformationChangeDetail.additionalResources) &&
         Objects.equals(this.supportDescription, updateInformationChangeDetail.supportDescription) &&
-        Objects.equals(this.supportResources, updateInformationChangeDetail.supportResources) &&
         Objects.equals(this.categories, updateInformationChangeDetail.categories) &&
         Objects.equals(this.associatedProducts, updateInformationChangeDetail.associatedProducts) &&
         Objects.equals(this.searchKeywords, updateInformationChangeDetail.searchKeywords);
@@ -551,7 +474,7 @@ public class UpdateInformationChangeDetail implements Serializable {
 
   @Override
   public int hashCode() {
-    return Objects.hash(productTitle, shortDescription, longDescription, sku, logoUrl, videoUrls, promotionalMedia, highlights, additionalResources, supportDescription, supportResources, categories, associatedProducts, searchKeywords);
+    return Objects.hash(productTitle, shortDescription, longDescription, sku, logoUrl, videoUrls, highlights, additionalResources, supportDescription, categories, associatedProducts, searchKeywords);
   }
 
   @Override
@@ -564,11 +487,9 @@ public class UpdateInformationChangeDetail implements Serializable {
     sb.append("    sku: ").append(toIndentedString(sku)).append("\n");
     sb.append("    logoUrl: ").append(toIndentedString(logoUrl)).append("\n");
     sb.append("    videoUrls: ").append(toIndentedString(videoUrls)).append("\n");
-    sb.append("    promotionalMedia: ").append(toIndentedString(promotionalMedia)).append("\n");
     sb.append("    highlights: ").append(toIndentedString(highlights)).append("\n");
     sb.append("    additionalResources: ").append(toIndentedString(additionalResources)).append("\n");
     sb.append("    supportDescription: ").append(toIndentedString(supportDescription)).append("\n");
-    sb.append("    supportResources: ").append(toIndentedString(supportResources)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    associatedProducts: ").append(toIndentedString(associatedProducts)).append("\n");
     sb.append("    searchKeywords: ").append(toIndentedString(searchKeywords)).append("\n");

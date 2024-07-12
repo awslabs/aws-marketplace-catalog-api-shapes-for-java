@@ -16,7 +16,6 @@ package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entityty
 import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.AdditionalResource;
-import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.PromotionalMedia;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.Video;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,8 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   PromotionalResources.JSON_PROPERTY_LOGO_URL,
   PromotionalResources.JSON_PROPERTY_VIDEOS,
-  PromotionalResources.JSON_PROPERTY_ADDITIONAL_RESOURCES,
-  PromotionalResources.JSON_PROPERTY_PROMOTIONAL_MEDIA
+  PromotionalResources.JSON_PROPERTY_ADDITIONAL_RESOURCES
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PromotionalResources implements Serializable {
@@ -51,9 +49,6 @@ public class PromotionalResources implements Serializable {
 
   public static final String JSON_PROPERTY_ADDITIONAL_RESOURCES = "AdditionalResources";
   private List<AdditionalResource> additionalResources;
-
-  public static final String JSON_PROPERTY_PROMOTIONAL_MEDIA = "PromotionalMedia";
-  private List<PromotionalMedia> promotionalMedia;
 
   public PromotionalResources() {
   }
@@ -151,40 +146,6 @@ public class PromotionalResources implements Serializable {
     this.additionalResources = additionalResources;
   }
 
-
-  public PromotionalResources promotionalMedia(List<PromotionalMedia> promotionalMedia) {
-    
-    this.promotionalMedia = promotionalMedia;
-    return this;
-  }
-
-  public PromotionalResources addPromotionalMediaItem(PromotionalMedia promotionalMediaItem) {
-    if (this.promotionalMedia == null) {
-      this.promotionalMedia = new ArrayList<>();
-    }
-    this.promotionalMedia.add(promotionalMediaItem);
-    return this;
-  }
-
-   /**
-   * Get promotionalMedia
-   * @return promotionalMedia
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PROMOTIONAL_MEDIA)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public List<PromotionalMedia> getPromotionalMedia() {
-    return promotionalMedia;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PROMOTIONAL_MEDIA)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPromotionalMedia(List<PromotionalMedia> promotionalMedia) {
-    this.promotionalMedia = promotionalMedia;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -196,13 +157,12 @@ public class PromotionalResources implements Serializable {
     PromotionalResources promotionalResources = (PromotionalResources) o;
     return Objects.equals(this.logoUrl, promotionalResources.logoUrl) &&
         Objects.equals(this.videos, promotionalResources.videos) &&
-        Objects.equals(this.additionalResources, promotionalResources.additionalResources) &&
-        Objects.equals(this.promotionalMedia, promotionalResources.promotionalMedia);
+        Objects.equals(this.additionalResources, promotionalResources.additionalResources);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(logoUrl, videos, additionalResources, promotionalMedia);
+    return Objects.hash(logoUrl, videos, additionalResources);
   }
 
   @Override
@@ -212,7 +172,6 @@ public class PromotionalResources implements Serializable {
     sb.append("    logoUrl: ").append(toIndentedString(logoUrl)).append("\n");
     sb.append("    videos: ").append(toIndentedString(videos)).append("\n");
     sb.append("    additionalResources: ").append(toIndentedString(additionalResources)).append("\n");
-    sb.append("    promotionalMedia: ").append(toIndentedString(promotionalMedia)).append("\n");
     sb.append("}");
     return sb.toString();
   }

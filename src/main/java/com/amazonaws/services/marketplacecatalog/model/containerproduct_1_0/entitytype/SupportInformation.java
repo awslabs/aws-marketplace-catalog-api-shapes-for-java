@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;

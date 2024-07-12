@@ -1,5 +1,5 @@
 /*
- * SaaSProduct_1_0_EntityType
+ * ContainerProduct_1_0_EntityType
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype;
+package com.amazonaws.services.marketplacecatalog.model.containerproduct_1_0.entitytype;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -20,49 +20,60 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * SupportInformation
+ * PositiveTargeting
  */
 @JsonPropertyOrder({
-  SupportInformation.JSON_PROPERTY_DESCRIPTION
+  PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class SupportInformation implements Serializable {
+public class PositiveTargeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
-  public static final String JSON_PROPERTY_DESCRIPTION = "Description";
-  private String description;
+  public static final String JSON_PROPERTY_BUYER_ACCOUNTS = "BuyerAccounts";
+  private List<String> buyerAccounts;
 
-  public SupportInformation() {
+  public PositiveTargeting() {
   }
 
-  public SupportInformation description(String description) {
+  public PositiveTargeting buyerAccounts(List<String> buyerAccounts) {
     
-    this.description = description;
+    this.buyerAccounts = buyerAccounts;
+    return this;
+  }
+
+  public PositiveTargeting addBuyerAccountsItem(String buyerAccountsItem) {
+    if (this.buyerAccounts == null) {
+      this.buyerAccounts = new ArrayList<>();
+    }
+    this.buyerAccounts.add(buyerAccountsItem);
     return this;
   }
 
    /**
-   * Get description
-   * @return description
+   * Get buyerAccounts
+   * @return buyerAccounts
   **/
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_BUYER_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getDescription() {
-    return description;
+  public List<String> getBuyerAccounts() {
+    return buyerAccounts;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_BUYER_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDescription(String description) {
-    this.description = description;
+  public void setBuyerAccounts(List<String> buyerAccounts) {
+    this.buyerAccounts = buyerAccounts;
   }
 
   @Override
@@ -73,20 +84,20 @@ public class SupportInformation implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SupportInformation supportInformation = (SupportInformation) o;
-    return Objects.equals(this.description, supportInformation.description);
+    PositiveTargeting positiveTargeting = (PositiveTargeting) o;
+    return Objects.equals(this.buyerAccounts, positiveTargeting.buyerAccounts);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description);
+    return Objects.hash(buyerAccounts);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SupportInformation {\n");
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("class PositiveTargeting {\n");
+    sb.append("    buyerAccounts: ").append(toIndentedString(buyerAccounts)).append("\n");
     sb.append("}");
     return sb.toString();
   }
