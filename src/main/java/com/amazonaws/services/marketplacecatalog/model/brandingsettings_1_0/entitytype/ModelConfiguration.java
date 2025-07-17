@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ModelConfiguration.JSON_PROPERTY_LOGO_URL
 })
 @JsonTypeName("Configuration")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ModelConfiguration implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -59,10 +59,10 @@ public class ModelConfiguration implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,17 +78,16 @@ public class ModelConfiguration implements Serializable {
     this.title = title;
   }
 
-
   public ModelConfiguration information(String information) {
     
     this.information = information;
     return this;
   }
 
-   /**
+  /**
    * Get information
    * @return information
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,17 +103,16 @@ public class ModelConfiguration implements Serializable {
     this.information = information;
   }
 
-
   public ModelConfiguration themeColor(String themeColor) {
     
     this.themeColor = themeColor;
     return this;
   }
 
-   /**
+  /**
    * Get themeColor
    * @return themeColor
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_THEME_COLOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -130,17 +128,16 @@ public class ModelConfiguration implements Serializable {
     this.themeColor = themeColor;
   }
 
-
   public ModelConfiguration logoUrl(String logoUrl) {
     
     this.logoUrl = logoUrl;
     return this;
   }
 
-   /**
+  /**
    * Get logoUrl
    * @return logoUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGO_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

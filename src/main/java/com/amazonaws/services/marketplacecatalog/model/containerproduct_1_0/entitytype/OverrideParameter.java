@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OverrideParameter.JSON_PROPERTY_DEFAULT,
   OverrideParameter.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class OverrideParameter implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -55,10 +55,10 @@ public class OverrideParameter implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get key
    * @return key
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -74,17 +74,16 @@ public class OverrideParameter implements Serializable {
     this.key = key;
   }
 
-
   public OverrideParameter _default(String _default) {
     
     this._default = _default;
     return this;
   }
 
-   /**
+  /**
    * Get _default
    * @return _default
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFAULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -100,17 +99,16 @@ public class OverrideParameter implements Serializable {
     this._default = _default;
   }
 
-
   public OverrideParameter metadata(Metadata metadata) {
     
     this.metadata = metadata;
     return this;
   }
 
-   /**
+  /**
    * Get metadata
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

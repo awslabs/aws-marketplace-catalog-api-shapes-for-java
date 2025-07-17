@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CloudFormationDetails.JSON_PROPERTY_DEFAULT_STACK_NAME,
   CloudFormationDetails.JSON_PROPERTY_TEMPLATE_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CloudFormationDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class CloudFormationDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get defaultStackName
    * @return defaultStackName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_STACK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class CloudFormationDetails implements Serializable {
     this.defaultStackName = defaultStackName;
   }
 
-
   public CloudFormationDetails templateUrl(String templateUrl) {
     
     this.templateUrl = templateUrl;
     return this;
   }
 
-   /**
+  /**
    * Get templateUrl
    * @return templateUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

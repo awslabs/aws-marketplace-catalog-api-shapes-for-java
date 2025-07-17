@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PositiveTargeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class PositiveTargeting implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get buyerAccounts
    * @return buyerAccounts
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BUYER_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

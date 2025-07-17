@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SecurityGroup.JSON_PROPERTY_TO_PORT,
   SecurityGroup.JSON_PROPERTY_CIDR_IPS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class SecurityGroup implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,7 +50,7 @@ public class SecurityGroup implements Serializable {
   private Integer toPort;
 
   public static final String JSON_PROPERTY_CIDR_IPS = "CidrIps";
-  private List<String> cidrIps;
+  private List<String> cidrIps = new ArrayList<>();
 
   public SecurityGroup() {
   }
@@ -61,10 +61,10 @@ public class SecurityGroup implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get protocol
    * @return protocol
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,17 +80,16 @@ public class SecurityGroup implements Serializable {
     this.protocol = protocol;
   }
 
-
   public SecurityGroup fromPort(Integer fromPort) {
     
     this.fromPort = fromPort;
     return this;
   }
 
-   /**
+  /**
    * Get fromPort
    * @return fromPort
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FROM_PORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -106,17 +105,16 @@ public class SecurityGroup implements Serializable {
     this.fromPort = fromPort;
   }
 
-
   public SecurityGroup toPort(Integer toPort) {
     
     this.toPort = toPort;
     return this;
   }
 
-   /**
+  /**
    * Get toPort
    * @return toPort
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_PORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -132,7 +130,6 @@ public class SecurityGroup implements Serializable {
     this.toPort = toPort;
   }
 
-
   public SecurityGroup cidrIps(List<String> cidrIps) {
     
     this.cidrIps = cidrIps;
@@ -147,10 +144,10 @@ public class SecurityGroup implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get cidrIps
    * @return cidrIps
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CIDR_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

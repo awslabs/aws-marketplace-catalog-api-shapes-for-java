@@ -41,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Version.JSON_PROPERTY_SOURCES,
   Version.JSON_PROPERTY_DELIVERY_OPTIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Version implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -61,10 +61,10 @@ public class Version implements Serializable {
   private String creationDate;
 
   public static final String JSON_PROPERTY_SOURCES = "Sources";
-  private List<Source> sources;
+  private List<Source> sources = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERY_OPTIONS = "DeliveryOptions";
-  private List<DeliveryOption> deliveryOptions;
+  private List<DeliveryOption> deliveryOptions = new ArrayList<>();
 
   public Version() {
   }
@@ -75,10 +75,10 @@ public class Version implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -94,17 +94,16 @@ public class Version implements Serializable {
     this.id = id;
   }
 
-
   public Version releaseNotes(String releaseNotes) {
     
     this.releaseNotes = releaseNotes;
     return this;
   }
 
-   /**
+  /**
    * Get releaseNotes
    * @return releaseNotes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -120,17 +119,16 @@ public class Version implements Serializable {
     this.releaseNotes = releaseNotes;
   }
 
-
   public Version upgradeInstructions(String upgradeInstructions) {
     
     this.upgradeInstructions = upgradeInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get upgradeInstructions
    * @return upgradeInstructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPGRADE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -146,17 +144,16 @@ public class Version implements Serializable {
     this.upgradeInstructions = upgradeInstructions;
   }
 
-
   public Version versionTitle(String versionTitle) {
     
     this.versionTitle = versionTitle;
     return this;
   }
 
-   /**
+  /**
    * Get versionTitle
    * @return versionTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,17 +169,16 @@ public class Version implements Serializable {
     this.versionTitle = versionTitle;
   }
 
-
   public Version creationDate(String creationDate) {
     
     this.creationDate = creationDate;
     return this;
   }
 
-   /**
+  /**
    * Get creationDate
    * @return creationDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATION_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -198,7 +194,6 @@ public class Version implements Serializable {
     this.creationDate = creationDate;
   }
 
-
   public Version sources(List<Source> sources) {
     
     this.sources = sources;
@@ -213,10 +208,10 @@ public class Version implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get sources
    * @return sources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -232,7 +227,6 @@ public class Version implements Serializable {
     this.sources = sources;
   }
 
-
   public Version deliveryOptions(List<DeliveryOption> deliveryOptions) {
     
     this.deliveryOptions = deliveryOptions;
@@ -247,10 +241,10 @@ public class Version implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptions
    * @return deliveryOptions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

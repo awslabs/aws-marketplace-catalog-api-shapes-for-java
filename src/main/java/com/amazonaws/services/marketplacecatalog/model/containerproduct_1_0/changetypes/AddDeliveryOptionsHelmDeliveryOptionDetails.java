@@ -43,7 +43,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddDeliveryOptionsHelmDeliveryOptionDetails.JSON_PROPERTY_MARKETPLACE_SERVICE_ACCOUNT_NAME,
   AddDeliveryOptionsHelmDeliveryOptionDetails.JSON_PROPERTY_OVERRIDE_PARAMETERS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -75,7 +75,7 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
   private String marketplaceServiceAccountName;
 
   public static final String JSON_PROPERTY_OVERRIDE_PARAMETERS = "OverrideParameters";
-  private List<OverrideParameter> overrideParameters;
+  private List<OverrideParameter> overrideParameters = new ArrayList<>();
 
   public AddDeliveryOptionsHelmDeliveryOptionDetails() {
   }
@@ -86,10 +86,10 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -105,17 +105,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.description = description;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -131,7 +130,6 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.usageInstructions = usageInstructions;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails containerImages(List<String> containerImages) {
     
     this.containerImages = containerImages;
@@ -146,10 +144,10 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     return this;
   }
 
-   /**
+  /**
    * Get containerImages
    * @return containerImages
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTAINER_IMAGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,7 +163,6 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.containerImages = containerImages;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails compatibleServices(List<String> compatibleServices) {
     
     this.compatibleServices = compatibleServices;
@@ -180,10 +177,10 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     return this;
   }
 
-   /**
+  /**
    * Get compatibleServices
    * @return compatibleServices
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPATIBLE_SERVICES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -199,17 +196,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.compatibleServices = compatibleServices;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails helmChartUri(String helmChartUri) {
     
     this.helmChartUri = helmChartUri;
     return this;
   }
 
-   /**
+  /**
    * Get helmChartUri
    * @return helmChartUri
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HELM_CHART_URI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -225,17 +221,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.helmChartUri = helmChartUri;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails quickLaunchEnabled(Boolean quickLaunchEnabled) {
     
     this.quickLaunchEnabled = quickLaunchEnabled;
     return this;
   }
 
-   /**
+  /**
    * Get quickLaunchEnabled
    * @return quickLaunchEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUICK_LAUNCH_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,17 +246,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.quickLaunchEnabled = quickLaunchEnabled;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails releaseName(String releaseName) {
     
     this.releaseName = releaseName;
     return this;
   }
 
-   /**
+  /**
    * Get releaseName
    * @return releaseName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,17 +271,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.releaseName = releaseName;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails namespace(String namespace) {
     
     this.namespace = namespace;
     return this;
   }
 
-   /**
+  /**
    * Get namespace
    * @return namespace
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAMESPACE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -303,17 +296,16 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.namespace = namespace;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails marketplaceServiceAccountName(String marketplaceServiceAccountName) {
     
     this.marketplaceServiceAccountName = marketplaceServiceAccountName;
     return this;
   }
 
-   /**
+  /**
    * Get marketplaceServiceAccountName
    * @return marketplaceServiceAccountName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKETPLACE_SERVICE_ACCOUNT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -329,7 +321,6 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     this.marketplaceServiceAccountName = marketplaceServiceAccountName;
   }
 
-
   public AddDeliveryOptionsHelmDeliveryOptionDetails overrideParameters(List<OverrideParameter> overrideParameters) {
     
     this.overrideParameters = overrideParameters;
@@ -344,10 +335,10 @@ public class AddDeliveryOptionsHelmDeliveryOptionDetails implements Serializable
     return this;
   }
 
-   /**
+  /**
    * Get overrideParameters
    * @return overrideParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OVERRIDE_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

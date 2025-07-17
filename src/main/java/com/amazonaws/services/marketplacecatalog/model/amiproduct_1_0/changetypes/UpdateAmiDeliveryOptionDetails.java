@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateAmiDeliveryOptionDetails.JSON_PROPERTY_RECOMMENDED_INSTANCE_TYPE,
   UpdateAmiDeliveryOptionDetails.JSON_PROPERTY_SECURITY_GROUPS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateAmiDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -52,7 +52,7 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
   private String recommendedInstanceType;
 
   public static final String JSON_PROPERTY_SECURITY_GROUPS = "SecurityGroups";
-  private List<SecurityGroup> securityGroups;
+  private List<SecurityGroup> securityGroups = new ArrayList<>();
 
   public UpdateAmiDeliveryOptionDetails() {
   }
@@ -63,10 +63,10 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -82,17 +82,16 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
     this.usageInstructions = usageInstructions;
   }
 
-
   public UpdateAmiDeliveryOptionDetails accessEndpointUrl(AccessEndpointUrl accessEndpointUrl) {
     
     this.accessEndpointUrl = accessEndpointUrl;
     return this;
   }
 
-   /**
+  /**
    * Get accessEndpointUrl
    * @return accessEndpointUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACCESS_ENDPOINT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -108,17 +107,16 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
     this.accessEndpointUrl = accessEndpointUrl;
   }
 
-
   public UpdateAmiDeliveryOptionDetails recommendedInstanceType(String recommendedInstanceType) {
     
     this.recommendedInstanceType = recommendedInstanceType;
     return this;
   }
 
-   /**
+  /**
    * Get recommendedInstanceType
    * @return recommendedInstanceType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECOMMENDED_INSTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -134,7 +132,6 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
     this.recommendedInstanceType = recommendedInstanceType;
   }
 
-
   public UpdateAmiDeliveryOptionDetails securityGroups(List<SecurityGroup> securityGroups) {
     
     this.securityGroups = securityGroups;
@@ -149,10 +146,10 @@ public class UpdateAmiDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get securityGroups
    * @return securityGroups
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SECURITY_GROUPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

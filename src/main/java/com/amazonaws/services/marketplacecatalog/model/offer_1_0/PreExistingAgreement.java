@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PreExistingAgreement.JSON_PROPERTY_ACQUISITION_CHANNEL,
   PreExistingAgreement.JSON_PROPERTY_PRICING_MODEL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PreExistingAgreement implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class PreExistingAgreement implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get acquisitionChannel
    * @return acquisitionChannel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACQUISITION_CHANNEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class PreExistingAgreement implements Serializable {
     this.acquisitionChannel = acquisitionChannel;
   }
 
-
   public PreExistingAgreement pricingModel(String pricingModel) {
     
     this.pricingModel = pricingModel;
     return this;
   }
 
-   /**
+  /**
    * Get pricingModel
    * @return pricingModel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICING_MODEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

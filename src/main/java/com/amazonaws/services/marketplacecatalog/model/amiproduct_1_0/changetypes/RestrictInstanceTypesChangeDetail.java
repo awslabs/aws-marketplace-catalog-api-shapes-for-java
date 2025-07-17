@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   RestrictInstanceTypesChangeDetail.JSON_PROPERTY_INSTANCE_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RestrictInstanceTypesChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class RestrictInstanceTypesChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get instanceTypes
    * @return instanceTypes
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INSTANCE_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

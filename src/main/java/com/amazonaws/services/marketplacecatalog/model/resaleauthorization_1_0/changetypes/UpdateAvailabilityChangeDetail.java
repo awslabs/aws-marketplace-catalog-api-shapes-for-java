@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateAvailabilityChangeDetail.JSON_PROPERTY_AVAILABILITY_END_DATE,
   UpdateAvailabilityChangeDetail.JSON_PROPERTY_OFFERS_MAX_QUANTITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateAvailabilityChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class UpdateAvailabilityChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get availabilityEndDate
    * @return availabilityEndDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AVAILABILITY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,19 +69,18 @@ public class UpdateAvailabilityChangeDetail implements Serializable {
     this.availabilityEndDate = availabilityEndDate;
   }
 
-
   public UpdateAvailabilityChangeDetail offersMaxQuantity(Integer offersMaxQuantity) {
     
     this.offersMaxQuantity = offersMaxQuantity;
     return this;
   }
 
-   /**
+  /**
    * Get offersMaxQuantity
    * minimum: 1
    * maximum: 1
    * @return offersMaxQuantity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFERS_MAX_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

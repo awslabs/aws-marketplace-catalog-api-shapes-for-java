@@ -34,12 +34,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateBuyerTargetingTermsChangeDetail.JSON_PROPERTY_TERMS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateBuyerTargetingTermsChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_TERMS = "Terms";
-  private List<BuyerTargetingTerm> terms;
+  private List<BuyerTargetingTerm> terms = new ArrayList<>();
 
   public UpdateBuyerTargetingTermsChangeDetail() {
   }
@@ -58,10 +58,10 @@ public class UpdateBuyerTargetingTermsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get terms
    * @return terms
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TERMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -42,7 +42,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PricingTerm.JSON_PROPERTY_GRANTS,
   PricingTerm.JSON_PROPERTY_DURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PricingTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -53,13 +53,13 @@ public class PricingTerm implements Serializable {
   private PricingTermCurrencyCode currencyCode;
 
   public static final String JSON_PROPERTY_RATE_CARDS = "RateCards";
-  private List<RateCards> rateCards;
+  private List<RateCards> rateCards = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PRICE = "Price";
   private String price;
 
   public static final String JSON_PROPERTY_GRANTS = "Grants";
-  private List<Grant> grants;
+  private List<Grant> grants = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DURATION = "Duration";
   private String duration;
@@ -73,10 +73,10 @@ public class PricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,17 +92,16 @@ public class PricingTerm implements Serializable {
     this.type = type;
   }
 
-
   public PricingTerm currencyCode(PricingTermCurrencyCode currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -118,7 +117,6 @@ public class PricingTerm implements Serializable {
     this.currencyCode = currencyCode;
   }
 
-
   public PricingTerm rateCards(List<RateCards> rateCards) {
     
     this.rateCards = rateCards;
@@ -133,10 +131,10 @@ public class PricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCards
    * @return rateCards
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -152,17 +150,16 @@ public class PricingTerm implements Serializable {
     this.rateCards = rateCards;
   }
 
-
   public PricingTerm price(String price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -178,7 +175,6 @@ public class PricingTerm implements Serializable {
     this.price = price;
   }
 
-
   public PricingTerm grants(List<Grant> grants) {
     
     this.grants = grants;
@@ -193,10 +189,10 @@ public class PricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get grants
    * @return grants
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GRANTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -212,17 +208,16 @@ public class PricingTerm implements Serializable {
     this.grants = grants;
   }
 
-
   public PricingTerm duration(String duration) {
     
     this.duration = duration;
     return this;
   }
 
-   /**
+  /**
    * Get duration
    * @return duration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

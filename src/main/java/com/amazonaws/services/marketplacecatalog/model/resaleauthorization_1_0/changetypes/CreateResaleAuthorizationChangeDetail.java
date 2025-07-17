@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_PRODUCT_ID,
   CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_RESELLER_ACCOUNT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateResaleAuthorizationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public CreateResaleAuthorizationChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +102,16 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public CreateResaleAuthorizationChangeDetail productId(String productId) {
     
     this.productId = productId;
     return this;
   }
 
-   /**
+  /**
    * Get productId
    * @return productId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.productId = productId;
   }
 
-
   public CreateResaleAuthorizationChangeDetail resellerAccountId(String resellerAccountId) {
     
     this.resellerAccountId = resellerAccountId;
     return this;
   }
 
-   /**
+  /**
    * Get resellerAccountId
    * @return resellerAccountId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESELLER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

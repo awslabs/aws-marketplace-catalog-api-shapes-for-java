@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDeliveryOptionsDetails.JSON_PROPERTY_HELM_DELIVERY_OPTION_DETAILS,
   UpdateDeliveryOptionsDetails.JSON_PROPERTY_EKS_ADD_ON_DELIVERY_OPTION_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionsDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class UpdateDeliveryOptionsDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get ecrDeliveryOptionDetails
    * @return ecrDeliveryOptionDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ECR_DELIVERY_OPTION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,17 +76,16 @@ public class UpdateDeliveryOptionsDetails implements Serializable {
     this.ecrDeliveryOptionDetails = ecrDeliveryOptionDetails;
   }
 
-
   public UpdateDeliveryOptionsDetails helmDeliveryOptionDetails(UpdateDeliveryOptionsHelmDeliveryOptionDetails helmDeliveryOptionDetails) {
     
     this.helmDeliveryOptionDetails = helmDeliveryOptionDetails;
     return this;
   }
 
-   /**
+  /**
    * Get helmDeliveryOptionDetails
    * @return helmDeliveryOptionDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HELM_DELIVERY_OPTION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,17 +101,16 @@ public class UpdateDeliveryOptionsDetails implements Serializable {
     this.helmDeliveryOptionDetails = helmDeliveryOptionDetails;
   }
 
-
   public UpdateDeliveryOptionsDetails eksAddOnDeliveryOptionDetails(UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails eksAddOnDeliveryOptionDetails) {
     
     this.eksAddOnDeliveryOptionDetails = eksAddOnDeliveryOptionDetails;
     return this;
   }
 
-   /**
+  /**
    * Get eksAddOnDeliveryOptionDetails
    * @return eksAddOnDeliveryOptionDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EKS_ADD_ON_DELIVERY_OPTION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

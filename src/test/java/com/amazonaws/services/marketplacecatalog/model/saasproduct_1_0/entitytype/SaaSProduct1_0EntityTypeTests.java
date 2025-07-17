@@ -17,7 +17,8 @@ public class SaaSProduct1_0EntityTypeTests {
     @BeforeAll
     public static void setup() {
         mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL)
+                .setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
     }
     
     @Test
@@ -132,6 +133,7 @@ public class SaaSProduct1_0EntityTypeTests {
                         .productCode("5cqs4jta6m2iuh6jak7s7bjsy")
                         .shortDescription("Test Product")
                         .longDescription("SaaS test product")
+                        .associatedProducts(null)
                         .highlights(Collections.singletonList("Config adds no run-time overheads"))
                         .searchKeywords(Arrays.asList("example", "keywords"))
                         .sku("SKU")

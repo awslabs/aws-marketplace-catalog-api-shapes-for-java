@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Statement.JSON_PROPERTY_EFFECT,
   Statement.JSON_PROPERTY_RESOURCES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Statement implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -43,7 +43,7 @@ public class Statement implements Serializable {
   private String effect;
 
   public static final String JSON_PROPERTY_RESOURCES = "Resources";
-  private List<Resource> resources;
+  private List<Resource> resources = new ArrayList<>();
 
   public Statement() {
   }
@@ -54,10 +54,10 @@ public class Statement implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get effect
    * @return effect
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EFFECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class Statement implements Serializable {
     this.effect = effect;
   }
 
-
   public Statement resources(List<Resource> resources) {
     
     this.resources = resources;
@@ -88,10 +87,10 @@ public class Statement implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get resources
    * @return resources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AssociateAudienceChangeDetail.JSON_PROPERTY_DESCRIPTION,
   AssociateAudienceChangeDetail.JSON_PROPERTY_PRINCIPALS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AssociateAudienceChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class AssociateAudienceChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,17 +76,16 @@ public class AssociateAudienceChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public AssociateAudienceChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,7 +101,6 @@ public class AssociateAudienceChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public AssociateAudienceChangeDetail principals(Set<String> principals) {
     
     this.principals = principals;
@@ -117,10 +115,10 @@ public class AssociateAudienceChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get principals
    * @return principals
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRINCIPALS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

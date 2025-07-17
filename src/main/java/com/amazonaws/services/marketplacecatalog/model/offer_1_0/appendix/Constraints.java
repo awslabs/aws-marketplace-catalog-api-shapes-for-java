@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Constraints.JSON_PROPERTY_MULTIPLE_DIMENSION_SELECTION,
   Constraints.JSON_PROPERTY_QUANTITY_CONFIGURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Constraints implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -51,10 +51,10 @@ public class Constraints implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get multipleDimensionSelection
    * @return multipleDimensionSelection
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MULTIPLE_DIMENSION_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class Constraints implements Serializable {
     this.multipleDimensionSelection = multipleDimensionSelection;
   }
 
-
   public Constraints quantityConfiguration(Constraint quantityConfiguration) {
     
     this.quantityConfiguration = quantityConfiguration;
     return this;
   }
 
-   /**
+  /**
    * Get quantityConfiguration
    * @return quantityConfiguration
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QUANTITY_CONFIGURATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeploymentTemplate.JSON_PROPERTY_DEFAULT_STACK_NAME,
   DeploymentTemplate.JSON_PROPERTY_TEMPLATE_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeploymentTemplate implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -66,10 +66,10 @@ public class DeploymentTemplate implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -85,17 +85,16 @@ public class DeploymentTemplate implements Serializable {
     this.type = type;
   }
 
-
   public DeploymentTemplate title(String title) {
     
     this.title = title;
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -111,17 +110,16 @@ public class DeploymentTemplate implements Serializable {
     this.title = title;
   }
 
-
   public DeploymentTemplate description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -137,17 +135,16 @@ public class DeploymentTemplate implements Serializable {
     this.description = description;
   }
 
-
   public DeploymentTemplate iamPolicy(String iamPolicy) {
     
     this.iamPolicy = iamPolicy;
     return this;
   }
 
-   /**
+  /**
    * Get iamPolicy
    * @return iamPolicy
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IAM_POLICY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -163,17 +160,16 @@ public class DeploymentTemplate implements Serializable {
     this.iamPolicy = iamPolicy;
   }
 
-
   public DeploymentTemplate defaultStackName(String defaultStackName) {
     
     this.defaultStackName = defaultStackName;
     return this;
   }
 
-   /**
+  /**
    * Get defaultStackName
    * @return defaultStackName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFAULT_STACK_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -189,17 +185,16 @@ public class DeploymentTemplate implements Serializable {
     this.defaultStackName = defaultStackName;
   }
 
-
   public DeploymentTemplate templateUrl(String templateUrl) {
     
     this.templateUrl = templateUrl;
     return this;
   }
 
-   /**
+  /**
    * Get templateUrl
    * @return templateUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -34,12 +34,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   Recommendations.JSON_PROPERTY_DEPLOYMENT_RESOURCES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Recommendations implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_DEPLOYMENT_RESOURCES = "DeploymentResources";
-  private List<DeploymentResource> deploymentResources;
+  private List<DeploymentResource> deploymentResources = new ArrayList<>();
 
   public Recommendations() {
   }
@@ -58,10 +58,10 @@ public class Recommendations implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deploymentResources
    * @return deploymentResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEPLOYMENT_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   CreateProductChangeDetail.JSON_PROPERTY_PRODUCT_TITLE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateProductChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -46,10 +46,10 @@ public class CreateProductChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get productTitle
    * @return productTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

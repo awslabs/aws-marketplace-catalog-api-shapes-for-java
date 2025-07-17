@@ -44,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Description.JSON_PROPERTY_REPLACEMENT_PRODUCT_ID,
   Description.JSON_PROPERTY_CATEGORIES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Description implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -64,13 +64,13 @@ public class Description implements Serializable {
   private String sku;
 
   public static final String JSON_PROPERTY_HIGHLIGHTS = "Highlights";
-  private List<String> highlights;
+  private List<String> highlights = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ASSOCIATED_PRODUCTS = "AssociatedProducts";
-  private List<String> associatedProducts;
+  private List<String> associatedProducts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEARCH_KEYWORDS = "SearchKeywords";
-  private List<String> searchKeywords;
+  private List<String> searchKeywords = new ArrayList<>();
 
   public static final String JSON_PROPERTY_VISIBILITY = "Visibility";
   private String visibility;
@@ -82,7 +82,7 @@ public class Description implements Serializable {
   private String replacementProductId;
 
   public static final String JSON_PROPERTY_CATEGORIES = "Categories";
-  private List<String> categories;
+  private List<String> categories = new ArrayList<>();
 
   public Description() {
   }
@@ -93,10 +93,10 @@ public class Description implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get productTitle
    * @return productTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,17 +112,16 @@ public class Description implements Serializable {
     this.productTitle = productTitle;
   }
 
-
   public Description productCode(String productCode) {
     
     this.productCode = productCode;
     return this;
   }
 
-   /**
+  /**
    * Get productCode
    * @return productCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -138,17 +137,16 @@ public class Description implements Serializable {
     this.productCode = productCode;
   }
 
-
   public Description shortDescription(String shortDescription) {
     
     this.shortDescription = shortDescription;
     return this;
   }
 
-   /**
+  /**
    * Get shortDescription
    * @return shortDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHORT_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -164,17 +162,16 @@ public class Description implements Serializable {
     this.shortDescription = shortDescription;
   }
 
-
   public Description longDescription(String longDescription) {
     
     this.longDescription = longDescription;
     return this;
   }
 
-   /**
+  /**
    * Get longDescription
    * @return longDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LONG_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -190,17 +187,16 @@ public class Description implements Serializable {
     this.longDescription = longDescription;
   }
 
-
   public Description sku(String sku) {
     
     this.sku = sku;
     return this;
   }
 
-   /**
+  /**
    * Get sku
    * @return sku
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -216,7 +212,6 @@ public class Description implements Serializable {
     this.sku = sku;
   }
 
-
   public Description highlights(List<String> highlights) {
     
     this.highlights = highlights;
@@ -231,10 +226,10 @@ public class Description implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get highlights
    * @return highlights
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HIGHLIGHTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,7 +245,6 @@ public class Description implements Serializable {
     this.highlights = highlights;
   }
 
-
   public Description associatedProducts(List<String> associatedProducts) {
     
     this.associatedProducts = associatedProducts;
@@ -265,11 +259,11 @@ public class Description implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * This shape is deprecated: AssociatedProducts is not supported for this entity type
    * @return associatedProducts
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSOCIATED_PRODUCTS)
@@ -286,7 +280,6 @@ public class Description implements Serializable {
     this.associatedProducts = associatedProducts;
   }
 
-
   public Description searchKeywords(List<String> searchKeywords) {
     
     this.searchKeywords = searchKeywords;
@@ -301,10 +294,10 @@ public class Description implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get searchKeywords
    * @return searchKeywords
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEARCH_KEYWORDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -320,17 +313,16 @@ public class Description implements Serializable {
     this.searchKeywords = searchKeywords;
   }
 
-
   public Description visibility(String visibility) {
     
     this.visibility = visibility;
     return this;
   }
 
-   /**
+  /**
    * Get visibility
    * @return visibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -346,17 +338,16 @@ public class Description implements Serializable {
     this.visibility = visibility;
   }
 
-
   public Description productState(String productState) {
     
     this.productState = productState;
     return this;
   }
 
-   /**
+  /**
    * Get productState
    * @return productState
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -372,17 +363,16 @@ public class Description implements Serializable {
     this.productState = productState;
   }
 
-
   public Description replacementProductId(String replacementProductId) {
     
     this.replacementProductId = replacementProductId;
     return this;
   }
 
-   /**
+  /**
    * Get replacementProductId
    * @return replacementProductId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLACEMENT_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -398,7 +388,6 @@ public class Description implements Serializable {
     this.replacementProductId = replacementProductId;
   }
 
-
   public Description categories(List<String> categories) {
     
     this.categories = categories;
@@ -413,10 +402,10 @@ public class Description implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get categories
    * @return categories
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

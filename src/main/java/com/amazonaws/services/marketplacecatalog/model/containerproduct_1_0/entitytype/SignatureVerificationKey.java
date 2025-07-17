@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SignatureVerificationKey.JSON_PROPERTY_STATUS,
   SignatureVerificationKey.JSON_PROPERTY_PUBLIC_KEY_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class SignatureVerificationKey implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class SignatureVerificationKey implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get publicKey
    * @return publicKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class SignatureVerificationKey implements Serializable {
     this.publicKey = publicKey;
   }
 
-
   public SignatureVerificationKey status(String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class SignatureVerificationKey implements Serializable {
     this.status = status;
   }
 
-
   public SignatureVerificationKey publicKeyVersion(Integer publicKeyVersion) {
     
     this.publicKeyVersion = publicKeyVersion;
     return this;
   }
 
-   /**
+  /**
    * Get publicKeyVersion
    * @return publicKeyVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PUBLIC_KEY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

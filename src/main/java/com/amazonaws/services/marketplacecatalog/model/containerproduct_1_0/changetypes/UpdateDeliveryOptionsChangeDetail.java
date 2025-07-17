@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDeliveryOptionsChangeDetail.JSON_PROPERTY_VERSION,
   UpdateDeliveryOptionsChangeDetail.JSON_PROPERTY_DELIVERY_OPTIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionsChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -44,7 +44,7 @@ public class UpdateDeliveryOptionsChangeDetail implements Serializable {
   private UpdateDeliveryOptionsVersion version;
 
   public static final String JSON_PROPERTY_DELIVERY_OPTIONS = "DeliveryOptions";
-  private List<UpdateDeliveryOption> deliveryOptions;
+  private List<UpdateDeliveryOption> deliveryOptions = new ArrayList<>();
 
   public UpdateDeliveryOptionsChangeDetail() {
   }
@@ -55,10 +55,10 @@ public class UpdateDeliveryOptionsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get version
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -74,7 +74,6 @@ public class UpdateDeliveryOptionsChangeDetail implements Serializable {
     this.version = version;
   }
 
-
   public UpdateDeliveryOptionsChangeDetail deliveryOptions(List<UpdateDeliveryOption> deliveryOptions) {
     
     this.deliveryOptions = deliveryOptions;
@@ -89,10 +88,10 @@ public class UpdateDeliveryOptionsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptions
    * @return deliveryOptions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

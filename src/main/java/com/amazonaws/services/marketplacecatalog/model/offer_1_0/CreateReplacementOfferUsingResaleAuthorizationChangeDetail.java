@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateReplacementOfferUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_AGREEMENT_ID,
   CreateReplacementOfferUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateReplacementOfferUsingResaleAuthorizationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class CreateReplacementOfferUsingResaleAuthorizationChangeDetail implemen
     return this;
   }
 
-   /**
+  /**
    * Get resaleAuthorizationId
    * @return resaleAuthorizationId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESALE_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class CreateReplacementOfferUsingResaleAuthorizationChangeDetail implemen
     this.resaleAuthorizationId = resaleAuthorizationId;
   }
 
-
   public CreateReplacementOfferUsingResaleAuthorizationChangeDetail agreementId(String agreementId) {
     
     this.agreementId = agreementId;
     return this;
   }
 
-   /**
+  /**
    * Get agreementId
    * @return agreementId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AGREEMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class CreateReplacementOfferUsingResaleAuthorizationChangeDetail implemen
     this.agreementId = agreementId;
   }
 
-
   public CreateReplacementOfferUsingResaleAuthorizationChangeDetail name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

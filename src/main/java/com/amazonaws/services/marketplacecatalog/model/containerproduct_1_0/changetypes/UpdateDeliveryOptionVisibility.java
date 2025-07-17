@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDeliveryOptionVisibility.JSON_PROPERTY_ID,
   UpdateDeliveryOptionVisibility.JSON_PROPERTY_TARGET_VISIBILITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionVisibility implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -51,10 +51,10 @@ public class UpdateDeliveryOptionVisibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class UpdateDeliveryOptionVisibility implements Serializable {
     this.id = id;
   }
 
-
   public UpdateDeliveryOptionVisibility targetVisibility(UpdateDeliveryOptionsTargetVisibility targetVisibility) {
     
     this.targetVisibility = targetVisibility;
     return this;
   }
 
-   /**
+  /**
    * Get targetVisibility
    * @return targetVisibility
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TARGET_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

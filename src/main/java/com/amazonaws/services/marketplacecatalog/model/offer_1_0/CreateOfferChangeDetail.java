@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateOfferChangeDetail.JSON_PROPERTY_NAME,
   CreateOfferChangeDetail.JSON_PROPERTY_PRODUCT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateOfferChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class CreateOfferChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class CreateOfferChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public CreateOfferChangeDetail productId(String productId) {
     
     this.productId = productId;
     return this;
   }
 
-   /**
+  /**
    * Get productId
    * @return productId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

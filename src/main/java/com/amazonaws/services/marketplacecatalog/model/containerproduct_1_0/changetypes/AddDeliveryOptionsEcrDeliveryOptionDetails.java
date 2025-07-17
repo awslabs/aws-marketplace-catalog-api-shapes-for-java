@@ -39,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddDeliveryOptionsEcrDeliveryOptionDetails.JSON_PROPERTY_DEPLOYMENT_RESOURCES,
   AddDeliveryOptionsEcrDeliveryOptionDetails.JSON_PROPERTY_ACCESS_ROLE_ARN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -56,7 +56,7 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
   private List<String> compatibleServices = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEPLOYMENT_RESOURCES = "DeploymentResources";
-  private List<DeploymentResource> deploymentResources;
+  private List<DeploymentResource> deploymentResources = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ACCESS_ROLE_ARN = "AccessRoleArn";
   private String accessRoleArn;
@@ -70,10 +70,10 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -89,17 +89,16 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     this.description = description;
   }
 
-
   public AddDeliveryOptionsEcrDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -115,7 +114,6 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     this.usageInstructions = usageInstructions;
   }
 
-
   public AddDeliveryOptionsEcrDeliveryOptionDetails containerImages(List<String> containerImages) {
     
     this.containerImages = containerImages;
@@ -130,10 +128,10 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     return this;
   }
 
-   /**
+  /**
    * Get containerImages
    * @return containerImages
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTAINER_IMAGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -149,7 +147,6 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     this.containerImages = containerImages;
   }
 
-
   public AddDeliveryOptionsEcrDeliveryOptionDetails compatibleServices(List<String> compatibleServices) {
     
     this.compatibleServices = compatibleServices;
@@ -164,10 +161,10 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     return this;
   }
 
-   /**
+  /**
    * Get compatibleServices
    * @return compatibleServices
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPATIBLE_SERVICES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -183,7 +180,6 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     this.compatibleServices = compatibleServices;
   }
 
-
   public AddDeliveryOptionsEcrDeliveryOptionDetails deploymentResources(List<DeploymentResource> deploymentResources) {
     
     this.deploymentResources = deploymentResources;
@@ -198,10 +194,10 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     return this;
   }
 
-   /**
+  /**
    * Get deploymentResources
    * @return deploymentResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEPLOYMENT_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,17 +213,16 @@ public class AddDeliveryOptionsEcrDeliveryOptionDetails implements Serializable 
     this.deploymentResources = deploymentResources;
   }
 
-
   public AddDeliveryOptionsEcrDeliveryOptionDetails accessRoleArn(String accessRoleArn) {
     
     this.accessRoleArn = accessRoleArn;
     return this;
   }
 
-   /**
+  /**
    * Get accessRoleArn
    * @return accessRoleArn
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACCESS_ROLE_ARN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

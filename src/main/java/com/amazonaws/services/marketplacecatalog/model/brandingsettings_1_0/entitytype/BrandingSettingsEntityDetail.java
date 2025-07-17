@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   BrandingSettingsEntityDetail.JSON_PROPERTY_DESCRIPTION,
   BrandingSettingsEntityDetail.JSON_PROPERTY_CONFIGURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class BrandingSettingsEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -55,10 +55,10 @@ public class BrandingSettingsEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -74,17 +74,16 @@ public class BrandingSettingsEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public BrandingSettingsEntityDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -100,17 +99,16 @@ public class BrandingSettingsEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public BrandingSettingsEntityDetail _configuration(ModelConfiguration _configuration) {
     
     this._configuration = _configuration;
     return this;
   }
 
-   /**
+  /**
    * Get _configuration
    * @return _configuration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONFIGURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

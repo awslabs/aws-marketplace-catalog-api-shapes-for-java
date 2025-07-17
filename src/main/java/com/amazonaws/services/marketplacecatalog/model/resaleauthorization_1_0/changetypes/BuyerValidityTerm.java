@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   BuyerValidityTerm.JSON_PROPERTY_TYPE,
   BuyerValidityTerm.JSON_PROPERTY_MAXIMUM_AGREEMENT_START_DATE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class BuyerValidityTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -51,10 +51,10 @@ public class BuyerValidityTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class BuyerValidityTerm implements Serializable {
     this.type = type;
   }
 
-
   public BuyerValidityTerm maximumAgreementStartDate(String maximumAgreementStartDate) {
     
     this.maximumAgreementStartDate = maximumAgreementStartDate;
     return this;
   }
 
-   /**
+  /**
    * Get maximumAgreementStartDate
    * @return maximumAgreementStartDate
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MAXIMUM_AGREEMENT_START_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

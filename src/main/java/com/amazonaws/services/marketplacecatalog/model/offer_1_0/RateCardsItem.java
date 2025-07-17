@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RateCardsItem.JSON_PROPERTY_CONSTRAINTS,
   RateCardsItem.JSON_PROPERTY_RATE_CARD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RateCardsItem implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -49,7 +49,7 @@ public class RateCardsItem implements Serializable {
   private Constraints constraints;
 
   public static final String JSON_PROPERTY_RATE_CARD = "RateCard";
-  private List<RateCardItem> rateCard;
+  private List<RateCardItem> rateCard = new ArrayList<>();
 
   public RateCardsItem() {
   }
@@ -60,10 +60,10 @@ public class RateCardsItem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get selector
    * @return selector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SELECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,17 +79,16 @@ public class RateCardsItem implements Serializable {
     this.selector = selector;
   }
 
-
   public RateCardsItem constraints(Constraints constraints) {
     
     this.constraints = constraints;
     return this;
   }
 
-   /**
+  /**
    * Get constraints
    * @return constraints
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONSTRAINTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,7 +104,6 @@ public class RateCardsItem implements Serializable {
     this.constraints = constraints;
   }
 
-
   public RateCardsItem rateCard(List<RateCardItem> rateCard) {
     
     this.rateCard = rateCard;
@@ -120,10 +118,10 @@ public class RateCardsItem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCard
    * @return rateCard
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

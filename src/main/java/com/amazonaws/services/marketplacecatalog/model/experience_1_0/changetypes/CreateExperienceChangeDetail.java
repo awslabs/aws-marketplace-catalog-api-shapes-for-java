@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateExperienceChangeDetail.JSON_PROPERTY_DESCRIPTION,
   CreateExperienceChangeDetail.JSON_PROPERTY_CATALOG
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateExperienceChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class CreateExperienceChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class CreateExperienceChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public CreateExperienceChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class CreateExperienceChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public CreateExperienceChangeDetail catalog(String catalog) {
     
     this.catalog = catalog;
     return this;
   }
 
-   /**
+  /**
    * Get catalog
    * @return catalog
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATALOG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

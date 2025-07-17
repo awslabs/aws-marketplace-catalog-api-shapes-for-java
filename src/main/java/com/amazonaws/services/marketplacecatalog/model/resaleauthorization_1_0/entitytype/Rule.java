@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Rule.JSON_PROPERTY_RESELLER_ACCOUNT_ID,
   Rule.JSON_PROPERTY_RESELLER_LEGAL_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Rule implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -70,10 +70,10 @@ public class Rule implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,17 +89,16 @@ public class Rule implements Serializable {
     this.type = type;
   }
 
-
   public Rule id(String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,17 +114,16 @@ public class Rule implements Serializable {
     this.id = id;
   }
 
-
   public Rule usage(String usage) {
     
     this.usage = usage;
     return this;
   }
 
-   /**
+  /**
    * Get usage
    * @return usage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,17 +139,16 @@ public class Rule implements Serializable {
     this.usage = usage;
   }
 
-
   public Rule availabilityEndDate(String availabilityEndDate) {
     
     this.availabilityEndDate = availabilityEndDate;
     return this;
   }
 
-   /**
+  /**
    * Get availabilityEndDate
    * @return availabilityEndDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AVAILABILITY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,17 +164,16 @@ public class Rule implements Serializable {
     this.availabilityEndDate = availabilityEndDate;
   }
 
-
   public Rule offersMaxQuantity(Integer offersMaxQuantity) {
     
     this.offersMaxQuantity = offersMaxQuantity;
     return this;
   }
 
-   /**
+  /**
    * Get offersMaxQuantity
    * @return offersMaxQuantity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFERS_MAX_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -193,17 +189,16 @@ public class Rule implements Serializable {
     this.offersMaxQuantity = offersMaxQuantity;
   }
 
-
   public Rule resellerAccountId(String resellerAccountId) {
     
     this.resellerAccountId = resellerAccountId;
     return this;
   }
 
-   /**
+  /**
    * Get resellerAccountId
    * @return resellerAccountId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESELLER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,17 +214,16 @@ public class Rule implements Serializable {
     this.resellerAccountId = resellerAccountId;
   }
 
-
   public Rule resellerLegalName(String resellerLegalName) {
     
     this.resellerLegalName = resellerLegalName;
     return this;
   }
 
-   /**
+  /**
    * Get resellerLegalName
    * @return resellerLegalName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESELLER_LEGAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

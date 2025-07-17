@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OfferDetails.JSON_PROPERTY_OFFER_EXTENDED_STATUS,
   OfferDetails.JSON_PROPERTY_OFFER_CREATED_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class OfferDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class OfferDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get offerExtendedStatus
    * @return offerExtendedStatus
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFER_EXTENDED_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class OfferDetails implements Serializable {
     this.offerExtendedStatus = offerExtendedStatus;
   }
 
-
   public OfferDetails offerCreatedCount(Integer offerCreatedCount) {
     
     this.offerCreatedCount = offerCreatedCount;
     return this;
   }
 
-   /**
+  /**
    * Get offerCreatedCount
    * @return offerCreatedCount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFER_CREATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

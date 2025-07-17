@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Grant.JSON_PROPERTY_DIMENSION_KEY,
   Grant.JSON_PROPERTY_MAX_QUANTITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Grant implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class Grant implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get dimensionKey
    * @return dimensionKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DIMENSION_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,19 +69,18 @@ public class Grant implements Serializable {
     this.dimensionKey = dimensionKey;
   }
 
-
   public Grant maxQuantity(Integer maxQuantity) {
     
     this.maxQuantity = maxQuantity;
     return this;
   }
 
-   /**
+  /**
    * Get maxQuantity
    * minimum: 1
    * maximum: 2147483646
    * @return maxQuantity
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MAX_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

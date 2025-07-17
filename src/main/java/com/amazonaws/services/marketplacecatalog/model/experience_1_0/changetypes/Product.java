@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Product.JSON_PROPERTY_IDS,
   Product.JSON_PROPERTY_NOTES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Product implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -61,10 +61,10 @@ public class Product implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get ids
    * @return ids
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class Product implements Serializable {
     this.ids = ids;
   }
 
-
   public Product notes(String notes) {
     
     this.notes = notes;
     return this;
   }
 
-   /**
+  /**
    * Get notes
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

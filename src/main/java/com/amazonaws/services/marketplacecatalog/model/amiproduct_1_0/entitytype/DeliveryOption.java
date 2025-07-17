@@ -41,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeliveryOption.JSON_PROPERTY_RECOMMENDATIONS,
   DeliveryOption.JSON_PROPERTY_AMI_ALIAS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeliveryOption implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -84,10 +84,10 @@ public class DeliveryOption implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +103,16 @@ public class DeliveryOption implements Serializable {
     this.id = id;
   }
 
-
   public DeliveryOption type(String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +128,16 @@ public class DeliveryOption implements Serializable {
     this.type = type;
   }
 
-
   public DeliveryOption sourceId(String sourceId) {
     
     this.sourceId = sourceId;
     return this;
   }
 
-   /**
+  /**
    * Get sourceId
    * @return sourceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -155,17 +153,16 @@ public class DeliveryOption implements Serializable {
     this.sourceId = sourceId;
   }
 
-
   public DeliveryOption title(String title) {
     
     this.title = title;
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -181,17 +178,16 @@ public class DeliveryOption implements Serializable {
     this.title = title;
   }
 
-
   public DeliveryOption shortDescription(String shortDescription) {
     
     this.shortDescription = shortDescription;
     return this;
   }
 
-   /**
+  /**
    * Get shortDescription
    * @return shortDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHORT_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -207,17 +203,16 @@ public class DeliveryOption implements Serializable {
     this.shortDescription = shortDescription;
   }
 
-
   public DeliveryOption longDescription(String longDescription) {
     
     this.longDescription = longDescription;
     return this;
   }
 
-   /**
+  /**
    * Get longDescription
    * @return longDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LONG_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -233,17 +228,16 @@ public class DeliveryOption implements Serializable {
     this.longDescription = longDescription;
   }
 
-
   public DeliveryOption instructions(Instructions instructions) {
     
     this.instructions = instructions;
     return this;
   }
 
-   /**
+  /**
    * Get instructions
    * @return instructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -259,17 +253,16 @@ public class DeliveryOption implements Serializable {
     this.instructions = instructions;
   }
 
-
   public DeliveryOption visibility(String visibility) {
     
     this.visibility = visibility;
     return this;
   }
 
-   /**
+  /**
    * Get visibility
    * @return visibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -285,17 +278,16 @@ public class DeliveryOption implements Serializable {
     this.visibility = visibility;
   }
 
-
   public DeliveryOption recommendations(Recommendations recommendations) {
     
     this.recommendations = recommendations;
     return this;
   }
 
-   /**
+  /**
    * Get recommendations
    * @return recommendations
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECOMMENDATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -311,17 +303,16 @@ public class DeliveryOption implements Serializable {
     this.recommendations = recommendations;
   }
 
-
   public DeliveryOption amiAlias(String amiAlias) {
     
     this.amiAlias = amiAlias;
     return this;
   }
 
-   /**
+  /**
    * Get amiAlias
    * @return amiAlias
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AMI_ALIAS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AdditionalResource.JSON_PROPERTY_TEXT,
   AdditionalResource.JSON_PROPERTY_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AdditionalResource implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class AdditionalResource implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class AdditionalResource implements Serializable {
     this.type = type;
   }
 
-
   public AdditionalResource text(String text) {
     
     this.text = text;
     return this;
   }
 
-   /**
+  /**
    * Get text
    * @return text
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class AdditionalResource implements Serializable {
     this.text = text;
   }
 
-
   public AdditionalResource url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * Get url
    * @return url
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

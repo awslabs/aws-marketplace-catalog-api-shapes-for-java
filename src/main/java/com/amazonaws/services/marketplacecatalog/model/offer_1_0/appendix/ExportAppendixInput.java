@@ -57,7 +57,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ExportAppendixInput.JSON_PROPERTY_UPDATE_INFORMATION_CHANGE_DETAIL,
   ExportAppendixInput.JSON_PROPERTY_UPDATE_TARGETING_CHANGE_DETAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ExportAppendixInput implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -112,10 +112,10 @@ public class ExportAppendixInput implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get customerVerificationTerm
    * @return customerVerificationTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CUSTOMER_VERIFICATION_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,17 +131,16 @@ public class ExportAppendixInput implements Serializable {
     this.customerVerificationTerm = customerVerificationTerm;
   }
 
-
   public ExportAppendixInput legalTerm(LegalTerm legalTerm) {
     
     this.legalTerm = legalTerm;
     return this;
   }
 
-   /**
+  /**
    * Get legalTerm
    * @return legalTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LEGAL_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -157,17 +156,16 @@ public class ExportAppendixInput implements Serializable {
     this.legalTerm = legalTerm;
   }
 
-
   public ExportAppendixInput paymentScheduleTerm(PaymentScheduleTerm paymentScheduleTerm) {
     
     this.paymentScheduleTerm = paymentScheduleTerm;
     return this;
   }
 
-   /**
+  /**
    * Get paymentScheduleTerm
    * @return paymentScheduleTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PAYMENT_SCHEDULE_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -183,17 +181,16 @@ public class ExportAppendixInput implements Serializable {
     this.paymentScheduleTerm = paymentScheduleTerm;
   }
 
-
   public ExportAppendixInput byolPricingTerm(ByolPricingTerm byolPricingTerm) {
     
     this.byolPricingTerm = byolPricingTerm;
     return this;
   }
 
-   /**
+  /**
    * Get byolPricingTerm
    * @return byolPricingTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BYOL_PRICING_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -209,17 +206,16 @@ public class ExportAppendixInput implements Serializable {
     this.byolPricingTerm = byolPricingTerm;
   }
 
-
   public ExportAppendixInput freeTrialPricingTerm(FreeTrialPricingTerm freeTrialPricingTerm) {
     
     this.freeTrialPricingTerm = freeTrialPricingTerm;
     return this;
   }
 
-   /**
+  /**
    * Get freeTrialPricingTerm
    * @return freeTrialPricingTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FREE_TRIAL_PRICING_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -235,17 +231,16 @@ public class ExportAppendixInput implements Serializable {
     this.freeTrialPricingTerm = freeTrialPricingTerm;
   }
 
-
   public ExportAppendixInput usageBasedPricingTerm(UsageBasedPricingTerm usageBasedPricingTerm) {
     
     this.usageBasedPricingTerm = usageBasedPricingTerm;
     return this;
   }
 
-   /**
+  /**
    * Get usageBasedPricingTerm
    * @return usageBasedPricingTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_BASED_PRICING_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -261,17 +256,16 @@ public class ExportAppendixInput implements Serializable {
     this.usageBasedPricingTerm = usageBasedPricingTerm;
   }
 
-
   public ExportAppendixInput configurableUpfrontPricingTerm(ConfigurableUpfrontPricingTerm configurableUpfrontPricingTerm) {
     
     this.configurableUpfrontPricingTerm = configurableUpfrontPricingTerm;
     return this;
   }
 
-   /**
+  /**
    * Get configurableUpfrontPricingTerm
    * @return configurableUpfrontPricingTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONFIGURABLE_UPFRONT_PRICING_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -287,17 +281,16 @@ public class ExportAppendixInput implements Serializable {
     this.configurableUpfrontPricingTerm = configurableUpfrontPricingTerm;
   }
 
-
   public ExportAppendixInput recurringPaymentTerm(RecurringPaymentTerm recurringPaymentTerm) {
     
     this.recurringPaymentTerm = recurringPaymentTerm;
     return this;
   }
 
-   /**
+  /**
    * Get recurringPaymentTerm
    * @return recurringPaymentTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECURRING_PAYMENT_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -313,17 +306,16 @@ public class ExportAppendixInput implements Serializable {
     this.recurringPaymentTerm = recurringPaymentTerm;
   }
 
-
   public ExportAppendixInput fixedUpfrontPricingTerm(FixedUpfrontPricingTerm fixedUpfrontPricingTerm) {
     
     this.fixedUpfrontPricingTerm = fixedUpfrontPricingTerm;
     return this;
   }
 
-   /**
+  /**
    * Get fixedUpfrontPricingTerm
    * @return fixedUpfrontPricingTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FIXED_UPFRONT_PRICING_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -339,17 +331,16 @@ public class ExportAppendixInput implements Serializable {
     this.fixedUpfrontPricingTerm = fixedUpfrontPricingTerm;
   }
 
-
   public ExportAppendixInput supportTerm(SupportTerm supportTerm) {
     
     this.supportTerm = supportTerm;
     return this;
   }
 
-   /**
+  /**
    * Get supportTerm
    * @return supportTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUPPORT_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -365,17 +356,16 @@ public class ExportAppendixInput implements Serializable {
     this.supportTerm = supportTerm;
   }
 
-
   public ExportAppendixInput renewalTerm(RenewalTerm renewalTerm) {
     
     this.renewalTerm = renewalTerm;
     return this;
   }
 
-   /**
+  /**
    * Get renewalTerm
    * @return renewalTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RENEWAL_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -391,17 +381,16 @@ public class ExportAppendixInput implements Serializable {
     this.renewalTerm = renewalTerm;
   }
 
-
   public ExportAppendixInput validityTerm(ValidityTerm validityTerm) {
     
     this.validityTerm = validityTerm;
     return this;
   }
 
-   /**
+  /**
    * Get validityTerm
    * @return validityTerm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VALIDITY_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -417,17 +406,16 @@ public class ExportAppendixInput implements Serializable {
     this.validityTerm = validityTerm;
   }
 
-
   public ExportAppendixInput updateInformationChangeDetail(UpdateInformationChangeDetail updateInformationChangeDetail) {
     
     this.updateInformationChangeDetail = updateInformationChangeDetail;
     return this;
   }
 
-   /**
+  /**
    * Get updateInformationChangeDetail
    * @return updateInformationChangeDetail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_INFORMATION_CHANGE_DETAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -443,17 +431,16 @@ public class ExportAppendixInput implements Serializable {
     this.updateInformationChangeDetail = updateInformationChangeDetail;
   }
 
-
   public ExportAppendixInput updateTargetingChangeDetail(UpdateTargetingChangeDetail updateTargetingChangeDetail) {
     
     this.updateTargetingChangeDetail = updateTargetingChangeDetail;
     return this;
   }
 
-   /**
+  /**
    * Get updateTargetingChangeDetail
    * @return updateTargetingChangeDetail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_TARGETING_CHANGE_DETAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

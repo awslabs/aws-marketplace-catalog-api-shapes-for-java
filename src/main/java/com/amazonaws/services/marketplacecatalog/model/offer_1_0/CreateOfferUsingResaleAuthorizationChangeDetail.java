@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateOfferUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_NAME,
   CreateOfferUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_DESCRIPTION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateOfferUsingResaleAuthorizationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class CreateOfferUsingResaleAuthorizationChangeDetail implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get resaleAuthorizationId
    * @return resaleAuthorizationId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESALE_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class CreateOfferUsingResaleAuthorizationChangeDetail implements Serializ
     this.resaleAuthorizationId = resaleAuthorizationId;
   }
 
-
   public CreateOfferUsingResaleAuthorizationChangeDetail name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class CreateOfferUsingResaleAuthorizationChangeDetail implements Serializ
     this.name = name;
   }
 
-
   public CreateOfferUsingResaleAuthorizationChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

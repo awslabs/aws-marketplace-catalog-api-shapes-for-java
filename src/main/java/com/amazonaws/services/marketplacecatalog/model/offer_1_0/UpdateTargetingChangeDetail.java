@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateTargetingChangeDetail.JSON_PROPERTY_POSITIVE_TARGETING,
   UpdateTargetingChangeDetail.JSON_PROPERTY_NEGATIVE_TARGETING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateTargetingChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -52,10 +52,10 @@ public class UpdateTargetingChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get positiveTargeting
    * @return positiveTargeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -71,17 +71,16 @@ public class UpdateTargetingChangeDetail implements Serializable {
     this.positiveTargeting = positiveTargeting;
   }
 
-
   public UpdateTargetingChangeDetail negativeTargeting(NegativeTargeting negativeTargeting) {
     
     this.negativeTargeting = negativeTargeting;
     return this;
   }
 
-   /**
+  /**
    * Get negativeTargeting
    * @return negativeTargeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NEGATIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

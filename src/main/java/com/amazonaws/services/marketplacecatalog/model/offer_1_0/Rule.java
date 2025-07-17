@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Rule.JSON_PROPERTY_POSITIVE_TARGETING,
   Rule.JSON_PROPERTY_NEGATIVE_TARGETING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Rule implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -60,10 +60,10 @@ public class Rule implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,17 +79,16 @@ public class Rule implements Serializable {
     this.type = type;
   }
 
-
   public Rule availabilityEndDate(String availabilityEndDate) {
     
     this.availabilityEndDate = availabilityEndDate;
     return this;
   }
 
-   /**
+  /**
    * Get availabilityEndDate
    * @return availabilityEndDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AVAILABILITY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,17 +104,16 @@ public class Rule implements Serializable {
     this.availabilityEndDate = availabilityEndDate;
   }
 
-
   public Rule positiveTargeting(PositiveTargeting positiveTargeting) {
     
     this.positiveTargeting = positiveTargeting;
     return this;
   }
 
-   /**
+  /**
    * Get positiveTargeting
    * @return positiveTargeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,17 +129,16 @@ public class Rule implements Serializable {
     this.positiveTargeting = positiveTargeting;
   }
 
-
   public Rule negativeTargeting(NegativeTargeting negativeTargeting) {
     
     this.negativeTargeting = negativeTargeting;
     return this;
   }
 
-   /**
+  /**
    * Get negativeTargeting
    * @return negativeTargeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NEGATIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

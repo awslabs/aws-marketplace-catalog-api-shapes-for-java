@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OperatingSystem.JSON_PROPERTY_USERNAME,
   OperatingSystem.JSON_PROPERTY_SCANNING_PORT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class OperatingSystem implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class OperatingSystem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -77,17 +77,16 @@ public class OperatingSystem implements Serializable {
     this.name = name;
   }
 
-
   public OperatingSystem version(String version) {
     
     this.version = version;
     return this;
   }
 
-   /**
+  /**
    * Get version
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +102,16 @@ public class OperatingSystem implements Serializable {
     this.version = version;
   }
 
-
   public OperatingSystem username(String username) {
     
     this.username = username;
     return this;
   }
 
-   /**
+  /**
    * Get username
    * @return username
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +127,16 @@ public class OperatingSystem implements Serializable {
     this.username = username;
   }
 
-
   public OperatingSystem scanningPort(Integer scanningPort) {
     
     this.scanningPort = scanningPort;
     return this;
   }
 
-   /**
+  /**
    * Get scanningPort
    * @return scanningPort
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCANNING_PORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddDimensionChangeDetail.JSON_PROPERTY_UNIT,
   AddDimensionChangeDetail.JSON_PROPERTY_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDimensionChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -66,10 +66,10 @@ public class AddDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,17 +85,16 @@ public class AddDimensionChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public AddDimensionChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class AddDimensionChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public AddDimensionChangeDetail key(String key) {
     
     this.key = key;
     return this;
   }
 
-   /**
+  /**
    * Get key
    * @return key
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,17 +135,16 @@ public class AddDimensionChangeDetail implements Serializable {
     this.key = key;
   }
 
-
   public AddDimensionChangeDetail unit(String unit) {
     
     this.unit = unit;
     return this;
   }
 
-   /**
+  /**
    * Get unit
    * @return unit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,7 +160,6 @@ public class AddDimensionChangeDetail implements Serializable {
     this.unit = unit;
   }
 
-
   public AddDimensionChangeDetail types(List<DimensionType> types) {
     
     this.types = types;
@@ -178,10 +174,10 @@ public class AddDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get types
    * @return types
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Version.JSON_PROPERTY_ID,
   Version.JSON_PROPERTY_DELIVERY_OPTIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Version implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class Version implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,7 +73,6 @@ public class Version implements Serializable {
     this.id = id;
   }
 
-
   public Version deliveryOptions(List<DeliveryOption> deliveryOptions) {
     
     this.deliveryOptions = deliveryOptions;
@@ -88,10 +87,10 @@ public class Version implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptions
    * @return deliveryOptions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

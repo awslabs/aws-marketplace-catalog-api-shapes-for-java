@@ -46,7 +46,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Source.JSON_PROPERTY_COMPATIBILITY,
   Source.JSON_PROPERTY_OPERATING_SYSTEM
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Source implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -60,16 +60,16 @@ public class Source implements Serializable {
   private String template;
 
   public static final String JSON_PROPERTY_NESTED_DOCUMENTS = "NestedDocuments";
-  private List<String> nestedDocuments;
+  private List<String> nestedDocuments = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CONSUMED_SOURCES = "ConsumedSources";
-  private List<String> consumedSources;
+  private List<String> consumedSources = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ARCHITECTURE_DIAGRAM = "ArchitectureDiagram";
   private String architectureDiagram;
 
   public static final String JSON_PROPERTY_AWS_DEPENDENT_SERVICES = "AWSDependentServices";
-  private List<String> awsDependentServices;
+  private List<String> awsDependentServices = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IMAGE = "Image";
   private String image;
@@ -95,10 +95,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -114,17 +114,16 @@ public class Source implements Serializable {
     this.id = id;
   }
 
-
   public Source type(String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -140,17 +139,16 @@ public class Source implements Serializable {
     this.type = type;
   }
 
-
   public Source template(String template) {
     
     this.template = template;
     return this;
   }
 
-   /**
+  /**
    * Get template
    * @return template
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -166,7 +164,6 @@ public class Source implements Serializable {
     this.template = template;
   }
 
-
   public Source nestedDocuments(List<String> nestedDocuments) {
     
     this.nestedDocuments = nestedDocuments;
@@ -181,10 +178,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get nestedDocuments
    * @return nestedDocuments
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NESTED_DOCUMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -200,7 +197,6 @@ public class Source implements Serializable {
     this.nestedDocuments = nestedDocuments;
   }
 
-
   public Source consumedSources(List<String> consumedSources) {
     
     this.consumedSources = consumedSources;
@@ -215,10 +211,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get consumedSources
    * @return consumedSources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONSUMED_SOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -234,17 +230,16 @@ public class Source implements Serializable {
     this.consumedSources = consumedSources;
   }
 
-
   public Source architectureDiagram(String architectureDiagram) {
     
     this.architectureDiagram = architectureDiagram;
     return this;
   }
 
-   /**
+  /**
    * Get architectureDiagram
    * @return architectureDiagram
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARCHITECTURE_DIAGRAM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -260,7 +255,6 @@ public class Source implements Serializable {
     this.architectureDiagram = architectureDiagram;
   }
 
-
   public Source awsDependentServices(List<String> awsDependentServices) {
     
     this.awsDependentServices = awsDependentServices;
@@ -275,10 +269,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get awsDependentServices
    * @return awsDependentServices
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AWS_DEPENDENT_SERVICES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -294,17 +288,16 @@ public class Source implements Serializable {
     this.awsDependentServices = awsDependentServices;
   }
 
-
   public Source image(String image) {
     
     this.image = image;
     return this;
   }
 
-   /**
+  /**
    * Get image
    * @return image
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -320,17 +313,16 @@ public class Source implements Serializable {
     this.image = image;
   }
 
-
   public Source architecture(String architecture) {
     
     this.architecture = architecture;
     return this;
   }
 
-   /**
+  /**
    * Get architecture
    * @return architecture
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARCHITECTURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -346,17 +338,16 @@ public class Source implements Serializable {
     this.architecture = architecture;
   }
 
-
   public Source virtualizationType(String virtualizationType) {
     
     this.virtualizationType = virtualizationType;
     return this;
   }
 
-   /**
+  /**
    * Get virtualizationType
    * @return virtualizationType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VIRTUALIZATION_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -372,17 +363,16 @@ public class Source implements Serializable {
     this.virtualizationType = virtualizationType;
   }
 
-
   public Source compatibility(Compatibility compatibility) {
     
     this.compatibility = compatibility;
     return this;
   }
 
-   /**
+  /**
    * Get compatibility
    * @return compatibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -398,17 +388,16 @@ public class Source implements Serializable {
     this.compatibility = compatibility;
   }
 
-
   public Source operatingSystem(OperatingSystem operatingSystem) {
     
     this.operatingSystem = operatingSystem;
     return this;
   }
 
-   /**
+  /**
    * Get operatingSystem
    * @return operatingSystem
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPERATING_SYSTEM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

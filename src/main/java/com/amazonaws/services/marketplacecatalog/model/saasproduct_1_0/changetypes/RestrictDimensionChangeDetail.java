@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RestrictDimensionChangeDetail.JSON_PROPERTY_KEY,
   RestrictDimensionChangeDetail.JSON_PROPERTY_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RestrictDimensionChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class RestrictDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get key
    * @return key
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,7 +73,6 @@ public class RestrictDimensionChangeDetail implements Serializable {
     this.key = key;
   }
 
-
   public RestrictDimensionChangeDetail types(List<DimensionType> types) {
     
     this.types = types;
@@ -88,10 +87,10 @@ public class RestrictDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get types
    * @return types
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

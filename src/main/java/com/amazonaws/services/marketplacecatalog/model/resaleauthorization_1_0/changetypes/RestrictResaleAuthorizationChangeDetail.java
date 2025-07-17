@@ -24,12 +24,13 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  */
 @JsonPropertyOrder({
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RestrictResaleAuthorizationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public RestrictResaleAuthorizationChangeDetail() {
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

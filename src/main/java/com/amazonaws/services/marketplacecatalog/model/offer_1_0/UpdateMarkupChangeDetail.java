@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateMarkupChangeDetail.JSON_PROPERTY_PERCENTAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateMarkupChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -46,10 +46,10 @@ public class UpdateMarkupChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get percentage
    * @return percentage
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

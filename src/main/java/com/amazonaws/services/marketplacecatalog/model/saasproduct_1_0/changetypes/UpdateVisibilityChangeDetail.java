@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateVisibilityChangeDetail.JSON_PROPERTY_TARGET_VISIBILITY,
   UpdateVisibilityChangeDetail.JSON_PROPERTY_REPLACEMENT_PRODUCT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateVisibilityChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -51,10 +51,10 @@ public class UpdateVisibilityChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get targetVisibility
    * @return targetVisibility
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TARGET_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class UpdateVisibilityChangeDetail implements Serializable {
     this.targetVisibility = targetVisibility;
   }
 
-
   public UpdateVisibilityChangeDetail replacementProductId(String replacementProductId) {
     
     this.replacementProductId = replacementProductId;
     return this;
   }
 
-   /**
+  /**
    * Get replacementProductId
    * @return replacementProductId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLACEMENT_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

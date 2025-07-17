@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateRenewalTermsChangeDetail.JSON_PROPERTY_TERMS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateRenewalTermsChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class UpdateRenewalTermsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get terms
    * @return terms
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TERMS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

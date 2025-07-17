@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   DisassociateAudienceChangeDetail.JSON_PROPERTY_PRINCIPALS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DisassociateAudienceChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class DisassociateAudienceChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get principals
    * @return principals
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRINCIPALS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

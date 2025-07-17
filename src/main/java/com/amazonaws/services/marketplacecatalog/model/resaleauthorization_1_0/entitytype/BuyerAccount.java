@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   BuyerAccount.JSON_PROPERTY_AWS_ACCOUNT_ID,
   BuyerAccount.JSON_PROPERTY_LEGAL_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class BuyerAccount implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class BuyerAccount implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get awsAccountId
    * @return awsAccountId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AWS_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class BuyerAccount implements Serializable {
     this.awsAccountId = awsAccountId;
   }
 
-
   public BuyerAccount legalName(String legalName) {
     
     this.legalName = legalName;
     return this;
   }
 
-   /**
+  /**
    * Get legalName
    * @return legalName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LEGAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

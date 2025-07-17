@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateVersion.JSON_PROPERTY_RELEASE_NOTES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateVersion implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -46,10 +46,10 @@ public class UpdateVersion implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get releaseNotes
    * @return releaseNotes
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RELEASE_NOTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

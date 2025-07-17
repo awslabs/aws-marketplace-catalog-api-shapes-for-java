@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Resource.JSON_PROPERTY_IDS,
   Resource.JSON_PROPERTY_NOTES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Resource implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -43,7 +43,7 @@ public class Resource implements Serializable {
   private String type;
 
   public static final String JSON_PROPERTY_IDS = "Ids";
-  private List<String> ids;
+  private List<String> ids = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NOTES = "Notes";
   private String notes;
@@ -57,10 +57,10 @@ public class Resource implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,7 +76,6 @@ public class Resource implements Serializable {
     this.type = type;
   }
 
-
   public Resource ids(List<String> ids) {
     
     this.ids = ids;
@@ -91,10 +90,10 @@ public class Resource implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get ids
    * @return ids
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,17 +109,16 @@ public class Resource implements Serializable {
     this.ids = ids;
   }
 
-
   public Resource notes(String notes) {
     
     this.notes = notes;
     return this;
   }
 
-   /**
+  /**
    * Get notes
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

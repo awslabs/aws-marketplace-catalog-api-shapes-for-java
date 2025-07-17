@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateDeliveryOptionDetails.JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -47,10 +47,10 @@ public class UpdateDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get saaSUrlDeliveryOptionDetails
    * @return saaSUrlDeliveryOptionDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

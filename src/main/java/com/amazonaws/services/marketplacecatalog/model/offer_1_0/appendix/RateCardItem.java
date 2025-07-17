@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RateCardItem.JSON_PROPERTY_DIMENSION_KEY,
   RateCardItem.JSON_PROPERTY_PRICE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RateCardItem implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class RateCardItem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get dimensionKey
    * @return dimensionKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DIMENSION_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class RateCardItem implements Serializable {
     this.dimensionKey = dimensionKey;
   }
 
-
   public RateCardItem price(String price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

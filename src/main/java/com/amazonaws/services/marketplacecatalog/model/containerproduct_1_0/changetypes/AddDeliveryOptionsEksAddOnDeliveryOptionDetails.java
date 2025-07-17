@@ -44,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddDeliveryOptionsEksAddOnDeliveryOptionDetails.JSON_PROPERTY_NAMESPACE,
   AddDeliveryOptionsEksAddOnDeliveryOptionDetails.JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -79,7 +79,7 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
   private String namespace;
 
   public static final String JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS = "EnvironmentOverrideParameters";
-  private List<EnvironmentOverrideParameter> environmentOverrideParameters;
+  private List<EnvironmentOverrideParameter> environmentOverrideParameters = new ArrayList<>();
 
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails() {
   }
@@ -90,10 +90,10 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,17 +109,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.description = description;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +134,6 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.usageInstructions = usageInstructions;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails containerImages(List<String> containerImages) {
     
     this.containerImages = containerImages;
@@ -150,10 +148,10 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get containerImages
    * @return containerImages
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTAINER_IMAGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -169,17 +167,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.containerImages = containerImages;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails helmChartUri(String helmChartUri) {
     
     this.helmChartUri = helmChartUri;
     return this;
   }
 
-   /**
+  /**
    * Get helmChartUri
    * @return helmChartUri
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HELM_CHART_URI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,17 +192,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.helmChartUri = helmChartUri;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails addOnName(String addOnName) {
     
     this.addOnName = addOnName;
     return this;
   }
 
-   /**
+  /**
    * Get addOnName
    * @return addOnName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADD_ON_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -221,17 +217,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.addOnName = addOnName;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails addOnVersion(String addOnVersion) {
     
     this.addOnVersion = addOnVersion;
     return this;
   }
 
-   /**
+  /**
    * Get addOnVersion
    * @return addOnVersion
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADD_ON_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -247,17 +242,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.addOnVersion = addOnVersion;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails addOnType(String addOnType) {
     
     this.addOnType = addOnType;
     return this;
   }
 
-   /**
+  /**
    * Get addOnType
    * @return addOnType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADD_ON_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -273,7 +267,6 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.addOnType = addOnType;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails compatibleKubernetesVersions(List<String> compatibleKubernetesVersions) {
     
     this.compatibleKubernetesVersions = compatibleKubernetesVersions;
@@ -288,10 +281,10 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get compatibleKubernetesVersions
    * @return compatibleKubernetesVersions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPATIBLE_KUBERNETES_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -307,7 +300,6 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.compatibleKubernetesVersions = compatibleKubernetesVersions;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails supportedArchitectures(List<String> supportedArchitectures) {
     
     this.supportedArchitectures = supportedArchitectures;
@@ -322,10 +314,10 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get supportedArchitectures
    * @return supportedArchitectures
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUPPORTED_ARCHITECTURES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -341,17 +333,16 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.supportedArchitectures = supportedArchitectures;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails namespace(String namespace) {
     
     this.namespace = namespace;
     return this;
   }
 
-   /**
+  /**
    * Get namespace
    * @return namespace
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAMESPACE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -367,7 +358,6 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     this.namespace = namespace;
   }
 
-
   public AddDeliveryOptionsEksAddOnDeliveryOptionDetails environmentOverrideParameters(List<EnvironmentOverrideParameter> environmentOverrideParameters) {
     
     this.environmentOverrideParameters = environmentOverrideParameters;
@@ -382,10 +372,10 @@ public class AddDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializ
     return this;
   }
 
-   /**
+  /**
    * Get environmentOverrideParameters
    * @return environmentOverrideParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

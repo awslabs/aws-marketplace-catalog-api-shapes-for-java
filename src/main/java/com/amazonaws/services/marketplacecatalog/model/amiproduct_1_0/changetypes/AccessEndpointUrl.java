@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AccessEndpointUrl.JSON_PROPERTY_PROTOCOL,
   AccessEndpointUrl.JSON_PROPERTY_RELATIVE_PATH
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AccessEndpointUrl implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,12 +54,12 @@ public class AccessEndpointUrl implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get port
    * minimum: 1
    * maximum: 65535
    * @return port
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,17 +75,16 @@ public class AccessEndpointUrl implements Serializable {
     this.port = port;
   }
 
-
   public AccessEndpointUrl protocol(String protocol) {
     
     this.protocol = protocol;
     return this;
   }
 
-   /**
+  /**
    * Get protocol
    * @return protocol
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,17 +100,16 @@ public class AccessEndpointUrl implements Serializable {
     this.protocol = protocol;
   }
 
-
   public AccessEndpointUrl relativePath(String relativePath) {
     
     this.relativePath = relativePath;
     return this;
   }
 
-   /**
+  /**
    * Get relativePath
    * @return relativePath
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELATIVE_PATH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

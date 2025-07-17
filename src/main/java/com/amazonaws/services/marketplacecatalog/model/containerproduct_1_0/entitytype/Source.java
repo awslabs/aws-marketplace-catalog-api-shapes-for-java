@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Source.JSON_PROPERTY_COMPATIBILITY,
   Source.JSON_PROPERTY_HELM_CHART_URI
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Source implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -49,7 +49,7 @@ public class Source implements Serializable {
   private String id;
 
   public static final String JSON_PROPERTY_IMAGES = "Images";
-  private List<String> images;
+  private List<String> images = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPATIBILITY = "Compatibility";
   private SourceCompatibility compatibility;
@@ -66,10 +66,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -85,17 +85,16 @@ public class Source implements Serializable {
     this.type = type;
   }
 
-
   public Source id(String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -111,7 +110,6 @@ public class Source implements Serializable {
     this.id = id;
   }
 
-
   public Source images(List<String> images) {
     
     this.images = images;
@@ -126,10 +124,10 @@ public class Source implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get images
    * @return images
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -145,17 +143,16 @@ public class Source implements Serializable {
     this.images = images;
   }
 
-
   public Source compatibility(SourceCompatibility compatibility) {
     
     this.compatibility = compatibility;
     return this;
   }
 
-   /**
+  /**
    * Get compatibility
    * @return compatibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -171,17 +168,16 @@ public class Source implements Serializable {
     this.compatibility = compatibility;
   }
 
-
   public Source helmChartUri(String helmChartUri) {
     
     this.helmChartUri = helmChartUri;
     return this;
   }
 
-   /**
+  /**
    * Get helmChartUri
    * @return helmChartUri
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HELM_CHART_URI)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

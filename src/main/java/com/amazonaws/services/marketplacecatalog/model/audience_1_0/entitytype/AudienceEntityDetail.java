@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AudienceEntityDetail.JSON_PROPERTY_EXPERIENCE_ID,
   AudienceEntityDetail.JSON_PROPERTY_PRINCIPALS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AudienceEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,7 +50,7 @@ public class AudienceEntityDetail implements Serializable {
   private String experienceId;
 
   public static final String JSON_PROPERTY_PRINCIPALS = "Principals";
-  private List<String> principals;
+  private List<String> principals = new ArrayList<>();
 
   public AudienceEntityDetail() {
   }
@@ -61,10 +61,10 @@ public class AudienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,17 +80,16 @@ public class AudienceEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public AudienceEntityDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -106,17 +105,16 @@ public class AudienceEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public AudienceEntityDetail experienceId(String experienceId) {
     
     this.experienceId = experienceId;
     return this;
   }
 
-   /**
+  /**
    * Get experienceId
    * @return experienceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXPERIENCE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -132,7 +130,6 @@ public class AudienceEntityDetail implements Serializable {
     this.experienceId = experienceId;
   }
 
-
   public AudienceEntityDetail principals(List<String> principals) {
     
     this.principals = principals;
@@ -147,10 +144,10 @@ public class AudienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get principals
    * @return principals
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRINCIPALS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

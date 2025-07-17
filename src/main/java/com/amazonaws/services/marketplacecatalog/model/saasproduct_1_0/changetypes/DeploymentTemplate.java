@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeploymentTemplate.JSON_PROPERTY_IAM_POLICY,
   DeploymentTemplate.JSON_PROPERTY_CLOUD_FORMATION_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeploymentTemplate implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -59,10 +59,10 @@ public class DeploymentTemplate implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,17 +78,16 @@ public class DeploymentTemplate implements Serializable {
     this.title = title;
   }
 
-
   public DeploymentTemplate description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,17 +103,16 @@ public class DeploymentTemplate implements Serializable {
     this.description = description;
   }
 
-
   public DeploymentTemplate iamPolicy(String iamPolicy) {
     
     this.iamPolicy = iamPolicy;
     return this;
   }
 
-   /**
+  /**
    * Get iamPolicy
    * @return iamPolicy
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IAM_POLICY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -130,17 +128,16 @@ public class DeploymentTemplate implements Serializable {
     this.iamPolicy = iamPolicy;
   }
 
-
   public DeploymentTemplate cloudFormationDetails(CloudFormationDetails cloudFormationDetails) {
     
     this.cloudFormationDetails = cloudFormationDetails;
     return this;
   }
 
-   /**
+  /**
    * Get cloudFormationDetails
    * @return cloudFormationDetails
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLOUD_FORMATION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

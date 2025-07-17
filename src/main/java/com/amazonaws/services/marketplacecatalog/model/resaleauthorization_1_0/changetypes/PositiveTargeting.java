@@ -33,12 +33,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PositiveTargeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_BUYER_ACCOUNTS = "BuyerAccounts";
-  private Set<String> buyerAccounts;
+  private Set<String> buyerAccounts = new LinkedHashSet<>();
 
   public PositiveTargeting() {
   }
@@ -57,10 +57,10 @@ public class PositiveTargeting implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get buyerAccounts
    * @return buyerAccounts
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BUYER_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
