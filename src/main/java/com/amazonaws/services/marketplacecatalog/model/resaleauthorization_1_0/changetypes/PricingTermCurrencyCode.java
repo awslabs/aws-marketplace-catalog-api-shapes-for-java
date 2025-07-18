@@ -27,7 +27,15 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum PricingTermCurrencyCode {
   
-  USD("USD");
+  USD("USD"),
+  
+  AUD("AUD"),
+  
+  EUR("EUR"),
+  
+  GBP("GBP"),
+  
+  JPY("JPY");
 
   private String value;
 

@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   ProcurementPolicyConfiguration.JSON_PROPERTY_POLICY_RESOURCE_REQUESTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ProcurementPolicyConfiguration implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -47,10 +47,10 @@ public class ProcurementPolicyConfiguration implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get policyResourceRequests
    * @return policyResourceRequests
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_POLICY_RESOURCE_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

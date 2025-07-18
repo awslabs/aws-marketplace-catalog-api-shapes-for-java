@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SecurityGroup.JSON_PROPERTY_IP_RANGES,
   SecurityGroup.JSON_PROPERTY_TO_PORT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class SecurityGroup implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -61,12 +61,12 @@ public class SecurityGroup implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get fromPort
    * minimum: 1
    * maximum: 65535
    * @return fromPort
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FROM_PORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,17 +82,16 @@ public class SecurityGroup implements Serializable {
     this.fromPort = fromPort;
   }
 
-
   public SecurityGroup ipProtocol(String ipProtocol) {
     
     this.ipProtocol = ipProtocol;
     return this;
   }
 
-   /**
+  /**
    * Get ipProtocol
    * @return ipProtocol
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,7 +107,6 @@ public class SecurityGroup implements Serializable {
     this.ipProtocol = ipProtocol;
   }
 
-
   public SecurityGroup ipRanges(List<String> ipRanges) {
     
     this.ipRanges = ipRanges;
@@ -123,10 +121,10 @@ public class SecurityGroup implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get ipRanges
    * @return ipRanges
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP_RANGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -142,19 +140,18 @@ public class SecurityGroup implements Serializable {
     this.ipRanges = ipRanges;
   }
 
-
   public SecurityGroup toPort(Integer toPort) {
     
     this.toPort = toPort;
     return this;
   }
 
-   /**
+  /**
    * Get toPort
    * minimum: 1
    * maximum: 65535
    * @return toPort
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO_PORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

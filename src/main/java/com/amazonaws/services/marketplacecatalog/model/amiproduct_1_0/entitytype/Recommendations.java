@@ -35,12 +35,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Recommendations.JSON_PROPERTY_SECURITY_GROUPS,
   Recommendations.JSON_PROPERTY_INSTANCE_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Recommendations implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_SECURITY_GROUPS = "SecurityGroups";
-  private List<SecurityGroup> securityGroups;
+  private List<SecurityGroup> securityGroups = new ArrayList<>();
 
   public static final String JSON_PROPERTY_INSTANCE_TYPE = "InstanceType";
   private String instanceType;
@@ -62,10 +62,10 @@ public class Recommendations implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get securityGroups
    * @return securityGroups
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SECURITY_GROUPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class Recommendations implements Serializable {
     this.securityGroups = securityGroups;
   }
 
-
   public Recommendations instanceType(String instanceType) {
     
     this.instanceType = instanceType;
     return this;
   }
 
-   /**
+  /**
    * Get instanceType
    * @return instanceType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INSTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

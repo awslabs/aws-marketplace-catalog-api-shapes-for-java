@@ -40,7 +40,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddAmiDeliveryOptionDetails.JSON_PROPERTY_RECOMMENDED_INSTANCE_TYPE,
   AddAmiDeliveryOptionDetails.JSON_PROPERTY_SECURITY_GROUPS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddAmiDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -68,10 +68,10 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get amiSource
    * @return amiSource
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMI_SOURCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,17 +87,16 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     this.amiSource = amiSource;
   }
 
-
   public AddAmiDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,17 +112,16 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     this.usageInstructions = usageInstructions;
   }
 
-
   public AddAmiDeliveryOptionDetails accessEndpointUrl(AccessEndpointUrl accessEndpointUrl) {
     
     this.accessEndpointUrl = accessEndpointUrl;
     return this;
   }
 
-   /**
+  /**
    * Get accessEndpointUrl
    * @return accessEndpointUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACCESS_ENDPOINT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,17 +137,16 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     this.accessEndpointUrl = accessEndpointUrl;
   }
 
-
   public AddAmiDeliveryOptionDetails recommendedInstanceType(String recommendedInstanceType) {
     
     this.recommendedInstanceType = recommendedInstanceType;
     return this;
   }
 
-   /**
+  /**
    * Get recommendedInstanceType
    * @return recommendedInstanceType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECOMMENDED_INSTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,7 +162,6 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     this.recommendedInstanceType = recommendedInstanceType;
   }
 
-
   public AddAmiDeliveryOptionDetails securityGroups(List<SecurityGroup> securityGroups) {
     
     this.securityGroups = securityGroups;
@@ -180,10 +176,10 @@ public class AddAmiDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get securityGroups
    * @return securityGroups
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SECURITY_GROUPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

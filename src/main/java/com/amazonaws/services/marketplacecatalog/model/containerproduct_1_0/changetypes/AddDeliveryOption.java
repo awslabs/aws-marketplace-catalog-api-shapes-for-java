@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddDeliveryOption.JSON_PROPERTY_VISIBILITY,
   AddDeliveryOption.JSON_PROPERTY_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDeliveryOption implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -60,10 +60,10 @@ public class AddDeliveryOption implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptionTitle
    * @return deliveryOptionTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTION_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,17 +79,16 @@ public class AddDeliveryOption implements Serializable {
     this.deliveryOptionTitle = deliveryOptionTitle;
   }
 
-
   public AddDeliveryOption release(Boolean release) {
     
     this.release = release;
     return this;
   }
 
-   /**
+  /**
    * Get release
    * @return release
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,17 +104,16 @@ public class AddDeliveryOption implements Serializable {
     this.release = release;
   }
 
-
   public AddDeliveryOption visibility(AddDeliveryOptionVisibility visibility) {
     
     this.visibility = visibility;
     return this;
   }
 
-   /**
+  /**
    * Get visibility
    * @return visibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,17 +129,16 @@ public class AddDeliveryOption implements Serializable {
     this.visibility = visibility;
   }
 
-
   public AddDeliveryOption details(AddDeliveryOptionDetails details) {
     
     this.details = details;
     return this;
   }
 
-   /**
+  /**
    * Get details
    * @return details
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

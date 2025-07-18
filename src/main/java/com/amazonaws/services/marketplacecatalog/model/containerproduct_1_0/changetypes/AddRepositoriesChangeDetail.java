@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   AddRepositoriesChangeDetail.JSON_PROPERTY_REPOSITORIES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddRepositoriesChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class AddRepositoriesChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get repositories
    * @return repositories
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPOSITORIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

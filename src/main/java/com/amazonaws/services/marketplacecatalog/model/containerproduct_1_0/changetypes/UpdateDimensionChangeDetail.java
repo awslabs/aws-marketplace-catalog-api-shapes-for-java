@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDimensionChangeDetail.JSON_PROPERTY_KEY,
   UpdateDimensionChangeDetail.JSON_PROPERTY_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDimensionChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -62,10 +62,10 @@ public class UpdateDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class UpdateDimensionChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public UpdateDimensionChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -107,17 +106,16 @@ public class UpdateDimensionChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public UpdateDimensionChangeDetail key(String key) {
     
     this.key = key;
     return this;
   }
 
-   /**
+  /**
    * Get key
    * @return key
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +131,6 @@ public class UpdateDimensionChangeDetail implements Serializable {
     this.key = key;
   }
 
-
   public UpdateDimensionChangeDetail types(List<DimensionType> types) {
     
     this.types = types;
@@ -148,10 +145,10 @@ public class UpdateDimensionChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get types
    * @return types
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

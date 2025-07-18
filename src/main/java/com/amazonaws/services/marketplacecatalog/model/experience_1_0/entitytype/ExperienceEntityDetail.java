@@ -40,7 +40,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ExperienceEntityDetail.JSON_PROPERTY_BRANDING_SETTINGS,
   ExperienceEntityDetail.JSON_PROPERTY_INTEGRATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ExperienceEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,13 +57,13 @@ public class ExperienceEntityDetail implements Serializable {
   private String adminStatus;
 
   public static final String JSON_PROPERTY_PROCUREMENT_POLICIES = "ProcurementPolicies";
-  private List<String> procurementPolicies;
+  private List<String> procurementPolicies = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DISCOVERY_POLICIES = "DiscoveryPolicies";
-  private List<String> discoveryPolicies;
+  private List<String> discoveryPolicies = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BRANDING_SETTINGS = "BrandingSettings";
-  private List<String> brandingSettings;
+  private List<String> brandingSettings = new ArrayList<>();
 
   public static final String JSON_PROPERTY_INTEGRATION = "Integration";
   private String integration;
@@ -77,10 +77,10 @@ public class ExperienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -96,17 +96,16 @@ public class ExperienceEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public ExperienceEntityDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,17 +121,16 @@ public class ExperienceEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public ExperienceEntityDetail status(String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -148,17 +146,16 @@ public class ExperienceEntityDetail implements Serializable {
     this.status = status;
   }
 
-
   public ExperienceEntityDetail adminStatus(String adminStatus) {
     
     this.adminStatus = adminStatus;
     return this;
   }
 
-   /**
+  /**
    * Get adminStatus
    * @return adminStatus
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADMIN_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -174,7 +171,6 @@ public class ExperienceEntityDetail implements Serializable {
     this.adminStatus = adminStatus;
   }
 
-
   public ExperienceEntityDetail procurementPolicies(List<String> procurementPolicies) {
     
     this.procurementPolicies = procurementPolicies;
@@ -189,10 +185,10 @@ public class ExperienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get procurementPolicies
    * @return procurementPolicies
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROCUREMENT_POLICIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -208,7 +204,6 @@ public class ExperienceEntityDetail implements Serializable {
     this.procurementPolicies = procurementPolicies;
   }
 
-
   public ExperienceEntityDetail discoveryPolicies(List<String> discoveryPolicies) {
     
     this.discoveryPolicies = discoveryPolicies;
@@ -223,10 +218,10 @@ public class ExperienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get discoveryPolicies
    * @return discoveryPolicies
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISCOVERY_POLICIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -242,7 +237,6 @@ public class ExperienceEntityDetail implements Serializable {
     this.discoveryPolicies = discoveryPolicies;
   }
 
-
   public ExperienceEntityDetail brandingSettings(List<String> brandingSettings) {
     
     this.brandingSettings = brandingSettings;
@@ -257,10 +251,10 @@ public class ExperienceEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get brandingSettings
    * @return brandingSettings
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BRANDING_SETTINGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -276,17 +270,16 @@ public class ExperienceEntityDetail implements Serializable {
     this.brandingSettings = brandingSettings;
   }
 
-
   public ExperienceEntityDetail integration(String integration) {
     
     this.integration = integration;
     return this;
   }
 
-   /**
+  /**
    * Get integration
    * @return integration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INTEGRATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

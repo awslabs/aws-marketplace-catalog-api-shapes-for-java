@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ConfigurableUpfrontPricingTerm.JSON_PROPERTY_CURRENCY_CODE,
   ConfigurableUpfrontPricingTerm.JSON_PROPERTY_RATE_CARDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ConfigurableUpfrontPricingTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -49,7 +49,7 @@ public class ConfigurableUpfrontPricingTerm implements Serializable {
   private CurrencyCode currencyCode;
 
   public static final String JSON_PROPERTY_RATE_CARDS = "RateCards";
-  private List<ConfigurableUpfrontRateCardItem> rateCards;
+  private List<ConfigurableUpfrontRateCardItem> rateCards = new ArrayList<>();
 
   public ConfigurableUpfrontPricingTerm() {
   }
@@ -60,10 +60,10 @@ public class ConfigurableUpfrontPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -79,17 +79,16 @@ public class ConfigurableUpfrontPricingTerm implements Serializable {
     this.type = type;
   }
 
-
   public ConfigurableUpfrontPricingTerm currencyCode(CurrencyCode currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -105,7 +104,6 @@ public class ConfigurableUpfrontPricingTerm implements Serializable {
     this.currencyCode = currencyCode;
   }
 
-
   public ConfigurableUpfrontPricingTerm rateCards(List<ConfigurableUpfrontRateCardItem> rateCards) {
     
     this.rateCards = rateCards;
@@ -120,10 +118,10 @@ public class ConfigurableUpfrontPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCards
    * @return rateCards
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

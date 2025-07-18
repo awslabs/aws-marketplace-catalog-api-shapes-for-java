@@ -48,15 +48,15 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ContainerProductEntityDetail.JSON_PROPERTY_TARGETING,
   ContainerProductEntityDetail.JSON_PROPERTY_SIGNATURE_VERIFICATION_KEYS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ContainerProductEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_VERSIONS = "Versions";
-  private List<Version> versions;
+  private List<Version> versions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REPOSITORIES = "Repositories";
-  private List<Repository> repositories;
+  private List<Repository> repositories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "Description";
   private Description description;
@@ -68,13 +68,13 @@ public class ContainerProductEntityDetail implements Serializable {
   private SupportInformation supportInformation;
 
   public static final String JSON_PROPERTY_DIMENSIONS = "Dimensions";
-  private List<Dimension> dimensions;
+  private List<Dimension> dimensions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TARGETING = "Targeting";
   private Targeting targeting;
 
   public static final String JSON_PROPERTY_SIGNATURE_VERIFICATION_KEYS = "SignatureVerificationKeys";
-  private List<SignatureVerificationKey> signatureVerificationKeys;
+  private List<SignatureVerificationKey> signatureVerificationKeys = new ArrayList<>();
 
   public ContainerProductEntityDetail() {
   }
@@ -93,10 +93,10 @@ public class ContainerProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get versions
    * @return versions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,7 +112,6 @@ public class ContainerProductEntityDetail implements Serializable {
     this.versions = versions;
   }
 
-
   public ContainerProductEntityDetail repositories(List<Repository> repositories) {
     
     this.repositories = repositories;
@@ -127,10 +126,10 @@ public class ContainerProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get repositories
    * @return repositories
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPOSITORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -146,17 +145,16 @@ public class ContainerProductEntityDetail implements Serializable {
     this.repositories = repositories;
   }
 
-
   public ContainerProductEntityDetail description(Description description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,17 +170,16 @@ public class ContainerProductEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public ContainerProductEntityDetail promotionalResources(PromotionalResources promotionalResources) {
     
     this.promotionalResources = promotionalResources;
     return this;
   }
 
-   /**
+  /**
    * Get promotionalResources
    * @return promotionalResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROMOTIONAL_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -198,17 +195,16 @@ public class ContainerProductEntityDetail implements Serializable {
     this.promotionalResources = promotionalResources;
   }
 
-
   public ContainerProductEntityDetail supportInformation(SupportInformation supportInformation) {
     
     this.supportInformation = supportInformation;
     return this;
   }
 
-   /**
+  /**
    * Get supportInformation
    * @return supportInformation
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUPPORT_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,7 +220,6 @@ public class ContainerProductEntityDetail implements Serializable {
     this.supportInformation = supportInformation;
   }
 
-
   public ContainerProductEntityDetail dimensions(List<Dimension> dimensions) {
     
     this.dimensions = dimensions;
@@ -239,10 +234,10 @@ public class ContainerProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get dimensions
    * @return dimensions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DIMENSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -258,17 +253,16 @@ public class ContainerProductEntityDetail implements Serializable {
     this.dimensions = dimensions;
   }
 
-
   public ContainerProductEntityDetail targeting(Targeting targeting) {
     
     this.targeting = targeting;
     return this;
   }
 
-   /**
+  /**
    * Get targeting
    * @return targeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,7 +278,6 @@ public class ContainerProductEntityDetail implements Serializable {
     this.targeting = targeting;
   }
 
-
   public ContainerProductEntityDetail signatureVerificationKeys(List<SignatureVerificationKey> signatureVerificationKeys) {
     
     this.signatureVerificationKeys = signatureVerificationKeys;
@@ -299,10 +292,10 @@ public class ContainerProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get signatureVerificationKeys
    * @return signatureVerificationKeys
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SIGNATURE_VERIFICATION_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

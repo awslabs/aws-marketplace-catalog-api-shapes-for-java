@@ -39,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDeliveryOptionsEcrDeliveryOptionDetails.JSON_PROPERTY_DEPLOYMENT_RESOURCES,
   UpdateDeliveryOptionsEcrDeliveryOptionDetails.JSON_PROPERTY_DELIVERY_OPTION_TITLE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,13 +50,13 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
   private String usageInstructions;
 
   public static final String JSON_PROPERTY_CONTAINER_IMAGES = "ContainerImages";
-  private List<String> containerImages;
+  private List<String> containerImages = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPATIBLE_SERVICES = "CompatibleServices";
-  private List<String> compatibleServices;
+  private List<String> compatibleServices = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEPLOYMENT_RESOURCES = "DeploymentResources";
-  private List<DeploymentResource> deploymentResources;
+  private List<DeploymentResource> deploymentResources = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERY_OPTION_TITLE = "DeliveryOptionTitle";
   private String deliveryOptionTitle;
@@ -70,10 +70,10 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,17 +89,16 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     this.description = description;
   }
 
-
   public UpdateDeliveryOptionsEcrDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,7 +114,6 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     this.usageInstructions = usageInstructions;
   }
 
-
   public UpdateDeliveryOptionsEcrDeliveryOptionDetails containerImages(List<String> containerImages) {
     
     this.containerImages = containerImages;
@@ -130,10 +128,10 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     return this;
   }
 
-   /**
+  /**
    * Get containerImages
    * @return containerImages
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTAINER_IMAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,7 +147,6 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     this.containerImages = containerImages;
   }
 
-
   public UpdateDeliveryOptionsEcrDeliveryOptionDetails compatibleServices(List<String> compatibleServices) {
     
     this.compatibleServices = compatibleServices;
@@ -164,10 +161,10 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     return this;
   }
 
-   /**
+  /**
    * Get compatibleServices
    * @return compatibleServices
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBLE_SERVICES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -183,7 +180,6 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     this.compatibleServices = compatibleServices;
   }
 
-
   public UpdateDeliveryOptionsEcrDeliveryOptionDetails deploymentResources(List<DeploymentResource> deploymentResources) {
     
     this.deploymentResources = deploymentResources;
@@ -198,10 +194,10 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     return this;
   }
 
-   /**
+  /**
    * Get deploymentResources
    * @return deploymentResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEPLOYMENT_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,17 +213,16 @@ public class UpdateDeliveryOptionsEcrDeliveryOptionDetails implements Serializab
     this.deploymentResources = deploymentResources;
   }
 
-
   public UpdateDeliveryOptionsEcrDeliveryOptionDetails deliveryOptionTitle(String deliveryOptionTitle) {
     
     this.deliveryOptionTitle = deliveryOptionTitle;
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptionTitle
    * @return deliveryOptionTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTION_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

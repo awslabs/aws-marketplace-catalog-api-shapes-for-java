@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddVersion.JSON_PROPERTY_VERSION_TITLE,
   AddVersion.JSON_PROPERTY_RELEASE_NOTES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddVersion implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class AddVersion implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get versionTitle
    * @return versionTitle
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION_TITLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class AddVersion implements Serializable {
     this.versionTitle = versionTitle;
   }
 
-
   public AddVersion releaseNotes(String releaseNotes) {
     
     this.releaseNotes = releaseNotes;
     return this;
   }
 
-   /**
+  /**
    * Get releaseNotes
    * @return releaseNotes
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RELEASE_NOTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

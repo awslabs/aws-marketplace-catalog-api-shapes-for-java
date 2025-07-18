@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Schedule.JSON_PROPERTY_CHARGE_DATE,
   Schedule.JSON_PROPERTY_CHARGE_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Schedule implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class Schedule implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get chargeDate
    * @return chargeDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CHARGE_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class Schedule implements Serializable {
     this.chargeDate = chargeDate;
   }
 
-
   public Schedule chargeAmount(String chargeAmount) {
     
     this.chargeAmount = chargeAmount;
     return this;
   }
 
-   /**
+  /**
    * Get chargeAmount
    * @return chargeAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

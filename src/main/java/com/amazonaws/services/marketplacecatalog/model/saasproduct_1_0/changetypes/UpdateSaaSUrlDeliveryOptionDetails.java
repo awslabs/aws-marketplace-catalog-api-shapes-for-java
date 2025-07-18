@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateSaaSUrlDeliveryOptionDetails.JSON_PROPERTY_DEPLOYMENT_TEMPLATES,
   UpdateSaaSUrlDeliveryOptionDetails.JSON_PROPERTY_USAGE_INSTRUCTIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -48,7 +48,7 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
   private String launchUrl;
 
   public static final String JSON_PROPERTY_DEPLOYMENT_TEMPLATES = "DeploymentTemplates";
-  private List<DeploymentTemplate> deploymentTemplates;
+  private List<DeploymentTemplate> deploymentTemplates = new ArrayList<>();
 
   public static final String JSON_PROPERTY_USAGE_INSTRUCTIONS = "UsageInstructions";
   private String usageInstructions;
@@ -62,10 +62,10 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get fulfillmentUrl
    * @return fulfillmentUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FULFILLMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
     this.fulfillmentUrl = fulfillmentUrl;
   }
 
-
   public UpdateSaaSUrlDeliveryOptionDetails launchUrl(String launchUrl) {
     
     this.launchUrl = launchUrl;
     return this;
   }
 
-   /**
+  /**
    * Get launchUrl
    * @return launchUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LAUNCH_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -107,7 +106,6 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
     this.launchUrl = launchUrl;
   }
 
-
   public UpdateSaaSUrlDeliveryOptionDetails deploymentTemplates(List<DeploymentTemplate> deploymentTemplates) {
     
     this.deploymentTemplates = deploymentTemplates;
@@ -122,10 +120,10 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deploymentTemplates
    * @return deploymentTemplates
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEPLOYMENT_TEMPLATES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,17 +139,16 @@ public class UpdateSaaSUrlDeliveryOptionDetails implements Serializable {
     this.deploymentTemplates = deploymentTemplates;
   }
 
-
   public UpdateSaaSUrlDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

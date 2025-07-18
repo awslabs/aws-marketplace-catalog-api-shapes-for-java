@@ -48,7 +48,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Term.JSON_PROPERTY_GRANTS,
   Term.JSON_PROPERTY_SCHEDULE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Term implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -62,7 +62,7 @@ public class Term implements Serializable {
   private PositiveTargeting positiveTargeting;
 
   public static final String JSON_PROPERTY_DOCUMENTS = "Documents";
-  private List<Document> documents;
+  private List<Document> documents = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MAXIMUM_AGREEMENT_START_DATE = "MaximumAgreementStartDate";
   private String maximumAgreementStartDate;
@@ -71,7 +71,7 @@ public class Term implements Serializable {
   private String currencyCode;
 
   public static final String JSON_PROPERTY_RATE_CARDS = "RateCards";
-  private List<RateCards> rateCards;
+  private List<RateCards> rateCards = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DURATION = "Duration";
   private String duration;
@@ -80,10 +80,10 @@ public class Term implements Serializable {
   private String price;
 
   public static final String JSON_PROPERTY_GRANTS = "Grants";
-  private List<Grant> grants;
+  private List<Grant> grants = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULE = "Schedule";
-  private List<Schedule> schedule;
+  private List<Schedule> schedule = new ArrayList<>();
 
   public Term() {
   }
@@ -94,10 +94,10 @@ public class Term implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +113,16 @@ public class Term implements Serializable {
     this.type = type;
   }
 
-
   public Term id(String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,17 +138,16 @@ public class Term implements Serializable {
     this.id = id;
   }
 
-
   public Term positiveTargeting(PositiveTargeting positiveTargeting) {
     
     this.positiveTargeting = positiveTargeting;
     return this;
   }
 
-   /**
+  /**
    * Get positiveTargeting
    * @return positiveTargeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,7 +163,6 @@ public class Term implements Serializable {
     this.positiveTargeting = positiveTargeting;
   }
 
-
   public Term documents(List<Document> documents) {
     
     this.documents = documents;
@@ -180,10 +177,10 @@ public class Term implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get documents
    * @return documents
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOCUMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -199,17 +196,16 @@ public class Term implements Serializable {
     this.documents = documents;
   }
 
-
   public Term maximumAgreementStartDate(String maximumAgreementStartDate) {
     
     this.maximumAgreementStartDate = maximumAgreementStartDate;
     return this;
   }
 
-   /**
+  /**
    * Get maximumAgreementStartDate
    * @return maximumAgreementStartDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAXIMUM_AGREEMENT_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -225,17 +221,16 @@ public class Term implements Serializable {
     this.maximumAgreementStartDate = maximumAgreementStartDate;
   }
 
-
   public Term currencyCode(String currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,7 +246,6 @@ public class Term implements Serializable {
     this.currencyCode = currencyCode;
   }
 
-
   public Term rateCards(List<RateCards> rateCards) {
     
     this.rateCards = rateCards;
@@ -266,10 +260,10 @@ public class Term implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCards
    * @return rateCards
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -285,17 +279,16 @@ public class Term implements Serializable {
     this.rateCards = rateCards;
   }
 
-
   public Term duration(String duration) {
     
     this.duration = duration;
     return this;
   }
 
-   /**
+  /**
    * Get duration
    * @return duration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -311,17 +304,16 @@ public class Term implements Serializable {
     this.duration = duration;
   }
 
-
   public Term price(String price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -337,7 +329,6 @@ public class Term implements Serializable {
     this.price = price;
   }
 
-
   public Term grants(List<Grant> grants) {
     
     this.grants = grants;
@@ -352,10 +343,10 @@ public class Term implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get grants
    * @return grants
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GRANTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -371,7 +362,6 @@ public class Term implements Serializable {
     this.grants = grants;
   }
 
-
   public Term schedule(List<Schedule> schedule) {
     
     this.schedule = schedule;
@@ -386,10 +376,10 @@ public class Term implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get schedule
    * @return schedule
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

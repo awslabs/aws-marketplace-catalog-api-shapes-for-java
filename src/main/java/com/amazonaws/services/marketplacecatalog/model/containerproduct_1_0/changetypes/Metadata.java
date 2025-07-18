@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Metadata.JSON_PROPERTY_DESCRIPTION,
   Metadata.JSON_PROPERTY_OBFUSCATE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Metadata implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,10 +54,10 @@ public class Metadata implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class Metadata implements Serializable {
     this.label = label;
   }
 
-
   public Metadata description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class Metadata implements Serializable {
     this.description = description;
   }
 
-
   public Metadata obfuscate(Boolean obfuscate) {
     
     this.obfuscate = obfuscate;
     return this;
   }
 
-   /**
+  /**
    * Get obfuscate
    * @return obfuscate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OBFUSCATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

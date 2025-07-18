@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   FreeTrialPricingTerm.JSON_PROPERTY_DURATION,
   FreeTrialPricingTerm.JSON_PROPERTY_GRANTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class FreeTrialPricingTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -59,10 +59,10 @@ public class FreeTrialPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,17 +78,16 @@ public class FreeTrialPricingTerm implements Serializable {
     this.type = type;
   }
 
-
   public FreeTrialPricingTerm duration(String duration) {
     
     this.duration = duration;
     return this;
   }
 
-   /**
+  /**
    * Get duration
    * @return duration
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,7 +103,6 @@ public class FreeTrialPricingTerm implements Serializable {
     this.duration = duration;
   }
 
-
   public FreeTrialPricingTerm grants(List<GrantItem> grants) {
     
     this.grants = grants;
@@ -119,10 +117,10 @@ public class FreeTrialPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get grants
    * @return grants
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GRANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

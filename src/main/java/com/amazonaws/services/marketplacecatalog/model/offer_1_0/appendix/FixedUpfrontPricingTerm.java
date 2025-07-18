@@ -40,7 +40,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   FixedUpfrontPricingTerm.JSON_PROPERTY_GRANTS,
   FixedUpfrontPricingTerm.JSON_PROPERTY_DURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class FixedUpfrontPricingTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -68,10 +68,10 @@ public class FixedUpfrontPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,17 +87,16 @@ public class FixedUpfrontPricingTerm implements Serializable {
     this.type = type;
   }
 
-
   public FixedUpfrontPricingTerm currencyCode(CurrencyCode currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,17 +112,16 @@ public class FixedUpfrontPricingTerm implements Serializable {
     this.currencyCode = currencyCode;
   }
 
-
   public FixedUpfrontPricingTerm price(String price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,7 +137,6 @@ public class FixedUpfrontPricingTerm implements Serializable {
     this.price = price;
   }
 
-
   public FixedUpfrontPricingTerm grants(List<GrantItem> grants) {
     
     this.grants = grants;
@@ -154,10 +151,10 @@ public class FixedUpfrontPricingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * MaxQuantity is required
    * @return grants
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GRANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -173,17 +170,16 @@ public class FixedUpfrontPricingTerm implements Serializable {
     this.grants = grants;
   }
 
-
   public FixedUpfrontPricingTerm duration(String duration) {
     
     this.duration = duration;
     return this;
   }
 
-   /**
+  /**
    * Get duration
    * @return duration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

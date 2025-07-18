@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Access.JSON_PROPERTY_PROTOCOL,
   Access.JSON_PROPERTY_RELATIVE_PATH
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Access implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class Access implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -77,17 +77,16 @@ public class Access implements Serializable {
     this.type = type;
   }
 
-
   public Access port(Integer port) {
     
     this.port = port;
     return this;
   }
 
-   /**
+  /**
    * Get port
    * @return port
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +102,16 @@ public class Access implements Serializable {
     this.port = port;
   }
 
-
   public Access protocol(String protocol) {
     
     this.protocol = protocol;
     return this;
   }
 
-   /**
+  /**
    * Get protocol
    * @return protocol
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +127,16 @@ public class Access implements Serializable {
     this.protocol = protocol;
   }
 
-
   public Access relativePath(String relativePath) {
     
     this.relativePath = relativePath;
     return this;
   }
 
-   /**
+  /**
    * Get relativePath
    * @return relativePath
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELATIVE_PATH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

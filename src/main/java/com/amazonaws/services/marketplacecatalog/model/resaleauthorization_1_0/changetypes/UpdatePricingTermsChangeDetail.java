@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdatePricingTermsChangeDetail.JSON_PROPERTY_PRICING_MODEL,
   UpdatePricingTermsChangeDetail.JSON_PROPERTY_TERMS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdatePricingTermsChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -55,10 +55,10 @@ public class UpdatePricingTermsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get pricingModel
    * @return pricingModel
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICING_MODEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,7 +74,6 @@ public class UpdatePricingTermsChangeDetail implements Serializable {
     this.pricingModel = pricingModel;
   }
 
-
   public UpdatePricingTermsChangeDetail terms(List<PricingTerm> terms) {
     
     this.terms = terms;
@@ -89,10 +88,10 @@ public class UpdatePricingTermsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get terms
    * @return terms
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TERMS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

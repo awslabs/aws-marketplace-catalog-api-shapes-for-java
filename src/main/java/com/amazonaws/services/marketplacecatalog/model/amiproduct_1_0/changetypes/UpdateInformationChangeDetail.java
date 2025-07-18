@@ -45,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateInformationChangeDetail.JSON_PROPERTY_ASSOCIATED_PRODUCTS,
   UpdateInformationChangeDetail.JSON_PROPERTY_SEARCH_KEYWORDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateInformationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -65,25 +65,25 @@ public class UpdateInformationChangeDetail implements Serializable {
   private String logoUrl;
 
   public static final String JSON_PROPERTY_VIDEO_URLS = "VideoUrls";
-  private List<String> videoUrls;
+  private List<String> videoUrls = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HIGHLIGHTS = "Highlights";
-  private List<String> highlights;
+  private List<String> highlights = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ADDITIONAL_RESOURCES = "AdditionalResources";
-  private List<AdditionalResource> additionalResources;
+  private List<AdditionalResource> additionalResources = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SUPPORT_DESCRIPTION = "SupportDescription";
   private String supportDescription;
 
   public static final String JSON_PROPERTY_CATEGORIES = "Categories";
-  private List<String> categories;
+  private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ASSOCIATED_PRODUCTS = "AssociatedProducts";
-  private List<String> associatedProducts;
+  private List<String> associatedProducts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEARCH_KEYWORDS = "SearchKeywords";
-  private List<String> searchKeywords;
+  private List<String> searchKeywords = new ArrayList<>();
 
   public UpdateInformationChangeDetail() {
   }
@@ -94,10 +94,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get productTitle
    * @return productTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +113,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.productTitle = productTitle;
   }
 
-
   public UpdateInformationChangeDetail shortDescription(String shortDescription) {
     
     this.shortDescription = shortDescription;
     return this;
   }
 
-   /**
+  /**
    * Get shortDescription
    * @return shortDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHORT_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,17 +138,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.shortDescription = shortDescription;
   }
 
-
   public UpdateInformationChangeDetail longDescription(String longDescription) {
     
     this.longDescription = longDescription;
     return this;
   }
 
-   /**
+  /**
    * Get longDescription
    * @return longDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LONG_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,17 +163,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.longDescription = longDescription;
   }
 
-
   public UpdateInformationChangeDetail sku(String sku) {
     
     this.sku = sku;
     return this;
   }
 
-   /**
+  /**
    * Get sku
    * @return sku
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -191,17 +188,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.sku = sku;
   }
 
-
   public UpdateInformationChangeDetail logoUrl(String logoUrl) {
     
     this.logoUrl = logoUrl;
     return this;
   }
 
-   /**
+  /**
    * Get logoUrl
    * @return logoUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGO_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,7 +213,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.logoUrl = logoUrl;
   }
 
-
   public UpdateInformationChangeDetail videoUrls(List<String> videoUrls) {
     
     this.videoUrls = videoUrls;
@@ -232,10 +227,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get videoUrls
    * @return videoUrls
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VIDEO_URLS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,7 +246,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.videoUrls = videoUrls;
   }
 
-
   public UpdateInformationChangeDetail highlights(List<String> highlights) {
     
     this.highlights = highlights;
@@ -266,10 +260,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get highlights
    * @return highlights
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HIGHLIGHTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -285,7 +279,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.highlights = highlights;
   }
 
-
   public UpdateInformationChangeDetail additionalResources(List<AdditionalResource> additionalResources) {
     
     this.additionalResources = additionalResources;
@@ -300,10 +293,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get additionalResources
    * @return additionalResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -319,17 +312,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.additionalResources = additionalResources;
   }
 
-
   public UpdateInformationChangeDetail supportDescription(String supportDescription) {
     
     this.supportDescription = supportDescription;
     return this;
   }
 
-   /**
+  /**
    * Get supportDescription
    * @return supportDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUPPORT_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,7 +337,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.supportDescription = supportDescription;
   }
 
-
   public UpdateInformationChangeDetail categories(List<String> categories) {
     
     this.categories = categories;
@@ -360,10 +351,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get categories
    * @return categories
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -379,7 +370,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.categories = categories;
   }
 
-
   public UpdateInformationChangeDetail associatedProducts(List<String> associatedProducts) {
     
     this.associatedProducts = associatedProducts;
@@ -394,11 +384,11 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * This shape is deprecated: AssociatedProducts is not supported for this change type
    * @return associatedProducts
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSOCIATED_PRODUCTS)
@@ -415,7 +405,6 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.associatedProducts = associatedProducts;
   }
 
-
   public UpdateInformationChangeDetail searchKeywords(List<String> searchKeywords) {
     
     this.searchKeywords = searchKeywords;
@@ -430,10 +419,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get searchKeywords
    * @return searchKeywords
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEARCH_KEYWORDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

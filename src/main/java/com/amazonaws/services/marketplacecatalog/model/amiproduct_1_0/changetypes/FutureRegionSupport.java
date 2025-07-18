@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   FutureRegionSupport.JSON_PROPERTY_SUPPORTED_REGIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class FutureRegionSupport implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -58,10 +58,10 @@ public class FutureRegionSupport implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get supportedRegions
    * @return supportedRegions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUPPORTED_REGIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -35,18 +35,18 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RegionAvailability.JSON_PROPERTY_FUTURE_REGION_SUPPORT,
   RegionAvailability.JSON_PROPERTY_RESTRICT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RegionAvailability implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_REGIONS = "Regions";
-  private List<String> regions;
+  private List<String> regions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FUTURE_REGION_SUPPORT = "FutureRegionSupport";
   private String futureRegionSupport;
 
   public static final String JSON_PROPERTY_RESTRICT = "Restrict";
-  private List<String> restrict;
+  private List<String> restrict = new ArrayList<>();
 
   public RegionAvailability() {
   }
@@ -65,10 +65,10 @@ public class RegionAvailability implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get regions
    * @return regions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REGIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,17 +84,16 @@ public class RegionAvailability implements Serializable {
     this.regions = regions;
   }
 
-
   public RegionAvailability futureRegionSupport(String futureRegionSupport) {
     
     this.futureRegionSupport = futureRegionSupport;
     return this;
   }
 
-   /**
+  /**
    * Get futureRegionSupport
    * @return futureRegionSupport
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FUTURE_REGION_SUPPORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,7 +109,6 @@ public class RegionAvailability implements Serializable {
     this.futureRegionSupport = futureRegionSupport;
   }
 
-
   public RegionAvailability restrict(List<String> restrict) {
     
     this.restrict = restrict;
@@ -125,10 +123,10 @@ public class RegionAvailability implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get restrict
    * @return restrict
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESTRICT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

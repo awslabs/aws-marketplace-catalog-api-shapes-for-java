@@ -33,12 +33,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   NegativeTargeting.JSON_PROPERTY_COUNTRY_CODES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class NegativeTargeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_COUNTRY_CODES = "CountryCodes";
-  private List<String> countryCodes;
+  private List<String> countryCodes = new ArrayList<>();
 
   public NegativeTargeting() {
   }
@@ -57,10 +57,10 @@ public class NegativeTargeting implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get countryCodes
    * @return countryCodes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

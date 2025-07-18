@@ -34,15 +34,15 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Compatibility.JSON_PROPERTY_AVAILABLE_INSTANCE_TYPES,
   Compatibility.JSON_PROPERTY_RESTRICTED_INSTANCE_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Compatibility implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_AVAILABLE_INSTANCE_TYPES = "AvailableInstanceTypes";
-  private List<String> availableInstanceTypes;
+  private List<String> availableInstanceTypes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_RESTRICTED_INSTANCE_TYPES = "RestrictedInstanceTypes";
-  private List<String> restrictedInstanceTypes;
+  private List<String> restrictedInstanceTypes = new ArrayList<>();
 
   public Compatibility() {
   }
@@ -61,10 +61,10 @@ public class Compatibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get availableInstanceTypes
    * @return availableInstanceTypes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AVAILABLE_INSTANCE_TYPES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,7 +80,6 @@ public class Compatibility implements Serializable {
     this.availableInstanceTypes = availableInstanceTypes;
   }
 
-
   public Compatibility restrictedInstanceTypes(List<String> restrictedInstanceTypes) {
     
     this.restrictedInstanceTypes = restrictedInstanceTypes;
@@ -95,10 +94,10 @@ public class Compatibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get restrictedInstanceTypes
    * @return restrictedInstanceTypes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESTRICTED_INSTANCE_TYPES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

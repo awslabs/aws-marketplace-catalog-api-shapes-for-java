@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Dimension.JSON_PROPERTY_UNIT,
   Dimension.JSON_PROPERTY_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Dimension implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -54,7 +54,7 @@ public class Dimension implements Serializable {
   private String unit;
 
   public static final String JSON_PROPERTY_TYPES = "Types";
-  private List<String> types;
+  private List<String> types = new ArrayList<>();
 
   public Dimension() {
   }
@@ -65,10 +65,10 @@ public class Dimension implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,17 +84,16 @@ public class Dimension implements Serializable {
     this.name = name;
   }
 
-
   public Dimension description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,17 +109,16 @@ public class Dimension implements Serializable {
     this.description = description;
   }
 
-
   public Dimension key(String key) {
     
     this.key = key;
     return this;
   }
 
-   /**
+  /**
    * Get key
    * @return key
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -136,17 +134,16 @@ public class Dimension implements Serializable {
     this.key = key;
   }
 
-
   public Dimension unit(String unit) {
     
     this.unit = unit;
     return this;
   }
 
-   /**
+  /**
    * Get unit
    * @return unit
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -162,7 +159,6 @@ public class Dimension implements Serializable {
     this.unit = unit;
   }
 
-
   public Dimension types(List<String> types) {
     
     this.types = types;
@@ -177,10 +173,10 @@ public class Dimension implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get types
    * @return types
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

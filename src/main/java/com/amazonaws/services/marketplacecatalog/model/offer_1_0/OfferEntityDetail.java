@@ -44,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OfferEntityDetail.JSON_PROPERTY_RULES,
   OfferEntityDetail.JSON_PROPERTY_TERMS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class OfferEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -70,10 +70,10 @@ public class OfferEntityDetail implements Serializable {
   private String productId;
 
   public static final String JSON_PROPERTY_RULES = "Rules";
-  private List<Rule> rules;
+  private List<Rule> rules = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TERMS = "Terms";
-  private List<Term> terms;
+  private List<Term> terms = new ArrayList<>();
 
   public OfferEntityDetail() {
   }
@@ -84,10 +84,10 @@ public class OfferEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +103,16 @@ public class OfferEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public OfferEntityDetail id(String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +128,16 @@ public class OfferEntityDetail implements Serializable {
     this.id = id;
   }
 
-
   public OfferEntityDetail state(String state) {
     
     this.state = state;
     return this;
   }
 
-   /**
+  /**
    * Get state
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -155,17 +153,16 @@ public class OfferEntityDetail implements Serializable {
     this.state = state;
   }
 
-
   public OfferEntityDetail markupPercentage(String markupPercentage) {
     
     this.markupPercentage = markupPercentage;
     return this;
   }
 
-   /**
+  /**
    * Get markupPercentage
    * @return markupPercentage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKUP_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -181,17 +178,16 @@ public class OfferEntityDetail implements Serializable {
     this.markupPercentage = markupPercentage;
   }
 
-
   public OfferEntityDetail name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -207,17 +203,16 @@ public class OfferEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public OfferEntityDetail preExistingAgreement(PreExistingAgreement preExistingAgreement) {
     
     this.preExistingAgreement = preExistingAgreement;
     return this;
   }
 
-   /**
+  /**
    * Get preExistingAgreement
    * @return preExistingAgreement
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRE_EXISTING_AGREEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -233,17 +228,16 @@ public class OfferEntityDetail implements Serializable {
     this.preExistingAgreement = preExistingAgreement;
   }
 
-
   public OfferEntityDetail productId(String productId) {
     
     this.productId = productId;
     return this;
   }
 
-   /**
+  /**
    * Get productId
    * @return productId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -259,7 +253,6 @@ public class OfferEntityDetail implements Serializable {
     this.productId = productId;
   }
 
-
   public OfferEntityDetail rules(List<Rule> rules) {
     
     this.rules = rules;
@@ -274,10 +267,10 @@ public class OfferEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rules
    * @return rules
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -293,7 +286,6 @@ public class OfferEntityDetail implements Serializable {
     this.rules = rules;
   }
 
-
   public OfferEntityDetail terms(List<Term> terms) {
     
     this.terms = terms;
@@ -308,10 +300,10 @@ public class OfferEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get terms
    * @return terms
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TERMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

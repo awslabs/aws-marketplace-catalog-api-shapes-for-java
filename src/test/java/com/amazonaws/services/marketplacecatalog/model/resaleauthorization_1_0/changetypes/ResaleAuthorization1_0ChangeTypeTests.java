@@ -18,7 +18,8 @@ public class ResaleAuthorization1_0ChangeTypeTests {
     @BeforeAll
     public static void setup() {
         mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL)
+                .setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
     }
 
     @Test

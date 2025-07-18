@@ -45,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails.JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS,
   UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails.JSON_PROPERTY_DELIVERY_OPTION_TITLE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -56,7 +56,7 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
   private String usageInstructions;
 
   public static final String JSON_PROPERTY_CONTAINER_IMAGES = "ContainerImages";
-  private List<String> containerImages;
+  private List<String> containerImages = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HELM_CHART_URI = "HelmChartUri";
   private String helmChartUri;
@@ -71,16 +71,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
   private String addOnType;
 
   public static final String JSON_PROPERTY_COMPATIBLE_KUBERNETES_VERSIONS = "CompatibleKubernetesVersions";
-  private List<String> compatibleKubernetesVersions;
+  private List<String> compatibleKubernetesVersions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SUPPORTED_ARCHITECTURES = "SupportedArchitectures";
-  private List<String> supportedArchitectures;
+  private List<String> supportedArchitectures = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NAMESPACE = "Namespace";
   private String namespace;
 
   public static final String JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS = "EnvironmentOverrideParameters";
-  private List<EnvironmentOverrideParameter> environmentOverrideParameters;
+  private List<EnvironmentOverrideParameter> environmentOverrideParameters = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERY_OPTION_TITLE = "DeliveryOptionTitle";
   private String deliveryOptionTitle;
@@ -94,10 +94,10 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +113,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.description = description;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails usageInstructions(String usageInstructions) {
     
     this.usageInstructions = usageInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get usageInstructions
    * @return usageInstructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,7 +138,6 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.usageInstructions = usageInstructions;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails containerImages(List<String> containerImages) {
     
     this.containerImages = containerImages;
@@ -154,10 +152,10 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     return this;
   }
 
-   /**
+  /**
    * Get containerImages
    * @return containerImages
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTAINER_IMAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -173,17 +171,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.containerImages = containerImages;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails helmChartUri(String helmChartUri) {
     
     this.helmChartUri = helmChartUri;
     return this;
   }
 
-   /**
+  /**
    * Get helmChartUri
    * @return helmChartUri
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HELM_CHART_URI)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -199,17 +196,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.helmChartUri = helmChartUri;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails addOnName(String addOnName) {
     
     this.addOnName = addOnName;
     return this;
   }
 
-   /**
+  /**
    * Get addOnName
    * @return addOnName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -225,17 +221,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.addOnName = addOnName;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails addOnVersion(String addOnVersion) {
     
     this.addOnVersion = addOnVersion;
     return this;
   }
 
-   /**
+  /**
    * Get addOnVersion
    * @return addOnVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,17 +246,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.addOnVersion = addOnVersion;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails addOnType(String addOnType) {
     
     this.addOnType = addOnType;
     return this;
   }
 
-   /**
+  /**
    * Get addOnType
    * @return addOnType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,7 +271,6 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.addOnType = addOnType;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails compatibleKubernetesVersions(List<String> compatibleKubernetesVersions) {
     
     this.compatibleKubernetesVersions = compatibleKubernetesVersions;
@@ -292,10 +285,10 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     return this;
   }
 
-   /**
+  /**
    * Get compatibleKubernetesVersions
    * @return compatibleKubernetesVersions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBLE_KUBERNETES_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -311,7 +304,6 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.compatibleKubernetesVersions = compatibleKubernetesVersions;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails supportedArchitectures(List<String> supportedArchitectures) {
     
     this.supportedArchitectures = supportedArchitectures;
@@ -326,10 +318,10 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     return this;
   }
 
-   /**
+  /**
    * Get supportedArchitectures
    * @return supportedArchitectures
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUPPORTED_ARCHITECTURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,17 +337,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.supportedArchitectures = supportedArchitectures;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails namespace(String namespace) {
     
     this.namespace = namespace;
     return this;
   }
 
-   /**
+  /**
    * Get namespace
    * @return namespace
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAMESPACE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -371,7 +362,6 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.namespace = namespace;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails environmentOverrideParameters(List<EnvironmentOverrideParameter> environmentOverrideParameters) {
     
     this.environmentOverrideParameters = environmentOverrideParameters;
@@ -386,10 +376,10 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     return this;
   }
 
-   /**
+  /**
    * Get environmentOverrideParameters
    * @return environmentOverrideParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -405,17 +395,16 @@ public class UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails implements Seria
     this.environmentOverrideParameters = environmentOverrideParameters;
   }
 
-
   public UpdateDeliveryOptionsEksAddOnDeliveryOptionDetails deliveryOptionTitle(String deliveryOptionTitle) {
     
     this.deliveryOptionTitle = deliveryOptionTitle;
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptionTitle
    * @return deliveryOptionTitle
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTION_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

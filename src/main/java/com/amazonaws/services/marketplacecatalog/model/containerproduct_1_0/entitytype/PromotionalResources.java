@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PromotionalResources.JSON_PROPERTY_VIDEOS,
   PromotionalResources.JSON_PROPERTY_ADDITIONAL_RESOURCES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PromotionalResources implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -45,10 +45,10 @@ public class PromotionalResources implements Serializable {
   private String logoUrl;
 
   public static final String JSON_PROPERTY_VIDEOS = "Videos";
-  private List<Video> videos;
+  private List<Video> videos = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ADDITIONAL_RESOURCES = "AdditionalResources";
-  private List<AdditionalResource> additionalResources;
+  private List<AdditionalResource> additionalResources = new ArrayList<>();
 
   public PromotionalResources() {
   }
@@ -59,10 +59,10 @@ public class PromotionalResources implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get logoUrl
    * @return logoUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGO_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,7 +78,6 @@ public class PromotionalResources implements Serializable {
     this.logoUrl = logoUrl;
   }
 
-
   public PromotionalResources videos(List<Video> videos) {
     
     this.videos = videos;
@@ -93,10 +92,10 @@ public class PromotionalResources implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get videos
    * @return videos
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VIDEOS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,7 +111,6 @@ public class PromotionalResources implements Serializable {
     this.videos = videos;
   }
 
-
   public PromotionalResources additionalResources(List<AdditionalResource> additionalResources) {
     
     this.additionalResources = additionalResources;
@@ -127,10 +125,10 @@ public class PromotionalResources implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get additionalResources
    * @return additionalResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

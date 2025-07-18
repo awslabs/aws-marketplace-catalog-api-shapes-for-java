@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AmiSource.JSON_PROPERTY_OPERATING_SYSTEM_NAME,
   AmiSource.JSON_PROPERTY_OPERATING_SYSTEM_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AmiSource implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -66,10 +66,10 @@ public class AmiSource implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get amiId
    * @return amiId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMI_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,17 +85,16 @@ public class AmiSource implements Serializable {
     this.amiId = amiId;
   }
 
-
   public AmiSource accessRoleArn(String accessRoleArn) {
     
     this.accessRoleArn = accessRoleArn;
     return this;
   }
 
-   /**
+  /**
    * Get accessRoleArn
    * @return accessRoleArn
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCESS_ROLE_ARN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class AmiSource implements Serializable {
     this.accessRoleArn = accessRoleArn;
   }
 
-
   public AmiSource userName(String userName) {
     
     this.userName = userName;
     return this;
   }
 
-   /**
+  /**
    * Get userName
    * @return userName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,19 +135,18 @@ public class AmiSource implements Serializable {
     this.userName = userName;
   }
 
-
   public AmiSource scanningPort(Integer scanningPort) {
     
     this.scanningPort = scanningPort;
     return this;
   }
 
-   /**
+  /**
    * Get scanningPort
    * minimum: 1
    * maximum: 65535
    * @return scanningPort
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCANNING_PORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,17 +162,16 @@ public class AmiSource implements Serializable {
     this.scanningPort = scanningPort;
   }
 
-
   public AmiSource operatingSystemName(String operatingSystemName) {
     
     this.operatingSystemName = operatingSystemName;
     return this;
   }
 
-   /**
+  /**
    * Get operatingSystemName
    * @return operatingSystemName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPERATING_SYSTEM_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,17 +187,16 @@ public class AmiSource implements Serializable {
     this.operatingSystemName = operatingSystemName;
   }
 
-
   public AmiSource operatingSystemVersion(String operatingSystemVersion) {
     
     this.operatingSystemVersion = operatingSystemVersion;
     return this;
   }
 
-   /**
+  /**
    * Get operatingSystemVersion
    * @return operatingSystemVersion
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPERATING_SYSTEM_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

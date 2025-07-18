@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RecurringPaymentTerm.JSON_PROPERTY_BILLING_PERIOD,
   RecurringPaymentTerm.JSON_PROPERTY_PRICE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RecurringPaymentTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -61,10 +61,10 @@ public class RecurringPaymentTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,17 +80,16 @@ public class RecurringPaymentTerm implements Serializable {
     this.type = type;
   }
 
-
   public RecurringPaymentTerm currencyCode(CurrencyCode currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,17 +105,16 @@ public class RecurringPaymentTerm implements Serializable {
     this.currencyCode = currencyCode;
   }
 
-
   public RecurringPaymentTerm billingPeriod(BillingPeriod billingPeriod) {
     
     this.billingPeriod = billingPeriod;
     return this;
   }
 
-   /**
+  /**
    * Get billingPeriod
    * @return billingPeriod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BILLING_PERIOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,17 +130,16 @@ public class RecurringPaymentTerm implements Serializable {
     this.billingPeriod = billingPeriod;
   }
 
-
   public RecurringPaymentTerm price(String price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

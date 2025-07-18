@@ -58,7 +58,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeliveryOption.JSON_PROPERTY_DISPLAY_ADD_ON_VERSION,
   DeliveryOption.JSON_PROPERTY_ADD_ON_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeliveryOption implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -105,13 +105,13 @@ public class DeliveryOption implements Serializable {
   private String namespace;
 
   public static final String JSON_PROPERTY_OVERRIDE_PARAMETERS = "OverrideParameters";
-  private List<OverrideParameter> overrideParameters;
+  private List<OverrideParameter> overrideParameters = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ADD_ON_TYPE = "AddOnType";
   private String addOnType;
 
   public static final String JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS = "EnvironmentOverrideParameters";
-  private List<EnvironmentOverrideParameter> environmentOverrideParameters;
+  private List<EnvironmentOverrideParameter> environmentOverrideParameters = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DISPLAY_ADD_ON_NAME = "DisplayAddOnName";
   private String displayAddOnName;
@@ -134,10 +134,10 @@ public class DeliveryOption implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -153,17 +153,16 @@ public class DeliveryOption implements Serializable {
     this.id = id;
   }
 
-
   public DeliveryOption type(String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -179,17 +178,16 @@ public class DeliveryOption implements Serializable {
     this.type = type;
   }
 
-
   public DeliveryOption sourceId(String sourceId) {
     
     this.sourceId = sourceId;
     return this;
   }
 
-   /**
+  /**
    * Get sourceId
    * @return sourceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -205,17 +203,16 @@ public class DeliveryOption implements Serializable {
     this.sourceId = sourceId;
   }
 
-
   public DeliveryOption title(String title) {
     
     this.title = title;
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -231,17 +228,16 @@ public class DeliveryOption implements Serializable {
     this.title = title;
   }
 
-
   public DeliveryOption shortDescription(String shortDescription) {
     
     this.shortDescription = shortDescription;
     return this;
   }
 
-   /**
+  /**
    * Get shortDescription
    * @return shortDescription
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHORT_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -257,17 +253,16 @@ public class DeliveryOption implements Serializable {
     this.shortDescription = shortDescription;
   }
 
-
   public DeliveryOption isRecommended(Boolean isRecommended) {
     
     this.isRecommended = isRecommended;
     return this;
   }
 
-   /**
+  /**
    * Get isRecommended
    * @return isRecommended
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_RECOMMENDED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,17 +278,16 @@ public class DeliveryOption implements Serializable {
     this.isRecommended = isRecommended;
   }
 
-
   public DeliveryOption compatibility(DeliveryOptionCompatibility compatibility) {
     
     this.compatibility = compatibility;
     return this;
   }
 
-   /**
+  /**
    * Get compatibility
    * @return compatibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -309,17 +303,16 @@ public class DeliveryOption implements Serializable {
     this.compatibility = compatibility;
   }
 
-
   public DeliveryOption instructions(Instructions instructions) {
     
     this.instructions = instructions;
     return this;
   }
 
-   /**
+  /**
    * Get instructions
    * @return instructions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -335,17 +328,16 @@ public class DeliveryOption implements Serializable {
     this.instructions = instructions;
   }
 
-
   public DeliveryOption recommendations(Recommendations recommendations) {
     
     this.recommendations = recommendations;
     return this;
   }
 
-   /**
+  /**
    * Get recommendations
    * @return recommendations
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECOMMENDATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -361,17 +353,16 @@ public class DeliveryOption implements Serializable {
     this.recommendations = recommendations;
   }
 
-
   public DeliveryOption visibility(String visibility) {
     
     this.visibility = visibility;
     return this;
   }
 
-   /**
+  /**
    * Get visibility
    * @return visibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -387,17 +378,16 @@ public class DeliveryOption implements Serializable {
     this.visibility = visibility;
   }
 
-
   public DeliveryOption quickLaunchEnabled(Boolean quickLaunchEnabled) {
     
     this.quickLaunchEnabled = quickLaunchEnabled;
     return this;
   }
 
-   /**
+  /**
    * Get quickLaunchEnabled
    * @return quickLaunchEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUICK_LAUNCH_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -413,17 +403,16 @@ public class DeliveryOption implements Serializable {
     this.quickLaunchEnabled = quickLaunchEnabled;
   }
 
-
   public DeliveryOption releaseName(String releaseName) {
     
     this.releaseName = releaseName;
     return this;
   }
 
-   /**
+  /**
    * Get releaseName
    * @return releaseName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -439,17 +428,16 @@ public class DeliveryOption implements Serializable {
     this.releaseName = releaseName;
   }
 
-
   public DeliveryOption marketplaceServiceAccountName(String marketplaceServiceAccountName) {
     
     this.marketplaceServiceAccountName = marketplaceServiceAccountName;
     return this;
   }
 
-   /**
+  /**
    * Get marketplaceServiceAccountName
    * @return marketplaceServiceAccountName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKETPLACE_SERVICE_ACCOUNT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -465,17 +453,16 @@ public class DeliveryOption implements Serializable {
     this.marketplaceServiceAccountName = marketplaceServiceAccountName;
   }
 
-
   public DeliveryOption namespace(String namespace) {
     
     this.namespace = namespace;
     return this;
   }
 
-   /**
+  /**
    * Get namespace
    * @return namespace
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAMESPACE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -491,7 +478,6 @@ public class DeliveryOption implements Serializable {
     this.namespace = namespace;
   }
 
-
   public DeliveryOption overrideParameters(List<OverrideParameter> overrideParameters) {
     
     this.overrideParameters = overrideParameters;
@@ -506,10 +492,10 @@ public class DeliveryOption implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get overrideParameters
    * @return overrideParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OVERRIDE_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -525,17 +511,16 @@ public class DeliveryOption implements Serializable {
     this.overrideParameters = overrideParameters;
   }
 
-
   public DeliveryOption addOnType(String addOnType) {
     
     this.addOnType = addOnType;
     return this;
   }
 
-   /**
+  /**
    * Get addOnType
    * @return addOnType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -551,7 +536,6 @@ public class DeliveryOption implements Serializable {
     this.addOnType = addOnType;
   }
 
-
   public DeliveryOption environmentOverrideParameters(List<EnvironmentOverrideParameter> environmentOverrideParameters) {
     
     this.environmentOverrideParameters = environmentOverrideParameters;
@@ -566,10 +550,10 @@ public class DeliveryOption implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get environmentOverrideParameters
    * @return environmentOverrideParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ENVIRONMENT_OVERRIDE_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -585,17 +569,16 @@ public class DeliveryOption implements Serializable {
     this.environmentOverrideParameters = environmentOverrideParameters;
   }
 
-
   public DeliveryOption displayAddOnName(String displayAddOnName) {
     
     this.displayAddOnName = displayAddOnName;
     return this;
   }
 
-   /**
+  /**
    * Get displayAddOnName
    * @return displayAddOnName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISPLAY_ADD_ON_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -611,17 +594,16 @@ public class DeliveryOption implements Serializable {
     this.displayAddOnName = displayAddOnName;
   }
 
-
   public DeliveryOption addOnName(String addOnName) {
     
     this.addOnName = addOnName;
     return this;
   }
 
-   /**
+  /**
    * Get addOnName
    * @return addOnName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -637,17 +619,16 @@ public class DeliveryOption implements Serializable {
     this.addOnName = addOnName;
   }
 
-
   public DeliveryOption displayAddOnVersion(String displayAddOnVersion) {
     
     this.displayAddOnVersion = displayAddOnVersion;
     return this;
   }
 
-   /**
+  /**
    * Get displayAddOnVersion
    * @return displayAddOnVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISPLAY_ADD_ON_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -663,17 +644,16 @@ public class DeliveryOption implements Serializable {
     this.displayAddOnVersion = displayAddOnVersion;
   }
 
-
   public DeliveryOption addOnVersion(String addOnVersion) {
     
     this.addOnVersion = addOnVersion;
     return this;
   }
 
-   /**
+  /**
    * Get addOnVersion
    * @return addOnVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADD_ON_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

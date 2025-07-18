@@ -34,15 +34,15 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PositiveTargeting.JSON_PROPERTY_COUNTRY_CODES,
   PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PositiveTargeting implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_COUNTRY_CODES = "CountryCodes";
-  private List<String> countryCodes;
+  private List<String> countryCodes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BUYER_ACCOUNTS = "BuyerAccounts";
-  private List<String> buyerAccounts;
+  private List<String> buyerAccounts = new ArrayList<>();
 
   public PositiveTargeting() {
   }
@@ -61,10 +61,10 @@ public class PositiveTargeting implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get countryCodes
    * @return countryCodes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,7 +80,6 @@ public class PositiveTargeting implements Serializable {
     this.countryCodes = countryCodes;
   }
 
-
   public PositiveTargeting buyerAccounts(List<String> buyerAccounts) {
     
     this.buyerAccounts = buyerAccounts;
@@ -95,10 +94,10 @@ public class PositiveTargeting implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get buyerAccounts
    * @return buyerAccounts
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BUYER_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

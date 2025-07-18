@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateReplacementOfferChangeDetail.JSON_PROPERTY_NAME,
   CreateReplacementOfferChangeDetail.JSON_PROPERTY_AGREEMENT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CreateReplacementOfferChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class CreateReplacementOfferChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class CreateReplacementOfferChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public CreateReplacementOfferChangeDetail agreementId(String agreementId) {
     
     this.agreementId = agreementId;
     return this;
   }
 
-   /**
+  /**
    * Get agreementId
    * @return agreementId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AGREEMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

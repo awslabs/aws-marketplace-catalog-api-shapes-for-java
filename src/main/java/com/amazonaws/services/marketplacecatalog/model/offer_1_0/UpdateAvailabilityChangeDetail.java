@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateAvailabilityChangeDetail.JSON_PROPERTY_AVAILABILITY_END_DATE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateAvailabilityChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -46,10 +46,10 @@ public class UpdateAvailabilityChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get availabilityEndDate
    * @return availabilityEndDate
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AVAILABILITY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

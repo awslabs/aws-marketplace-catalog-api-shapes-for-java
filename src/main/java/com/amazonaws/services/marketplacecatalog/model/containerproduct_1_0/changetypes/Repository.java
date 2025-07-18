@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Repository.JSON_PROPERTY_REPOSITORY_NAME,
   Repository.JSON_PROPERTY_REPOSITORY_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Repository implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -50,10 +50,10 @@ public class Repository implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get repositoryName
    * @return repositoryName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPOSITORY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class Repository implements Serializable {
     this.repositoryName = repositoryName;
   }
 
-
   public Repository repositoryType(String repositoryType) {
     
     this.repositoryType = repositoryType;
     return this;
   }
 
-   /**
+  /**
    * Get repositoryType
    * @return repositoryType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPOSITORY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

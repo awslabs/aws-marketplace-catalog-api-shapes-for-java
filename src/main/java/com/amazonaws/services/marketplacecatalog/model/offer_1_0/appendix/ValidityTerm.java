@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ValidityTerm.JSON_PROPERTY_AGREEMENT_START_DATE,
   ValidityTerm.JSON_PROPERTY_AGREEMENT_END_DATE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ValidityTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -59,10 +59,10 @@ public class ValidityTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,17 +78,16 @@ public class ValidityTerm implements Serializable {
     this.type = type;
   }
 
-
   public ValidityTerm agreementDuration(String agreementDuration) {
     
     this.agreementDuration = agreementDuration;
     return this;
   }
 
-   /**
+  /**
    * Get agreementDuration
    * @return agreementDuration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AGREEMENT_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,17 +103,16 @@ public class ValidityTerm implements Serializable {
     this.agreementDuration = agreementDuration;
   }
 
-
   public ValidityTerm agreementStartDate(String agreementStartDate) {
     
     this.agreementStartDate = agreementStartDate;
     return this;
   }
 
-   /**
+  /**
    * Get agreementStartDate
    * @return agreementStartDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AGREEMENT_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -130,17 +128,16 @@ public class ValidityTerm implements Serializable {
     this.agreementStartDate = agreementStartDate;
   }
 
-
   public ValidityTerm agreementEndDate(String agreementEndDate) {
     
     this.agreementEndDate = agreementEndDate;
     return this;
   }
 
-   /**
+  /**
    * Get agreementEndDate
    * @return agreementEndDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AGREEMENT_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

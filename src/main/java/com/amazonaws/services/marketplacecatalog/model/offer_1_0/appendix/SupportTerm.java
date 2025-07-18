@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SupportTerm.JSON_PROPERTY_TYPE,
   SupportTerm.JSON_PROPERTY_REFUND_POLICY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class SupportTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -51,10 +51,10 @@ public class SupportTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class SupportTerm implements Serializable {
     this.type = type;
   }
 
-
   public SupportTerm refundPolicy(String refundPolicy) {
     
     this.refundPolicy = refundPolicy;
     return this;
   }
 
-   /**
+  /**
    * Get refundPolicy
    * @return refundPolicy
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFUND_POLICY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

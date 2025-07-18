@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ProcurementPolicyEntityDetail.JSON_PROPERTY_STATEMENTS,
   ProcurementPolicyEntityDetail.JSON_PROPERTY_CONFIGURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ProcurementPolicyEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -49,7 +49,7 @@ public class ProcurementPolicyEntityDetail implements Serializable {
   private String description;
 
   public static final String JSON_PROPERTY_STATEMENTS = "Statements";
-  private List<Statement> statements;
+  private List<Statement> statements = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CONFIGURATION = "Configuration";
   private ModelConfiguration _configuration;
@@ -63,10 +63,10 @@ public class ProcurementPolicyEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -82,17 +82,16 @@ public class ProcurementPolicyEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public ProcurementPolicyEntityDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -108,7 +107,6 @@ public class ProcurementPolicyEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public ProcurementPolicyEntityDetail statements(List<Statement> statements) {
     
     this.statements = statements;
@@ -123,10 +121,10 @@ public class ProcurementPolicyEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get statements
    * @return statements
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATEMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -142,17 +140,16 @@ public class ProcurementPolicyEntityDetail implements Serializable {
     this.statements = statements;
   }
 
-
   public ProcurementPolicyEntityDetail _configuration(ModelConfiguration _configuration) {
     
     this._configuration = _configuration;
     return this;
   }
 
-   /**
+  /**
    * Get _configuration
    * @return _configuration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONFIGURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

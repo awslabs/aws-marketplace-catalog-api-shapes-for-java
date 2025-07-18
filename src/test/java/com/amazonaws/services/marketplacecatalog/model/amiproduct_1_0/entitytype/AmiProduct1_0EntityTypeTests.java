@@ -17,7 +17,8 @@ public class AmiProduct1_0EntityTypeTests {
     @BeforeAll
     public static void setup() {
         mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL)
+                .setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
     }
 
     @Test
@@ -210,6 +211,7 @@ public class AmiProduct1_0EntityTypeTests {
                         .productCode("9abcdefg9bw4k0zssg7thx123")
                         .shortDescription("Product description")
                         .longDescription("Long product description")
+                        .associatedProducts(null)
                         .sku("SKU")
                         .highlights(Collections.singletonList("Test product"))
                         .searchKeywords(Collections.singletonList("AWS"))

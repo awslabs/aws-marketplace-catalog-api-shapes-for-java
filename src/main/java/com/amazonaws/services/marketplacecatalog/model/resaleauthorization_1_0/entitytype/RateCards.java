@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RateCards.JSON_PROPERTY_RATE_CARD,
   RateCards.JSON_PROPERTY_CONSTRAINTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RateCards implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -46,7 +46,7 @@ public class RateCards implements Serializable {
   private Selector selector;
 
   public static final String JSON_PROPERTY_RATE_CARD = "RateCard";
-  private List<RateCard> rateCard;
+  private List<RateCard> rateCard = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CONSTRAINTS = "Constraints";
   private Constraints constraints;
@@ -60,10 +60,10 @@ public class RateCards implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get selector
    * @return selector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SELECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,7 +79,6 @@ public class RateCards implements Serializable {
     this.selector = selector;
   }
 
-
   public RateCards rateCard(List<RateCard> rateCard) {
     
     this.rateCard = rateCard;
@@ -94,10 +93,10 @@ public class RateCards implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCard
    * @return rateCard
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +112,16 @@ public class RateCards implements Serializable {
     this.rateCard = rateCard;
   }
 
-
   public RateCards constraints(Constraints constraints) {
     
     this.constraints = constraints;
     return this;
   }
 
-   /**
+  /**
    * Get constraints
    * @return constraints
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONSTRAINTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

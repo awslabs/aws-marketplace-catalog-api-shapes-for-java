@@ -35,18 +35,18 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeliveryOptionCompatibility.JSON_PROPERTY_KUBERNETES_VERSIONS,
   DeliveryOptionCompatibility.JSON_PROPERTY_ARCHITECTURES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeliveryOptionCompatibility implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_AW_S_SERVICES = "AWSServices";
-  private List<String> awSServices;
+  private List<String> awSServices = new ArrayList<>();
 
   public static final String JSON_PROPERTY_KUBERNETES_VERSIONS = "KubernetesVersions";
-  private List<String> kubernetesVersions;
+  private List<String> kubernetesVersions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ARCHITECTURES = "Architectures";
-  private List<String> architectures;
+  private List<String> architectures = new ArrayList<>();
 
   public DeliveryOptionCompatibility() {
   }
@@ -65,10 +65,10 @@ public class DeliveryOptionCompatibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get awSServices
    * @return awSServices
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AW_S_SERVICES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,7 +84,6 @@ public class DeliveryOptionCompatibility implements Serializable {
     this.awSServices = awSServices;
   }
 
-
   public DeliveryOptionCompatibility kubernetesVersions(List<String> kubernetesVersions) {
     
     this.kubernetesVersions = kubernetesVersions;
@@ -99,10 +98,10 @@ public class DeliveryOptionCompatibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get kubernetesVersions
    * @return kubernetesVersions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_KUBERNETES_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -118,7 +117,6 @@ public class DeliveryOptionCompatibility implements Serializable {
     this.kubernetesVersions = kubernetesVersions;
   }
 
-
   public DeliveryOptionCompatibility architectures(List<String> architectures) {
     
     this.architectures = architectures;
@@ -133,10 +131,10 @@ public class DeliveryOptionCompatibility implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get architectures
    * @return architectures
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARCHITECTURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

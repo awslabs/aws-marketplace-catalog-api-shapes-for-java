@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UpdateFutureRegionSupportChangeDetail.JSON_PROPERTY_FUTURE_REGION_SUPPORT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateFutureRegionSupportChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -47,10 +47,10 @@ public class UpdateFutureRegionSupportChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get futureRegionSupport
    * @return futureRegionSupport
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FUTURE_REGION_SUPPORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

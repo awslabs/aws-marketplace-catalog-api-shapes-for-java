@@ -48,12 +48,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AmiProductEntityDetail.JSON_PROPERTY_TARGETING,
   AmiProductEntityDetail.JSON_PROPERTY_COMPATIBILITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AmiProductEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_VERSIONS = "Versions";
-  private List<Version> versions;
+  private List<Version> versions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "Description";
   private Description description;
@@ -68,7 +68,7 @@ public class AmiProductEntityDetail implements Serializable {
   private SupportInformation supportInformation;
 
   public static final String JSON_PROPERTY_DIMENSIONS = "Dimensions";
-  private List<Dimension> dimensions;
+  private List<Dimension> dimensions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TARGETING = "Targeting";
   private Targeting targeting;
@@ -93,10 +93,10 @@ public class AmiProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get versions
    * @return versions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,17 +112,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.versions = versions;
   }
 
-
   public AmiProductEntityDetail description(Description description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -138,17 +137,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public AmiProductEntityDetail promotionalResources(PromotionalResources promotionalResources) {
     
     this.promotionalResources = promotionalResources;
     return this;
   }
 
-   /**
+  /**
    * Get promotionalResources
    * @return promotionalResources
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROMOTIONAL_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -164,17 +162,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.promotionalResources = promotionalResources;
   }
 
-
   public AmiProductEntityDetail regionAvailability(RegionAvailability regionAvailability) {
     
     this.regionAvailability = regionAvailability;
     return this;
   }
 
-   /**
+  /**
    * Get regionAvailability
    * @return regionAvailability
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REGION_AVAILABILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -190,17 +187,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.regionAvailability = regionAvailability;
   }
 
-
   public AmiProductEntityDetail supportInformation(SupportInformation supportInformation) {
     
     this.supportInformation = supportInformation;
     return this;
   }
 
-   /**
+  /**
    * Get supportInformation
    * @return supportInformation
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUPPORT_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -216,7 +212,6 @@ public class AmiProductEntityDetail implements Serializable {
     this.supportInformation = supportInformation;
   }
 
-
   public AmiProductEntityDetail dimensions(List<Dimension> dimensions) {
     
     this.dimensions = dimensions;
@@ -231,10 +226,10 @@ public class AmiProductEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get dimensions
    * @return dimensions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DIMENSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,17 +245,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.dimensions = dimensions;
   }
 
-
   public AmiProductEntityDetail targeting(Targeting targeting) {
     
     this.targeting = targeting;
     return this;
   }
 
-   /**
+  /**
    * Get targeting
    * @return targeting
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TARGETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -276,17 +270,16 @@ public class AmiProductEntityDetail implements Serializable {
     this.targeting = targeting;
   }
 
-
   public AmiProductEntityDetail compatibility(Compatibility compatibility) {
     
     this.compatibility = compatibility;
     return this;
   }
 
-   /**
+  /**
    * Get compatibility
    * @return compatibility
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPATIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

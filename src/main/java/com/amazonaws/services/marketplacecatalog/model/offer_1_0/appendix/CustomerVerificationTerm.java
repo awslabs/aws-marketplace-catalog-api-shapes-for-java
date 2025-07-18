@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CustomerVerificationTerm.JSON_PROPERTY_EXPIRATION_DURATION,
   CustomerVerificationTerm.JSON_PROPERTY_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class CustomerVerificationTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -56,10 +56,10 @@ public class CustomerVerificationTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get approvalStrategy
    * @return approvalStrategy
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPROVAL_STRATEGY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,17 +75,16 @@ public class CustomerVerificationTerm implements Serializable {
     this.approvalStrategy = approvalStrategy;
   }
 
-
   public CustomerVerificationTerm expirationDuration(String expirationDuration) {
     
     this.expirationDuration = expirationDuration;
     return this;
   }
 
-   /**
+  /**
    * ExpirationDuration is required if ApprovalStrategy is one of [&#39;AutoApproveOnExpiration&#39;, &#39;AutoRejectOnExpiration&#39;]. It must not have ExpirationDuration if ApprovalStrategy is &#39;WaitForApproval&#39;
    * @return expirationDuration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXPIRATION_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -101,17 +100,16 @@ public class CustomerVerificationTerm implements Serializable {
     this.expirationDuration = expirationDuration;
   }
 
-
   public CustomerVerificationTerm type(CustomerVerificationTermType type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

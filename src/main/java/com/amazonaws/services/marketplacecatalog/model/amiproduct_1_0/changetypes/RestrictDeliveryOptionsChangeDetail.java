@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   RestrictDeliveryOptionsChangeDetail.JSON_PROPERTY_DELIVERY_OPTION_IDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class RestrictDeliveryOptionsChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -57,10 +57,10 @@ public class RestrictDeliveryOptionsChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryOptionIds
    * @return deliveryOptionIds
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERY_OPTION_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

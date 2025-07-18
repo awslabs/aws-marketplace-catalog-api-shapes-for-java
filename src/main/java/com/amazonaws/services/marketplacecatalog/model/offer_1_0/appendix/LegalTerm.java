@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   LegalTerm.JSON_PROPERTY_TYPE,
   LegalTerm.JSON_PROPERTY_DOCUMENTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class LegalTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -55,10 +55,10 @@ public class LegalTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,7 +74,6 @@ public class LegalTerm implements Serializable {
     this.type = type;
   }
 
-
   public LegalTerm documents(List<DocumentItem> documents) {
     
     this.documents = documents;
@@ -89,10 +88,10 @@ public class LegalTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get documents
    * @return documents
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOCUMENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

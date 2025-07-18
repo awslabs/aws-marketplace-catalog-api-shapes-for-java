@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DocumentItem.JSON_PROPERTY_URL,
   DocumentItem.JSON_PROPERTY_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DocumentItem implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -56,10 +56,10 @@ public class DocumentItem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,17 +75,16 @@ public class DocumentItem implements Serializable {
     this.type = type;
   }
 
-
   public DocumentItem url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * Url is required for custom documents (i.e. one of [&#39;CustomEula&#39;, &#39;CustomDsa&#39;]
    * @return url
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -101,17 +100,16 @@ public class DocumentItem implements Serializable {
     this.url = url;
   }
 
-
   public DocumentItem version(LegalDocumentVersion version) {
     
     this.version = version;
     return this;
   }
 
-   /**
+  /**
    * Get version
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

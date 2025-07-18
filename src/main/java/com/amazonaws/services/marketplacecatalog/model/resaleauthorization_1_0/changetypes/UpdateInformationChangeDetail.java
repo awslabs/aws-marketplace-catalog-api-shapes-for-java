@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UpdateInformationChangeDetail.JSON_PROPERTY_DESCRIPTION,
   UpdateInformationChangeDetail.JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateInformationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -55,10 +55,10 @@ public class UpdateInformationChangeDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -74,17 +74,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.name = name;
   }
 
-
   public UpdateInformationChangeDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -100,17 +99,16 @@ public class UpdateInformationChangeDetail implements Serializable {
     this.description = description;
   }
 
-
   public UpdateInformationChangeDetail preExistingBuyerAgreement(PreExistingBuyerAgreement preExistingBuyerAgreement) {
     
     this.preExistingBuyerAgreement = preExistingBuyerAgreement;
     return this;
   }
 
-   /**
+  /**
    * Get preExistingBuyerAgreement
    * @return preExistingBuyerAgreement
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

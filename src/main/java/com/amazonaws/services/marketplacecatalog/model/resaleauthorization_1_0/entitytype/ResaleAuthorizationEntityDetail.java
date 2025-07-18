@@ -50,7 +50,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_MANUFACTURER_LEGAL_NAME,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_MANUFACTURER_ACCOUNT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ResaleAuthorizationEntityDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -73,16 +73,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
   private PreExistingBuyerAgreement preExistingBuyerAgreement;
 
   public static final String JSON_PROPERTY_DIMENSIONS = "Dimensions";
-  private List<Dimension> dimensions;
+  private List<Dimension> dimensions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_OFFER_DETAILS = "OfferDetails";
   private OfferDetails offerDetails;
 
   public static final String JSON_PROPERTY_TERMS = "Terms";
-  private List<Term> terms;
+  private List<Term> terms = new ArrayList<>();
 
   public static final String JSON_PROPERTY_RULES = "Rules";
-  private List<Rule> rules;
+  private List<Rule> rules = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CREATED_DATE = "CreatedDate";
   private String createdDate;
@@ -102,10 +102,10 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -121,17 +121,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.name = name;
   }
 
-
   public ResaleAuthorizationEntityDetail description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -147,17 +146,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.description = description;
   }
 
-
   public ResaleAuthorizationEntityDetail productId(String productId) {
     
     this.productId = productId;
     return this;
   }
 
-   /**
+  /**
    * Get productId
    * @return productId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -173,17 +171,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.productId = productId;
   }
 
-
   public ResaleAuthorizationEntityDetail productName(String productName) {
     
     this.productName = productName;
     return this;
   }
 
-   /**
+  /**
    * Get productName
    * @return productName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -199,17 +196,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.productName = productName;
   }
 
-
   public ResaleAuthorizationEntityDetail status(String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -225,17 +221,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.status = status;
   }
 
-
   public ResaleAuthorizationEntityDetail preExistingBuyerAgreement(PreExistingBuyerAgreement preExistingBuyerAgreement) {
     
     this.preExistingBuyerAgreement = preExistingBuyerAgreement;
     return this;
   }
 
-   /**
+  /**
    * Get preExistingBuyerAgreement
    * @return preExistingBuyerAgreement
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,7 +246,6 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.preExistingBuyerAgreement = preExistingBuyerAgreement;
   }
 
-
   public ResaleAuthorizationEntityDetail dimensions(List<Dimension> dimensions) {
     
     this.dimensions = dimensions;
@@ -266,10 +260,10 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get dimensions
    * @return dimensions
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DIMENSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -285,17 +279,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.dimensions = dimensions;
   }
 
-
   public ResaleAuthorizationEntityDetail offerDetails(OfferDetails offerDetails) {
     
     this.offerDetails = offerDetails;
     return this;
   }
 
-   /**
+  /**
    * Get offerDetails
    * @return offerDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFER_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -311,7 +304,6 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.offerDetails = offerDetails;
   }
 
-
   public ResaleAuthorizationEntityDetail terms(List<Term> terms) {
     
     this.terms = terms;
@@ -326,10 +318,10 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get terms
    * @return terms
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TERMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,7 +337,6 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.terms = terms;
   }
 
-
   public ResaleAuthorizationEntityDetail rules(List<Rule> rules) {
     
     this.rules = rules;
@@ -360,10 +351,10 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rules
    * @return rules
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -379,17 +370,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.rules = rules;
   }
 
-
   public ResaleAuthorizationEntityDetail createdDate(String createdDate) {
     
     this.createdDate = createdDate;
     return this;
   }
 
-   /**
+  /**
    * Get createdDate
    * @return createdDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -405,17 +395,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.createdDate = createdDate;
   }
 
-
   public ResaleAuthorizationEntityDetail manufacturerLegalName(String manufacturerLegalName) {
     
     this.manufacturerLegalName = manufacturerLegalName;
     return this;
   }
 
-   /**
+  /**
    * Get manufacturerLegalName
    * @return manufacturerLegalName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MANUFACTURER_LEGAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -431,17 +420,16 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.manufacturerLegalName = manufacturerLegalName;
   }
 
-
   public ResaleAuthorizationEntityDetail manufacturerAccountId(String manufacturerAccountId) {
     
     this.manufacturerAccountId = manufacturerAccountId;
     return this;
   }
 
-   /**
+  /**
    * Get manufacturerAccountId
    * @return manufacturerAccountId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MANUFACTURER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

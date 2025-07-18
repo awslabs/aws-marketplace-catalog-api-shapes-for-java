@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   BuyerTargetingTerm.JSON_PROPERTY_TYPE,
   BuyerTargetingTerm.JSON_PROPERTY_POSITIVE_TARGETING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class BuyerTargetingTerm implements Serializable {
   private static final long serialVersionUID = 1L;
 
@@ -52,10 +52,10 @@ public class BuyerTargetingTerm implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,17 +71,16 @@ public class BuyerTargetingTerm implements Serializable {
     this.type = type;
   }
 
-
   public BuyerTargetingTerm positiveTargeting(PositiveTargeting positiveTargeting) {
     
     this.positiveTargeting = positiveTargeting;
     return this;
   }
 
-   /**
+  /**
    * Get positiveTargeting
    * @return positiveTargeting
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_POSITIVE_TARGETING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -34,12 +34,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 @JsonPropertyOrder({
   UsageBasedRateCardItem.JSON_PROPERTY_RATE_CARD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UsageBasedRateCardItem implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_RATE_CARD = "RateCard";
-  private List<RateCardItem> rateCard;
+  private List<RateCardItem> rateCard = new ArrayList<>();
 
   public UsageBasedRateCardItem() {
   }
@@ -58,10 +58,10 @@ public class UsageBasedRateCardItem implements Serializable {
     return this;
   }
 
-   /**
+  /**
    * Get rateCard
    * @return rateCard
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATE_CARD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
