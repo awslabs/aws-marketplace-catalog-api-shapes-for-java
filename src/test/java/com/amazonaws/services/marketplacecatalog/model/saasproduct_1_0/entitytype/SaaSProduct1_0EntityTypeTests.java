@@ -220,4 +220,148 @@ public class SaaSProduct1_0EntityTypeTests {
 
         assertEquals(expectedDetail, actualDetail);
     }
+
+    @Test
+    public void testSaasProductApiDeliveryOptionEntityDetail() throws Exception {
+        String json = "{\n" +
+                "  \"Description\": {\n" +
+                "    \"ProductTitle\": \"Test Product\",\n" +
+                "    \"ProductCode\": \"5cqs4jta6m2iuh6jak7s7bjsy\",\n" +
+                "    \"ShortDescription\": \"Test Product\",\n" +
+                "    \"LongDescription\": \"SaaS test product\",\n" +
+                "    \"Sku\": \"SKU\",\n" +
+                "    \"Highlights\": [\"Config adds no run-time overheads\"],\n" +
+                "    \"AssociatedProducts\": null,\n" +
+                "    \"SearchKeywords\": [\"example\", \"keywords\"],\n" +
+                "    \"Visibility\": \"Restricted\",\n" +
+                "    \"ReplacementProductId\": \"prod-1234567890123\",\n" +
+                "    \"ProductState\": \"Active\",\n" +
+                "    \"Categories\": [\"Source Control\"]\n" +
+                "  },\n" +
+                "  \"PromotionalResources\": {\n" +
+                "    \"LogoUrl\": \"https://s3.amazonaws.com/awsmp-logos/logo.png\",\n" +
+                "    \"Videos\": [{\n" +
+                "      \"Type\": \"Link\",\n" +
+                "      \"Title\": \"Product Video\",\n" +
+                "      \"Url\": \"https://s3.amazonaws.com/awsmp-media/video.mp4\"\n" +
+                "    }],\n" +
+                "    \"AdditionalResources\": [{\n" +
+                "      \"Type\": \"Link\",\n" +
+                "      \"Text\": \"Sample Resource\",\n" +
+                "      \"Url\": \"https://amazon.com\"\n" +
+                "    }]\n" +
+                "  },\n" +
+                "  \"SupportInformation\": {\n" +
+                "    \"Description\": \"Product support information\"\n" +
+                "  },\n" +
+                "  \"Dimensions\": [{\n" +
+                "    \"Name\": \"Free Forever Plan\",\n" +
+                "    \"Description\": \"Free Forever Plan\",\n" +
+                "    \"Key\": \"FreePlan\",\n" +
+                "    \"Unit\": \"Units\",\n" +
+                "    \"Types\": [\"ExternallyMetered\"]\n" +
+                "  }],\n" +
+                "  \"Versions\": [{\n" +
+                "    \"Id\": \"version-57xgyhrofhrqm\",\n" +
+                "    \"DeliveryOptions\": [{\n" +
+                "      \"Id\": \"do-api123\",\n" +
+                "      \"Type\": \"ApiDelivery\",\n" +
+                "      \"ApiType\": \"MCP_SERVER\",\n" +
+                "      \"QuickLaunchEnabled\": true,\n" +
+                "      \"CompatibleServices\": [\"Bedrock-AgentCore\"],\n" +
+                "      \"FulfillmentUrl\": \"https://api.example.com/register\",\n" +
+                "      \"UsageInstructions\": \"Connect to our MCP server endpoint\",\n" +
+                "      \"Endpoints\": [{\n" +
+                "        \"Name\": \"MainEndpoint\",\n" +
+                "        \"EndpointUrl\": \"https://api.example.com/mcp\",\n" +
+                "        \"Description\": \"Main MCP server endpoint\",\n" +
+                "        \"AuthorizationTypes\": [\"API_KEY\"],\n" +
+                "        \"Schemas\": [],\n" +
+                "        \"IntegrationProtocols\": [{\n" +
+                "          \"Type\": \"MCP\",\n" +
+                "          \"UsageInstructions\": \"Use MCP protocol for integration\"\n" +
+                "        }]\n" +
+                "      }],\n" +
+                "      \"Visibility\": \"Limited\",\n" +
+                "      \"Targeting\": {\n" +
+                "        \"PositiveTargeting\": {\n" +
+                "          \"BuyerAccounts\": [\"123456789123\"]\n" +
+                "        }\n" +
+                "      }\n" +
+                "    }]\n" +
+                "  }],\n" +
+                "  \"Targeting\": {\n" +
+                "    \"PositiveTargeting\": {\n" +
+                "      \"BuyerAccounts\": [\"123456789123\"]\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+
+        SaaSProductEntityDetail actualDetail = mapper.readValue(json, SaaSProductEntityDetail.class);
+
+        SaaSProductEntityDetail expectedDetail = new SaaSProductEntityDetail()
+                .description(new Description()
+                        .productTitle("Test Product")
+                        .productCode("5cqs4jta6m2iuh6jak7s7bjsy")
+                        .shortDescription("Test Product")
+                        .longDescription("SaaS test product")
+                        .associatedProducts(null)
+                        .highlights(Collections.singletonList("Config adds no run-time overheads"))
+                        .searchKeywords(Arrays.asList("example", "keywords"))
+                        .sku("SKU")
+                        .visibility("Restricted")
+                        .replacementProductId("prod-1234567890123")
+                        .productState("Active")
+                        .categories(Collections.singletonList("Source Control")))
+                .promotionalResources(new PromotionalResources()
+                        .logoUrl("https://s3.amazonaws.com/awsmp-logos/logo.png")
+                        .videos(Collections.singletonList(new Video()
+                                .type("Link")
+                                .title("Product Video")
+                                .url("https://s3.amazonaws.com/awsmp-media/video.mp4")))
+                        .additionalResources(Collections.singletonList(new AdditionalResource()
+                                .type("Link")
+                                .text("Sample Resource")
+                                .url("https://amazon.com"))))
+                .supportInformation(new SupportInformation()
+                        .description("Product support information"))
+                .dimensions(Collections.singletonList(
+                        new Dimension()
+                                .name("Free Forever Plan")
+                                .description("Free Forever Plan")
+                                .key("FreePlan")
+                                .unit("Units")
+                                .types(Collections.singletonList("ExternallyMetered"))))
+                .versions(Collections.singletonList(new Version()
+                        .id("version-57xgyhrofhrqm")
+                        .deliveryOptions(Collections.singletonList(
+                                new DeliveryOption()
+                                        .id("do-api123")
+                                        .type("ApiDelivery")
+                                        .apiType("MCP_SERVER")
+                                        .quickLaunchEnabled(true)
+                                        .compatibleServices(Collections.singletonList("Bedrock-AgentCore"))
+                                        .fulfillmentUrl("https://api.example.com/register")
+                                        .usageInstructions("Connect to our MCP server endpoint")
+                                        .endpoints(Collections.singletonList(
+                                                new Endpoint()
+                                                        .name("MainEndpoint")
+                                                        .endpointUrl("https://api.example.com/mcp")
+                                                        .description("Main MCP server endpoint")
+                                                        .authorizationTypes(Collections.singletonList("API_KEY"))
+                                                        .schemas(Collections.emptyList())
+                                                        .integrationProtocols(Collections.singletonList(
+                                                                new IntegrationProtocol()
+                                                                        .type("MCP")
+                                                                        .usageInstructions("Use MCP protocol for integration")))))
+                                        .visibility("Limited")
+                                        .targeting(new Targeting()
+                                                .positiveTargeting(new PositiveTargeting()
+                                                        .buyerAccounts(Collections.singletonList("123456789123"))))))))
+                .targeting(new Targeting()
+                        .positiveTargeting(new PositiveTargeting()
+                                .buyerAccounts(Collections.singletonList("123456789123"))));
+
+        assertEquals(expectedDetail, actualDetail);
+    }
 }

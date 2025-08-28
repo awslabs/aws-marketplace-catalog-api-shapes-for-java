@@ -16,6 +16,7 @@ package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entityty
 import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.DeploymentTemplate;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.Endpoint;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.Targeting;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -41,7 +42,10 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DeliveryOption.JSON_PROPERTY_DEPLOYMENT_TEMPLATES,
   DeliveryOption.JSON_PROPERTY_USAGE_INSTRUCTIONS,
   DeliveryOption.JSON_PROPERTY_VISIBILITY,
-  DeliveryOption.JSON_PROPERTY_TARGETING
+  DeliveryOption.JSON_PROPERTY_TARGETING,
+  DeliveryOption.JSON_PROPERTY_API_TYPE,
+  DeliveryOption.JSON_PROPERTY_COMPATIBLE_SERVICES,
+  DeliveryOption.JSON_PROPERTY_ENDPOINTS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class DeliveryOption implements Serializable {
@@ -73,6 +77,15 @@ public class DeliveryOption implements Serializable {
 
   public static final String JSON_PROPERTY_TARGETING = "Targeting";
   private Targeting targeting;
+
+  public static final String JSON_PROPERTY_API_TYPE = "ApiType";
+  private String apiType;
+
+  public static final String JSON_PROPERTY_COMPATIBLE_SERVICES = "CompatibleServices";
+  private List<String> compatibleServices = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_ENDPOINTS = "Endpoints";
+  private List<Endpoint> endpoints = new ArrayList<>();
 
   public DeliveryOption() {
   }
@@ -310,6 +323,97 @@ public class DeliveryOption implements Serializable {
     this.targeting = targeting;
   }
 
+  public DeliveryOption apiType(String apiType) {
+    
+    this.apiType = apiType;
+    return this;
+  }
+
+  /**
+   * Get apiType
+   * @return apiType
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_API_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getApiType() {
+    return apiType;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_API_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setApiType(String apiType) {
+    this.apiType = apiType;
+  }
+
+  public DeliveryOption compatibleServices(List<String> compatibleServices) {
+    
+    this.compatibleServices = compatibleServices;
+    return this;
+  }
+
+  public DeliveryOption addCompatibleServicesItem(String compatibleServicesItem) {
+    if (this.compatibleServices == null) {
+      this.compatibleServices = new ArrayList<>();
+    }
+    this.compatibleServices.add(compatibleServicesItem);
+    return this;
+  }
+
+  /**
+   * Get compatibleServices
+   * @return compatibleServices
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_COMPATIBLE_SERVICES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getCompatibleServices() {
+    return compatibleServices;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_COMPATIBLE_SERVICES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCompatibleServices(List<String> compatibleServices) {
+    this.compatibleServices = compatibleServices;
+  }
+
+  public DeliveryOption endpoints(List<Endpoint> endpoints) {
+    
+    this.endpoints = endpoints;
+    return this;
+  }
+
+  public DeliveryOption addEndpointsItem(Endpoint endpointsItem) {
+    if (this.endpoints == null) {
+      this.endpoints = new ArrayList<>();
+    }
+    this.endpoints.add(endpointsItem);
+    return this;
+  }
+
+  /**
+   * Get endpoints
+   * @return endpoints
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ENDPOINTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<Endpoint> getEndpoints() {
+    return endpoints;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ENDPOINTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEndpoints(List<Endpoint> endpoints) {
+    this.endpoints = endpoints;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -327,12 +431,15 @@ public class DeliveryOption implements Serializable {
         Objects.equals(this.deploymentTemplates, deliveryOption.deploymentTemplates) &&
         Objects.equals(this.usageInstructions, deliveryOption.usageInstructions) &&
         Objects.equals(this.visibility, deliveryOption.visibility) &&
-        Objects.equals(this.targeting, deliveryOption.targeting);
+        Objects.equals(this.targeting, deliveryOption.targeting) &&
+        Objects.equals(this.apiType, deliveryOption.apiType) &&
+        Objects.equals(this.compatibleServices, deliveryOption.compatibleServices) &&
+        Objects.equals(this.endpoints, deliveryOption.endpoints);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, type, fulfillmentUrl, quickLaunchEnabled, launchUrl, deploymentTemplates, usageInstructions, visibility, targeting);
+    return Objects.hash(id, type, fulfillmentUrl, quickLaunchEnabled, launchUrl, deploymentTemplates, usageInstructions, visibility, targeting, apiType, compatibleServices, endpoints);
   }
 
   @Override
@@ -348,6 +455,9 @@ public class DeliveryOption implements Serializable {
     sb.append("    usageInstructions: ").append(toIndentedString(usageInstructions)).append("\n");
     sb.append("    visibility: ").append(toIndentedString(visibility)).append("\n");
     sb.append("    targeting: ").append(toIndentedString(targeting)).append("\n");
+    sb.append("    apiType: ").append(toIndentedString(apiType)).append("\n");
+    sb.append("    compatibleServices: ").append(toIndentedString(compatibleServices)).append("\n");
+    sb.append("    endpoints: ").append(toIndentedString(endpoints)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -15,6 +15,7 @@ package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changety
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.AddApiDeliveryOptionDetails;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.AddSaaSUrlDeliveryOptionDetails;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,10 +27,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * AddDeliveryOptionDetails
+ * One of [SaaSUrlDeliveryOptionDetails, ApiDeliveryOptionDetails] is required
  */
 @JsonPropertyOrder({
-  AddDeliveryOptionDetails.JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS
+  AddDeliveryOptionDetails.JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS,
+  AddDeliveryOptionDetails.JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AddDeliveryOptionDetails implements Serializable {
@@ -37,6 +39,9 @@ public class AddDeliveryOptionDetails implements Serializable {
 
   public static final String JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS = "SaaSUrlDeliveryOptionDetails";
   private AddSaaSUrlDeliveryOptionDetails saaSUrlDeliveryOptionDetails;
+
+  public static final String JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS = "ApiDeliveryOptionDetails";
+  private AddApiDeliveryOptionDetails apiDeliveryOptionDetails;
 
   public AddDeliveryOptionDetails() {
   }
@@ -51,9 +56,9 @@ public class AddDeliveryOptionDetails implements Serializable {
    * Get saaSUrlDeliveryOptionDetails
    * @return saaSUrlDeliveryOptionDetails
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public AddSaaSUrlDeliveryOptionDetails getSaaSUrlDeliveryOptionDetails() {
     return saaSUrlDeliveryOptionDetails;
@@ -61,9 +66,34 @@ public class AddDeliveryOptionDetails implements Serializable {
 
 
   @JsonProperty(JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSaaSUrlDeliveryOptionDetails(AddSaaSUrlDeliveryOptionDetails saaSUrlDeliveryOptionDetails) {
     this.saaSUrlDeliveryOptionDetails = saaSUrlDeliveryOptionDetails;
+  }
+
+  public AddDeliveryOptionDetails apiDeliveryOptionDetails(AddApiDeliveryOptionDetails apiDeliveryOptionDetails) {
+    
+    this.apiDeliveryOptionDetails = apiDeliveryOptionDetails;
+    return this;
+  }
+
+  /**
+   * Get apiDeliveryOptionDetails
+   * @return apiDeliveryOptionDetails
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public AddApiDeliveryOptionDetails getApiDeliveryOptionDetails() {
+    return apiDeliveryOptionDetails;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setApiDeliveryOptionDetails(AddApiDeliveryOptionDetails apiDeliveryOptionDetails) {
+    this.apiDeliveryOptionDetails = apiDeliveryOptionDetails;
   }
 
   @Override
@@ -75,12 +105,13 @@ public class AddDeliveryOptionDetails implements Serializable {
       return false;
     }
     AddDeliveryOptionDetails addDeliveryOptionDetails = (AddDeliveryOptionDetails) o;
-    return Objects.equals(this.saaSUrlDeliveryOptionDetails, addDeliveryOptionDetails.saaSUrlDeliveryOptionDetails);
+    return Objects.equals(this.saaSUrlDeliveryOptionDetails, addDeliveryOptionDetails.saaSUrlDeliveryOptionDetails) &&
+        Objects.equals(this.apiDeliveryOptionDetails, addDeliveryOptionDetails.apiDeliveryOptionDetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(saaSUrlDeliveryOptionDetails);
+    return Objects.hash(saaSUrlDeliveryOptionDetails, apiDeliveryOptionDetails);
   }
 
   @Override
@@ -88,6 +119,7 @@ public class AddDeliveryOptionDetails implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class AddDeliveryOptionDetails {\n");
     sb.append("    saaSUrlDeliveryOptionDetails: ").append(toIndentedString(saaSUrlDeliveryOptionDetails)).append("\n");
+    sb.append("    apiDeliveryOptionDetails: ").append(toIndentedString(apiDeliveryOptionDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }
