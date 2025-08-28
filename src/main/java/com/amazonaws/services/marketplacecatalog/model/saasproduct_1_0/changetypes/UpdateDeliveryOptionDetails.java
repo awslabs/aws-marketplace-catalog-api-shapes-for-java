@@ -15,6 +15,7 @@ package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changety
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.UpdateApiDeliveryOptionDetails;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.UpdateSaaSUrlDeliveryOptionDetails;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  * UpdateDeliveryOptionDetails
  */
 @JsonPropertyOrder({
-  UpdateDeliveryOptionDetails.JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS
+  UpdateDeliveryOptionDetails.JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS,
+  UpdateDeliveryOptionDetails.JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class UpdateDeliveryOptionDetails implements Serializable {
@@ -37,6 +39,9 @@ public class UpdateDeliveryOptionDetails implements Serializable {
 
   public static final String JSON_PROPERTY_SAA_S_URL_DELIVERY_OPTION_DETAILS = "SaaSUrlDeliveryOptionDetails";
   private UpdateSaaSUrlDeliveryOptionDetails saaSUrlDeliveryOptionDetails;
+
+  public static final String JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS = "ApiDeliveryOptionDetails";
+  private UpdateApiDeliveryOptionDetails apiDeliveryOptionDetails;
 
   public UpdateDeliveryOptionDetails() {
   }
@@ -66,6 +71,31 @@ public class UpdateDeliveryOptionDetails implements Serializable {
     this.saaSUrlDeliveryOptionDetails = saaSUrlDeliveryOptionDetails;
   }
 
+  public UpdateDeliveryOptionDetails apiDeliveryOptionDetails(UpdateApiDeliveryOptionDetails apiDeliveryOptionDetails) {
+    
+    this.apiDeliveryOptionDetails = apiDeliveryOptionDetails;
+    return this;
+  }
+
+  /**
+   * Get apiDeliveryOptionDetails
+   * @return apiDeliveryOptionDetails
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public UpdateApiDeliveryOptionDetails getApiDeliveryOptionDetails() {
+    return apiDeliveryOptionDetails;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_API_DELIVERY_OPTION_DETAILS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setApiDeliveryOptionDetails(UpdateApiDeliveryOptionDetails apiDeliveryOptionDetails) {
+    this.apiDeliveryOptionDetails = apiDeliveryOptionDetails;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -75,12 +105,13 @@ public class UpdateDeliveryOptionDetails implements Serializable {
       return false;
     }
     UpdateDeliveryOptionDetails updateDeliveryOptionDetails = (UpdateDeliveryOptionDetails) o;
-    return Objects.equals(this.saaSUrlDeliveryOptionDetails, updateDeliveryOptionDetails.saaSUrlDeliveryOptionDetails);
+    return Objects.equals(this.saaSUrlDeliveryOptionDetails, updateDeliveryOptionDetails.saaSUrlDeliveryOptionDetails) &&
+        Objects.equals(this.apiDeliveryOptionDetails, updateDeliveryOptionDetails.apiDeliveryOptionDetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(saaSUrlDeliveryOptionDetails);
+    return Objects.hash(saaSUrlDeliveryOptionDetails, apiDeliveryOptionDetails);
   }
 
   @Override
@@ -88,6 +119,7 @@ public class UpdateDeliveryOptionDetails implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class UpdateDeliveryOptionDetails {\n");
     sb.append("    saaSUrlDeliveryOptionDetails: ").append(toIndentedString(saaSUrlDeliveryOptionDetails)).append("\n");
+    sb.append("    apiDeliveryOptionDetails: ").append(toIndentedString(apiDeliveryOptionDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }

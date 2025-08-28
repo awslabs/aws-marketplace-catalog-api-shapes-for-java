@@ -298,4 +298,142 @@ public class SaaSProduct1_0ChangeTypeTests {
 
         JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
     }
+
+    @Test
+    public void testAddApiDeliveryOptionsChangeDetail() throws Exception {
+        AddDeliveryOptionsChangeDetail detail = new AddDeliveryOptionsChangeDetail()
+                .deliveryOptions(Collections.singletonList(new AddDeliveryOption()
+                        .details(new AddDeliveryOptionDetails()
+                                .apiDeliveryOptionDetails(new AddApiDeliveryOptionDetails()
+                                        .apiType(ApiType.MCP_SERVER)
+                                        .quickLaunchEnabled(Boolean.TRUE)
+                                        .compatibleServices(Collections.singletonList(CompatibleService.BEDROCK_AGENT_CORE))
+                                        .fulfillmentUrl("https://api.example.com/register")
+                                        .usageInstructions("Connect to our MCP server endpoint")
+                                        .endpoints(Collections.singletonList(new ApiEndpoint()
+                                                .name("MainEndpoint")
+                                                .endpointUrl("https://api.example.com/mcp")
+                                                .description("Main MCP server endpoint")
+                                                .authorizationTypes(Collections.singletonList(AuthorizationType.API_KEY))
+                                                .schemas(Collections.emptyList())
+                                                .integrationProtocols(Collections.singletonList(new IntegrationProtocol()
+                                                        .type(ProtocolType.MCP)
+                                                        .usageInstructions("Use MCP protocol for integration")))))))));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"DeliveryOptions\": [{\n" +
+                "      \"Details\": {\n" +
+                "          \"ApiDeliveryOptionDetails\":  {\n" +
+                "            \"ApiType\": \"MCP_SERVER\",\n" +
+                "            \"QuickLaunchEnabled\": true,\n" +
+                "            \"CompatibleServices\": [\"Bedrock-AgentCore\"],\n" +
+                "            \"FulfillmentUrl\": \"https://api.example.com/register\",\n" +
+                "            \"UsageInstructions\": \"Connect to our MCP server endpoint\",\n" +
+                "            \"Endpoints\": [{\n" +
+                "              \"Name\": \"MainEndpoint\",\n" +
+                "              \"EndpointUrl\": \"https://api.example.com/mcp\",\n" +
+                "              \"Description\": \"Main MCP server endpoint\",\n" +
+                "              \"AuthorizationTypes\": [\"API_KEY\"],\n" +
+                "              \"IntegrationProtocols\": [{\n" +
+                "                \"Type\": \"MCP\",\n" +
+                "                \"UsageInstructions\": \"Use MCP protocol for integration\"\n" +
+                "              }]\n" +
+                "            }]\n" +
+                "          }\n" +
+                "      }\n" +
+                "  }]\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
+    public void testUpdateApiDeliveryOptionsChangeDetail() throws Exception {
+        UpdateDeliveryOptionsChangeDetail detail = new UpdateDeliveryOptionsChangeDetail()
+                .deliveryOptions(Collections.singletonList(new UpdateDeliveryOption()
+                        .id("do-api123456789")
+                        .details(new UpdateDeliveryOptionDetails()
+                                .apiDeliveryOptionDetails(new UpdateApiDeliveryOptionDetails()
+                                        .usageInstructions("Updated MCP server instructions")
+                                        .endpoints(Collections.singletonList(new ApiEndpoint()
+                                                .endpointUrl("https://api.example.com/mcp/v2")
+                                                .authorizationTypes(Collections.singletonList(AuthorizationType.OAUTH2))))))));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"DeliveryOptions\": [{\n" +
+                "      \"Id\": \"do-api123456789\",\n" +
+                "      \"Details\": {\n" +
+                "          \"ApiDeliveryOptionDetails\":  {\n" +
+                "            \"UsageInstructions\": \"Updated MCP server instructions\",\n" +
+                "            \"Endpoints\": [{\n" +
+                "              \"EndpointUrl\": \"https://api.example.com/mcp/v2\",\n" +
+                "              \"AuthorizationTypes\": [\"OAUTH2\"]\n" +
+                "            }]\n" +
+                "          }\n" +
+                "      }\n" +
+                "  }]\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
+    public void testAddApiDeliveryOptionsWithSchemasChangeDetail() throws Exception {
+        AddDeliveryOptionsChangeDetail detail = new AddDeliveryOptionsChangeDetail()
+                .deliveryOptions(Collections.singletonList(new AddDeliveryOption()
+                        .details(new AddDeliveryOptionDetails()
+                                .apiDeliveryOptionDetails(new AddApiDeliveryOptionDetails()
+                                        .apiType(ApiType.MCP_SERVER)
+                                        .quickLaunchEnabled(Boolean.TRUE)
+                                        .compatibleServices(Collections.singletonList(CompatibleService.BEDROCK_AGENT_CORE))
+                                        .fulfillmentUrl("https://api.example.com/register")
+                                        .usageInstructions("Connect to our MCP server endpoint")
+                                        .endpoints(Collections.singletonList(new ApiEndpoint()
+                                                .name("MainEndpoint")
+                                                .endpointUrl("https://api.example.com/mcp")
+                                                .description("Main MCP server endpoint")
+                                                .authorizationTypes(Collections.singletonList(AuthorizationType.API_KEY))
+                                                .schemas(Collections.singletonList(new ApiSchema()
+                                                        .type(SchemaType.OPEN_API)
+                                                        .schemaUrl("https://api.example.com/schema.json")))
+                                                .integrationProtocols(Collections.singletonList(new IntegrationProtocol()
+                                                        .type(ProtocolType.MCP)
+                                                        .usageInstructions("Use MCP protocol for integration")))))))));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"DeliveryOptions\": [{\n" +
+                "      \"Details\": {\n" +
+                "          \"ApiDeliveryOptionDetails\":  {\n" +
+                "            \"ApiType\": \"MCP_SERVER\",\n" +
+                "            \"QuickLaunchEnabled\": true,\n" +
+                "            \"CompatibleServices\": [\"Bedrock-AgentCore\"],\n" +
+                "            \"FulfillmentUrl\": \"https://api.example.com/register\",\n" +
+                "            \"UsageInstructions\": \"Connect to our MCP server endpoint\",\n" +
+                "            \"Endpoints\": [{\n" +
+                "              \"Name\": \"MainEndpoint\",\n" +
+                "              \"EndpointUrl\": \"https://api.example.com/mcp\",\n" +
+                "              \"Description\": \"Main MCP server endpoint\",\n" +
+                "              \"AuthorizationTypes\": [\"API_KEY\"],\n" +
+                "              \"Schemas\": [{\n" +
+                "                \"Type\": \"OPEN_API\",\n" +
+                "                \"SchemaUrl\": \"https://api.example.com/schema.json\"\n" +
+                "              }],\n" +
+                "              \"IntegrationProtocols\": [{\n" +
+                "                \"Type\": \"MCP\",\n" +
+                "                \"UsageInstructions\": \"Use MCP protocol for integration\"\n" +
+                "              }]\n" +
+                "            }]\n" +
+                "          }\n" +
+                "      }\n" +
+                "  }]\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
 }
