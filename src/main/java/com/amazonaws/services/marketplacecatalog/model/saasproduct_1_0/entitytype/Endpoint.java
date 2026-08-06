@@ -16,6 +16,7 @@ package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entityty
 import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.ApiSchema;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.EndpointUrlParameter;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.entitytype.IntegrationProtocol;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,11 +35,13 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  */
 @JsonPropertyOrder({
   Endpoint.JSON_PROPERTY_NAME,
+  Endpoint.JSON_PROPERTY_ENDPOINT_TYPE,
   Endpoint.JSON_PROPERTY_ENDPOINT_URL,
   Endpoint.JSON_PROPERTY_DESCRIPTION,
   Endpoint.JSON_PROPERTY_AUTHORIZATION_TYPES,
   Endpoint.JSON_PROPERTY_SCHEMAS,
-  Endpoint.JSON_PROPERTY_INTEGRATION_PROTOCOLS
+  Endpoint.JSON_PROPERTY_INTEGRATION_PROTOCOLS,
+  Endpoint.JSON_PROPERTY_ENDPOINT_URL_PARAMETERS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Endpoint implements Serializable {
@@ -46,6 +49,9 @@ public class Endpoint implements Serializable {
 
   public static final String JSON_PROPERTY_NAME = "Name";
   private String name;
+
+  public static final String JSON_PROPERTY_ENDPOINT_TYPE = "EndpointType";
+  private String endpointType;
 
   public static final String JSON_PROPERTY_ENDPOINT_URL = "EndpointUrl";
   private String endpointUrl;
@@ -61,6 +67,9 @@ public class Endpoint implements Serializable {
 
   public static final String JSON_PROPERTY_INTEGRATION_PROTOCOLS = "IntegrationProtocols";
   private List<IntegrationProtocol> integrationProtocols = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_ENDPOINT_URL_PARAMETERS = "EndpointUrlParameters";
+  private List<EndpointUrlParameter> endpointUrlParameters = new ArrayList<>();
 
   public Endpoint() {
   }
@@ -88,6 +97,31 @@ public class Endpoint implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(String name) {
     this.name = name;
+  }
+
+  public Endpoint endpointType(String endpointType) {
+    
+    this.endpointType = endpointType;
+    return this;
+  }
+
+  /**
+   * Get endpointType
+   * @return endpointType
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getEndpointType() {
+    return endpointType;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEndpointType(String endpointType) {
+    this.endpointType = endpointType;
   }
 
   public Endpoint endpointUrl(String endpointUrl) {
@@ -239,6 +273,39 @@ public class Endpoint implements Serializable {
     this.integrationProtocols = integrationProtocols;
   }
 
+  public Endpoint endpointUrlParameters(List<EndpointUrlParameter> endpointUrlParameters) {
+    
+    this.endpointUrlParameters = endpointUrlParameters;
+    return this;
+  }
+
+  public Endpoint addEndpointUrlParametersItem(EndpointUrlParameter endpointUrlParametersItem) {
+    if (this.endpointUrlParameters == null) {
+      this.endpointUrlParameters = new ArrayList<>();
+    }
+    this.endpointUrlParameters.add(endpointUrlParametersItem);
+    return this;
+  }
+
+  /**
+   * Get endpointUrlParameters
+   * @return endpointUrlParameters
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_URL_PARAMETERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<EndpointUrlParameter> getEndpointUrlParameters() {
+    return endpointUrlParameters;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_URL_PARAMETERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEndpointUrlParameters(List<EndpointUrlParameter> endpointUrlParameters) {
+    this.endpointUrlParameters = endpointUrlParameters;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -249,16 +316,18 @@ public class Endpoint implements Serializable {
     }
     Endpoint endpoint = (Endpoint) o;
     return Objects.equals(this.name, endpoint.name) &&
+        Objects.equals(this.endpointType, endpoint.endpointType) &&
         Objects.equals(this.endpointUrl, endpoint.endpointUrl) &&
         Objects.equals(this.description, endpoint.description) &&
         Objects.equals(this.authorizationTypes, endpoint.authorizationTypes) &&
         Objects.equals(this.schemas, endpoint.schemas) &&
-        Objects.equals(this.integrationProtocols, endpoint.integrationProtocols);
+        Objects.equals(this.integrationProtocols, endpoint.integrationProtocols) &&
+        Objects.equals(this.endpointUrlParameters, endpoint.endpointUrlParameters);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, endpointUrl, description, authorizationTypes, schemas, integrationProtocols);
+    return Objects.hash(name, endpointType, endpointUrl, description, authorizationTypes, schemas, integrationProtocols, endpointUrlParameters);
   }
 
   @Override
@@ -266,11 +335,13 @@ public class Endpoint implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class Endpoint {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    endpointType: ").append(toIndentedString(endpointType)).append("\n");
     sb.append("    endpointUrl: ").append(toIndentedString(endpointUrl)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    authorizationTypes: ").append(toIndentedString(authorizationTypes)).append("\n");
     sb.append("    schemas: ").append(toIndentedString(schemas)).append("\n");
     sb.append("    integrationProtocols: ").append(toIndentedString(integrationProtocols)).append("\n");
+    sb.append("    endpointUrlParameters: ").append(toIndentedString(endpointUrlParameters)).append("\n");
     sb.append("}");
     return sb.toString();
   }

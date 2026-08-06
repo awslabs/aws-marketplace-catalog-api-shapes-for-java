@@ -436,4 +436,64 @@ public class SaaSProduct1_0ChangeTypeTests {
 
         JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
     }
+
+    @Test
+    public void testAddApiDeliveryOptionsWithDynamicEndpointChangeDetail() throws Exception {
+        AddDeliveryOptionsChangeDetail detail = new AddDeliveryOptionsChangeDetail()
+                .deliveryOptions(Collections.singletonList(new AddDeliveryOption()
+                        .details(new AddDeliveryOptionDetails()
+                                .apiDeliveryOptionDetails(new AddApiDeliveryOptionDetails()
+                                        .apiType(ApiType.MCP_SERVER)
+                                        .quickLaunchEnabled(Boolean.TRUE)
+                                        .compatibleServices(Collections.singletonList(CompatibleService.BEDROCK_AGENT_CORE))
+                                        .fulfillmentUrl("https://api.example.com/register")
+                                        .usageInstructions("Connect to our MCP server endpoint")
+                                        .endpoints(Collections.singletonList(new ApiEndpoint()
+                                                .name("DynamicEndpoint")
+                                                .endpointType(EndpointType.DYNAMIC)
+                                                .endpointUrl("https://api.example.com/v1/{tenantId}/agent")
+                                                .description("Dynamic MCP server endpoint")
+                                                .authorizationTypes(Collections.singletonList(AuthorizationType.API_KEY))
+                                                .integrationProtocols(Collections.singletonList(new IntegrationProtocol()
+                                                        .type(ProtocolType.MCP)
+                                                        .usageInstructions("Use MCP protocol for integration")))
+                                                .endpointUrlParameters(Collections.singletonList(new EndpointUrlParameter()
+                                                        .name("tenantId")
+                                                        .description("Buyer tenant identifier")
+                                                        .defaultValue("default-tenant")))))))));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"DeliveryOptions\": [{\n" +
+                "      \"Details\": {\n" +
+                "          \"ApiDeliveryOptionDetails\":  {\n" +
+                "            \"ApiType\": \"MCP_SERVER\",\n" +
+                "            \"QuickLaunchEnabled\": true,\n" +
+                "            \"CompatibleServices\": [\"Bedrock-AgentCore\"],\n" +
+                "            \"FulfillmentUrl\": \"https://api.example.com/register\",\n" +
+                "            \"UsageInstructions\": \"Connect to our MCP server endpoint\",\n" +
+                "            \"Endpoints\": [{\n" +
+                "              \"Name\": \"DynamicEndpoint\",\n" +
+                "              \"EndpointType\": \"DYNAMIC\",\n" +
+                "              \"EndpointUrl\": \"https://api.example.com/v1/{tenantId}/agent\",\n" +
+                "              \"Description\": \"Dynamic MCP server endpoint\",\n" +
+                "              \"AuthorizationTypes\": [\"API_KEY\"],\n" +
+                "              \"IntegrationProtocols\": [{\n" +
+                "                \"Type\": \"MCP\",\n" +
+                "                \"UsageInstructions\": \"Use MCP protocol for integration\"\n" +
+                "              }],\n" +
+                "              \"EndpointUrlParameters\": [{\n" +
+                "                \"Name\": \"tenantId\",\n" +
+                "                \"Description\": \"Buyer tenant identifier\",\n" +
+                "                \"DefaultValue\": \"default-tenant\"\n" +
+                "              }]\n" +
+                "            }]\n" +
+                "          }\n" +
+                "      }\n" +
+                "  }]\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
 }

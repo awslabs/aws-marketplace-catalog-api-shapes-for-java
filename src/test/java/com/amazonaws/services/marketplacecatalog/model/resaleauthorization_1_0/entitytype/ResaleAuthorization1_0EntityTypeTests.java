@@ -26,6 +26,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "  \"Description\": \"Canary test description\",\n" +
                 "  \"ProductId\": \"b199549a-6c5d-49a0-8217-607972c6f4f9\",\n" +
                 "  \"ProductName\": \"Channel CAPI Integ Test Product (SaaS CCP)\",\n" +
+                "  \"PricingModel\": \"Contract\",\n" +
                 "  \"Status\": \"Active\",\n" +
                 "  \"PreExistingBuyerAgreement\": {\n" +
                 "    \"AcquisitionChannel\": \"Unknown\",\n" +
@@ -176,6 +177,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 .description("Canary test description")
                 .productId("b199549a-6c5d-49a0-8217-607972c6f4f9")
                 .productName("Channel CAPI Integ Test Product (SaaS CCP)")
+                .pricingModel("Contract")
                 .status("Active")
                 .preExistingBuyerAgreement(new PreExistingBuyerAgreement()
                         .acquisitionChannel("Unknown")

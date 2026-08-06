@@ -40,6 +40,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_DESCRIPTION,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRODUCT_ID,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRODUCT_NAME,
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRICING_MODEL,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_STATUS,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_DIMENSIONS,
@@ -65,6 +66,9 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
 
   public static final String JSON_PROPERTY_PRODUCT_NAME = "ProductName";
   private String productName;
+
+  public static final String JSON_PROPERTY_PRICING_MODEL = "PricingModel";
+  private String pricingModel;
 
   public static final String JSON_PROPERTY_STATUS = "Status";
   private String status;
@@ -194,6 +198,31 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProductName(String productName) {
     this.productName = productName;
+  }
+
+  public ResaleAuthorizationEntityDetail pricingModel(String pricingModel) {
+    
+    this.pricingModel = pricingModel;
+    return this;
+  }
+
+  /**
+   * Get pricingModel
+   * @return pricingModel
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PRICING_MODEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getPricingModel() {
+    return pricingModel;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PRICING_MODEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setPricingModel(String pricingModel) {
+    this.pricingModel = pricingModel;
   }
 
   public ResaleAuthorizationEntityDetail status(String status) {
@@ -458,6 +487,7 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
         Objects.equals(this.description, resaleAuthorizationEntityDetail.description) &&
         Objects.equals(this.productId, resaleAuthorizationEntityDetail.productId) &&
         Objects.equals(this.productName, resaleAuthorizationEntityDetail.productName) &&
+        Objects.equals(this.pricingModel, resaleAuthorizationEntityDetail.pricingModel) &&
         Objects.equals(this.status, resaleAuthorizationEntityDetail.status) &&
         Objects.equals(this.preExistingBuyerAgreement, resaleAuthorizationEntityDetail.preExistingBuyerAgreement) &&
         Objects.equals(this.dimensions, resaleAuthorizationEntityDetail.dimensions) &&
@@ -471,7 +501,7 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, description, productId, productName, status, preExistingBuyerAgreement, dimensions, offerDetails, terms, rules, createdDate, manufacturerLegalName, manufacturerAccountId);
+    return Objects.hash(name, description, productId, productName, pricingModel, status, preExistingBuyerAgreement, dimensions, offerDetails, terms, rules, createdDate, manufacturerLegalName, manufacturerAccountId);
   }
 
   @Override
@@ -482,6 +512,7 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    productName: ").append(toIndentedString(productName)).append("\n");
+    sb.append("    pricingModel: ").append(toIndentedString(pricingModel)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    preExistingBuyerAgreement: ").append(toIndentedString(preExistingBuyerAgreement)).append("\n");
     sb.append("    dimensions: ").append(toIndentedString(dimensions)).append("\n");
