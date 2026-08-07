@@ -184,9 +184,9 @@ public class AddApiDeliveryOptionDetails implements Serializable {
    * Get usageInstructions
    * @return usageInstructions
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUsageInstructions() {
     return usageInstructions;
@@ -194,7 +194,7 @@ public class AddApiDeliveryOptionDetails implements Serializable {
 
 
   @JsonProperty(JSON_PROPERTY_USAGE_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsageInstructions(String usageInstructions) {
     this.usageInstructions = usageInstructions;
   }

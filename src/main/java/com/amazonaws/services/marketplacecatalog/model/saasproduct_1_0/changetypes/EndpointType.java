@@ -1,5 +1,5 @@
 /*
- * ResaleAuthorization_1_0_ChangeTypes
+ * SaaSProduct_1_0_ChangeTypes
  *     Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
  *
  * The version of the OpenAPI document: 1.0
@@ -11,7 +11,7 @@
  */
 
 
-package com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.changetypes;
+package com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -23,19 +23,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Gets or Sets UpdatePricingModel
+ * Gets or Sets EndpointType
  */
-public enum UpdatePricingModel {
+public enum EndpointType {
   
-  FREE("Free"),
+  STATIC("STATIC"),
   
-  USAGE("Usage"),
-  
-  CONTRACT("Contract");
+  DYNAMIC("DYNAMIC");
 
   private String value;
 
-  UpdatePricingModel(String value) {
+  EndpointType(String value) {
     this.value = value;
   }
 
@@ -50,8 +48,8 @@ public enum UpdatePricingModel {
   }
 
   @JsonCreator
-  public static UpdatePricingModel fromValue(String value) {
-    for (UpdatePricingModel b : UpdatePricingModel.values()) {
+  public static EndpointType fromValue(String value) {
+    for (EndpointType b : EndpointType.values()) {
       if (b.value.equals(value)) {
         return b;
       }

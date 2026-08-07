@@ -364,4 +364,104 @@ public class SaaSProduct1_0EntityTypeTests {
 
         assertEquals(expectedDetail, actualDetail);
     }
+
+    @Test
+    public void testSaasProductApiDeliveryOptionWithDynamicEndpointEntityDetail() throws Exception {
+        String json = "{\n" +
+                "  \"Description\": {\n" +
+                "    \"ProductTitle\": \"Test Product\",\n" +
+                "    \"ProductCode\": \"5cqs4jta6m2iuh6jak7s7bjsy\",\n" +
+                "    \"ShortDescription\": \"Test Product\",\n" +
+                "    \"LongDescription\": \"SaaS test product\",\n" +
+                "    \"Sku\": \"SKU\",\n" +
+                "    \"Highlights\": [\"MCP Server integration\"],\n" +
+                "    \"SearchKeywords\": [\"api\", \"mcp\"],\n" +
+                "    \"Visibility\": \"Public\",\n" +
+                "    \"ProductState\": \"Active\",\n" +
+                "    \"Categories\": [\"AI Services\"]\n" +
+                "  },\n" +
+                "  \"Versions\": [{\n" +
+                "    \"Id\": \"version-api123\",\n" +
+                "    \"DeliveryOptions\": [{\n" +
+                "      \"Id\": \"do-api123\",\n" +
+                "      \"Type\": \"ApiDelivery\",\n" +
+                "      \"ApiType\": \"MCP_SERVER\",\n" +
+                "      \"QuickLaunchEnabled\": true,\n" +
+                "      \"CompatibleServices\": [\"Bedrock-AgentCore\"],\n" +
+                "      \"FulfillmentUrl\": \"https://api.example.com/register\",\n" +
+                "      \"UsageInstructions\": \"Connect to our MCP server endpoint\",\n" +
+                "      \"Endpoints\": [{\n" +
+                "        \"Name\": \"DynamicEndpoint\",\n" +
+                "        \"EndpointType\": \"DYNAMIC\",\n" +
+                "        \"EndpointUrl\": \"https://api.example.com/v1/{tenantId}/agent\",\n" +
+                "        \"Description\": \"Dynamic MCP server endpoint\",\n" +
+                "        \"AuthorizationTypes\": [\"API_KEY\"],\n" +
+                "        \"IntegrationProtocols\": [{\n" +
+                "          \"Type\": \"MCP\",\n" +
+                "          \"UsageInstructions\": \"Use MCP protocol for integration\"\n" +
+                "        }],\n" +
+                "        \"EndpointUrlParameters\": [{\n" +
+                "          \"Name\": \"tenantId\",\n" +
+                "          \"Description\": \"Buyer tenant identifier\",\n" +
+                "          \"DefaultValue\": \"default-tenant\"\n" +
+                "        }]\n" +
+                "      }],\n" +
+                "      \"Visibility\": \"Public\"\n" +
+                "    }]\n" +
+                "  }],\n" +
+                "  \"Targeting\": {\n" +
+                "    \"PositiveTargeting\": {\n" +
+                "      \"BuyerAccounts\": [\"123456789123\"]\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+
+        SaaSProductEntityDetail actualDetail = mapper.readValue(json, SaaSProductEntityDetail.class);
+
+        SaaSProductEntityDetail expectedDetail = new SaaSProductEntityDetail()
+                .description(new Description()
+                        .productTitle("Test Product")
+                        .productCode("5cqs4jta6m2iuh6jak7s7bjsy")
+                        .shortDescription("Test Product")
+                        .longDescription("SaaS test product")
+                        .highlights(Collections.singletonList("MCP Server integration"))
+                        .searchKeywords(Arrays.asList("api", "mcp"))
+                        .sku("SKU")
+                        .visibility("Public")
+                        .productState("Active")
+                        .categories(Collections.singletonList("AI Services")))
+                .versions(Collections.singletonList(new Version()
+                        .id("version-api123")
+                        .deliveryOptions(Collections.singletonList(
+                                new DeliveryOption()
+                                        .id("do-api123")
+                                        .type("ApiDelivery")
+                                        .apiType("MCP_SERVER")
+                                        .quickLaunchEnabled(true)
+                                        .compatibleServices(Collections.singletonList("Bedrock-AgentCore"))
+                                        .fulfillmentUrl("https://api.example.com/register")
+                                        .usageInstructions("Connect to our MCP server endpoint")
+                                        .endpoints(Collections.singletonList(
+                                                new Endpoint()
+                                                        .name("DynamicEndpoint")
+                                                        .endpointType("DYNAMIC")
+                                                        .endpointUrl("https://api.example.com/v1/{tenantId}/agent")
+                                                        .description("Dynamic MCP server endpoint")
+                                                        .authorizationTypes(Collections.singletonList("API_KEY"))
+                                                        .integrationProtocols(Collections.singletonList(
+                                                                new IntegrationProtocol()
+                                                                        .type("MCP")
+                                                                        .usageInstructions("Use MCP protocol for integration")))
+                                                        .endpointUrlParameters(Collections.singletonList(
+                                                                new EndpointUrlParameter()
+                                                                        .name("tenantId")
+                                                                        .description("Buyer tenant identifier")
+                                                                        .defaultValue("default-tenant")))))
+                                        .visibility("Public")))))
+                .targeting(new Targeting()
+                        .positiveTargeting(new PositiveTargeting()
+                                .buyerAccounts(Collections.singletonList("123456789123"))));
+
+        assertEquals(expectedDetail, actualDetail);
+    }
 }

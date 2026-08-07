@@ -17,6 +17,8 @@ import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.ApiSchema;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.AuthorizationType;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.EndpointType;
+import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.EndpointUrlParameter;
 import com.amazonaws.services.marketplacecatalog.model.saasproduct_1_0.changetypes.IntegrationProtocol;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,11 +37,13 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  */
 @JsonPropertyOrder({
   ApiEndpoint.JSON_PROPERTY_NAME,
+  ApiEndpoint.JSON_PROPERTY_ENDPOINT_TYPE,
   ApiEndpoint.JSON_PROPERTY_ENDPOINT_URL,
   ApiEndpoint.JSON_PROPERTY_DESCRIPTION,
   ApiEndpoint.JSON_PROPERTY_AUTHORIZATION_TYPES,
   ApiEndpoint.JSON_PROPERTY_SCHEMAS,
-  ApiEndpoint.JSON_PROPERTY_INTEGRATION_PROTOCOLS
+  ApiEndpoint.JSON_PROPERTY_INTEGRATION_PROTOCOLS,
+  ApiEndpoint.JSON_PROPERTY_ENDPOINT_URL_PARAMETERS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ApiEndpoint implements Serializable {
@@ -47,6 +51,9 @@ public class ApiEndpoint implements Serializable {
 
   public static final String JSON_PROPERTY_NAME = "Name";
   private String name;
+
+  public static final String JSON_PROPERTY_ENDPOINT_TYPE = "EndpointType";
+  private EndpointType endpointType;
 
   public static final String JSON_PROPERTY_ENDPOINT_URL = "EndpointUrl";
   private String endpointUrl;
@@ -62,6 +69,9 @@ public class ApiEndpoint implements Serializable {
 
   public static final String JSON_PROPERTY_INTEGRATION_PROTOCOLS = "IntegrationProtocols";
   private List<IntegrationProtocol> integrationProtocols = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_ENDPOINT_URL_PARAMETERS = "EndpointUrlParameters";
+  private List<EndpointUrlParameter> endpointUrlParameters = new ArrayList<>();
 
   public ApiEndpoint() {
   }
@@ -89,6 +99,31 @@ public class ApiEndpoint implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(String name) {
     this.name = name;
+  }
+
+  public ApiEndpoint endpointType(EndpointType endpointType) {
+    
+    this.endpointType = endpointType;
+    return this;
+  }
+
+  /**
+   * Get endpointType
+   * @return endpointType
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public EndpointType getEndpointType() {
+    return endpointType;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_TYPE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEndpointType(EndpointType endpointType) {
+    this.endpointType = endpointType;
   }
 
   public ApiEndpoint endpointUrl(String endpointUrl) {
@@ -240,6 +275,39 @@ public class ApiEndpoint implements Serializable {
     this.integrationProtocols = integrationProtocols;
   }
 
+  public ApiEndpoint endpointUrlParameters(List<EndpointUrlParameter> endpointUrlParameters) {
+    
+    this.endpointUrlParameters = endpointUrlParameters;
+    return this;
+  }
+
+  public ApiEndpoint addEndpointUrlParametersItem(EndpointUrlParameter endpointUrlParametersItem) {
+    if (this.endpointUrlParameters == null) {
+      this.endpointUrlParameters = new ArrayList<>();
+    }
+    this.endpointUrlParameters.add(endpointUrlParametersItem);
+    return this;
+  }
+
+  /**
+   * Get endpointUrlParameters
+   * @return endpointUrlParameters
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_URL_PARAMETERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<EndpointUrlParameter> getEndpointUrlParameters() {
+    return endpointUrlParameters;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ENDPOINT_URL_PARAMETERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEndpointUrlParameters(List<EndpointUrlParameter> endpointUrlParameters) {
+    this.endpointUrlParameters = endpointUrlParameters;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -250,16 +318,18 @@ public class ApiEndpoint implements Serializable {
     }
     ApiEndpoint apiEndpoint = (ApiEndpoint) o;
     return Objects.equals(this.name, apiEndpoint.name) &&
+        Objects.equals(this.endpointType, apiEndpoint.endpointType) &&
         Objects.equals(this.endpointUrl, apiEndpoint.endpointUrl) &&
         Objects.equals(this.description, apiEndpoint.description) &&
         Objects.equals(this.authorizationTypes, apiEndpoint.authorizationTypes) &&
         Objects.equals(this.schemas, apiEndpoint.schemas) &&
-        Objects.equals(this.integrationProtocols, apiEndpoint.integrationProtocols);
+        Objects.equals(this.integrationProtocols, apiEndpoint.integrationProtocols) &&
+        Objects.equals(this.endpointUrlParameters, apiEndpoint.endpointUrlParameters);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, endpointUrl, description, authorizationTypes, schemas, integrationProtocols);
+    return Objects.hash(name, endpointType, endpointUrl, description, authorizationTypes, schemas, integrationProtocols, endpointUrlParameters);
   }
 
   @Override
@@ -267,11 +337,13 @@ public class ApiEndpoint implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApiEndpoint {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    endpointType: ").append(toIndentedString(endpointType)).append("\n");
     sb.append("    endpointUrl: ").append(toIndentedString(endpointUrl)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    authorizationTypes: ").append(toIndentedString(authorizationTypes)).append("\n");
     sb.append("    schemas: ").append(toIndentedString(schemas)).append("\n");
     sb.append("    integrationProtocols: ").append(toIndentedString(integrationProtocols)).append("\n");
+    sb.append("    endpointUrlParameters: ").append(toIndentedString(endpointUrlParameters)).append("\n");
     sb.append("}");
     return sb.toString();
   }
