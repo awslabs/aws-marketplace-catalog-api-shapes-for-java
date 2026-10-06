@@ -34,7 +34,8 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Rule.JSON_PROPERTY_AVAILABILITY_END_DATE,
   Rule.JSON_PROPERTY_OFFERS_MAX_QUANTITY,
   Rule.JSON_PROPERTY_RESELLER_ACCOUNT_ID,
-  Rule.JSON_PROPERTY_RESELLER_LEGAL_NAME
+  Rule.JSON_PROPERTY_RESELLER_LEGAL_NAME,
+  Rule.JSON_PROPERTY_RESELLER_ROLE
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Rule implements Serializable {
@@ -60,6 +61,9 @@ public class Rule implements Serializable {
 
   public static final String JSON_PROPERTY_RESELLER_LEGAL_NAME = "ResellerLegalName";
   private String resellerLegalName;
+
+  public static final String JSON_PROPERTY_RESELLER_ROLE = "ResellerRole";
+  private String resellerRole;
 
   public Rule() {
   }
@@ -239,6 +243,31 @@ public class Rule implements Serializable {
     this.resellerLegalName = resellerLegalName;
   }
 
+  public Rule resellerRole(String resellerRole) {
+    
+    this.resellerRole = resellerRole;
+    return this;
+  }
+
+  /**
+   * Get resellerRole
+   * @return resellerRole
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_RESELLER_ROLE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getResellerRole() {
+    return resellerRole;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_RESELLER_ROLE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setResellerRole(String resellerRole) {
+    this.resellerRole = resellerRole;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -254,12 +283,13 @@ public class Rule implements Serializable {
         Objects.equals(this.availabilityEndDate, rule.availabilityEndDate) &&
         Objects.equals(this.offersMaxQuantity, rule.offersMaxQuantity) &&
         Objects.equals(this.resellerAccountId, rule.resellerAccountId) &&
-        Objects.equals(this.resellerLegalName, rule.resellerLegalName);
+        Objects.equals(this.resellerLegalName, rule.resellerLegalName) &&
+        Objects.equals(this.resellerRole, rule.resellerRole);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, id, usage, availabilityEndDate, offersMaxQuantity, resellerAccountId, resellerLegalName);
+    return Objects.hash(type, id, usage, availabilityEndDate, offersMaxQuantity, resellerAccountId, resellerLegalName, resellerRole);
   }
 
   @Override
@@ -273,6 +303,7 @@ public class Rule implements Serializable {
     sb.append("    offersMaxQuantity: ").append(toIndentedString(offersMaxQuantity)).append("\n");
     sb.append("    resellerAccountId: ").append(toIndentedString(resellerAccountId)).append("\n");
     sb.append("    resellerLegalName: ").append(toIndentedString(resellerLegalName)).append("\n");
+    sb.append("    resellerRole: ").append(toIndentedString(resellerRole)).append("\n");
     sb.append("}");
     return sb.toString();
   }

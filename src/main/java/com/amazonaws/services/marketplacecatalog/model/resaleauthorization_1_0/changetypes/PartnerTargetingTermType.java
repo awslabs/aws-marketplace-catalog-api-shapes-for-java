@@ -23,27 +23,15 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Gets or Sets PricingTermCurrencyCode
+ * Gets or Sets PartnerTargetingTermType
  */
-public enum PricingTermCurrencyCode {
+public enum PartnerTargetingTermType {
   
-  USD("USD"),
-  
-  AUD("AUD"),
-  
-  EUR("EUR"),
-  
-  GBP("GBP"),
-  
-  JPY("JPY"),
-  
-  CAD("CAD"),
-  
-  INR("INR");
+  PARTNER_TARGETING_TERM("PartnerTargetingTerm");
 
   private String value;
 
-  PricingTermCurrencyCode(String value) {
+  PartnerTargetingTermType(String value) {
     this.value = value;
   }
 
@@ -58,8 +46,8 @@ public enum PricingTermCurrencyCode {
   }
 
   @JsonCreator
-  public static PricingTermCurrencyCode fromValue(String value) {
-    for (PricingTermCurrencyCode b : PricingTermCurrencyCode.values()) {
+  public static PartnerTargetingTermType fromValue(String value) {
+    for (PartnerTargetingTermType b : PartnerTargetingTermType.values()) {
       if (b.value.equals(value)) {
         return b;
       }

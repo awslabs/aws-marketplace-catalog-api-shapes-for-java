@@ -39,17 +39,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_NAME,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_DESCRIPTION,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRODUCT_ID,
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRODUCT_ARN,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRODUCT_NAME,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRICING_MODEL,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_STATUS,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT,
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_SOURCE_AUTHORIZATION,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_DIMENSIONS,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_OFFER_DETAILS,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_TERMS,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_RULES,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_CREATED_DATE,
   ResaleAuthorizationEntityDetail.JSON_PROPERTY_MANUFACTURER_LEGAL_NAME,
-  ResaleAuthorizationEntityDetail.JSON_PROPERTY_MANUFACTURER_ACCOUNT_ID
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_MANUFACTURER_ACCOUNT_ID,
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_ISSUER_ACCOUNT_ID,
+  ResaleAuthorizationEntityDetail.JSON_PROPERTY_ISSUER_LEGAL_NAME
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ResaleAuthorizationEntityDetail implements Serializable {
@@ -64,6 +68,9 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
   public static final String JSON_PROPERTY_PRODUCT_ID = "ProductId";
   private String productId;
 
+  public static final String JSON_PROPERTY_PRODUCT_ARN = "ProductArn";
+  private String productArn;
+
   public static final String JSON_PROPERTY_PRODUCT_NAME = "ProductName";
   private String productName;
 
@@ -75,6 +82,9 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
 
   public static final String JSON_PROPERTY_PRE_EXISTING_BUYER_AGREEMENT = "PreExistingBuyerAgreement";
   private PreExistingBuyerAgreement preExistingBuyerAgreement;
+
+  public static final String JSON_PROPERTY_SOURCE_AUTHORIZATION = "SourceAuthorization";
+  private String sourceAuthorization;
 
   public static final String JSON_PROPERTY_DIMENSIONS = "Dimensions";
   private List<Dimension> dimensions = new ArrayList<>();
@@ -96,6 +106,12 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
 
   public static final String JSON_PROPERTY_MANUFACTURER_ACCOUNT_ID = "ManufacturerAccountId";
   private String manufacturerAccountId;
+
+  public static final String JSON_PROPERTY_ISSUER_ACCOUNT_ID = "IssuerAccountId";
+  private String issuerAccountId;
+
+  public static final String JSON_PROPERTY_ISSUER_LEGAL_NAME = "IssuerLegalName";
+  private String issuerLegalName;
 
   public ResaleAuthorizationEntityDetail() {
   }
@@ -173,6 +189,31 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProductId(String productId) {
     this.productId = productId;
+  }
+
+  public ResaleAuthorizationEntityDetail productArn(String productArn) {
+    
+    this.productArn = productArn;
+    return this;
+  }
+
+  /**
+   * Get productArn
+   * @return productArn
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PRODUCT_ARN)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getProductArn() {
+    return productArn;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PRODUCT_ARN)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setProductArn(String productArn) {
+    this.productArn = productArn;
   }
 
   public ResaleAuthorizationEntityDetail productName(String productName) {
@@ -273,6 +314,31 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPreExistingBuyerAgreement(PreExistingBuyerAgreement preExistingBuyerAgreement) {
     this.preExistingBuyerAgreement = preExistingBuyerAgreement;
+  }
+
+  public ResaleAuthorizationEntityDetail sourceAuthorization(String sourceAuthorization) {
+    
+    this.sourceAuthorization = sourceAuthorization;
+    return this;
+  }
+
+  /**
+   * Get sourceAuthorization
+   * @return sourceAuthorization
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SOURCE_AUTHORIZATION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getSourceAuthorization() {
+    return sourceAuthorization;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SOURCE_AUTHORIZATION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSourceAuthorization(String sourceAuthorization) {
+    this.sourceAuthorization = sourceAuthorization;
   }
 
   public ResaleAuthorizationEntityDetail dimensions(List<Dimension> dimensions) {
@@ -474,6 +540,56 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     this.manufacturerAccountId = manufacturerAccountId;
   }
 
+  public ResaleAuthorizationEntityDetail issuerAccountId(String issuerAccountId) {
+    
+    this.issuerAccountId = issuerAccountId;
+    return this;
+  }
+
+  /**
+   * Get issuerAccountId
+   * @return issuerAccountId
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ISSUER_ACCOUNT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getIssuerAccountId() {
+    return issuerAccountId;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ISSUER_ACCOUNT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIssuerAccountId(String issuerAccountId) {
+    this.issuerAccountId = issuerAccountId;
+  }
+
+  public ResaleAuthorizationEntityDetail issuerLegalName(String issuerLegalName) {
+    
+    this.issuerLegalName = issuerLegalName;
+    return this;
+  }
+
+  /**
+   * Get issuerLegalName
+   * @return issuerLegalName
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ISSUER_LEGAL_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getIssuerLegalName() {
+    return issuerLegalName;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ISSUER_LEGAL_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIssuerLegalName(String issuerLegalName) {
+    this.issuerLegalName = issuerLegalName;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -486,22 +602,26 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     return Objects.equals(this.name, resaleAuthorizationEntityDetail.name) &&
         Objects.equals(this.description, resaleAuthorizationEntityDetail.description) &&
         Objects.equals(this.productId, resaleAuthorizationEntityDetail.productId) &&
+        Objects.equals(this.productArn, resaleAuthorizationEntityDetail.productArn) &&
         Objects.equals(this.productName, resaleAuthorizationEntityDetail.productName) &&
         Objects.equals(this.pricingModel, resaleAuthorizationEntityDetail.pricingModel) &&
         Objects.equals(this.status, resaleAuthorizationEntityDetail.status) &&
         Objects.equals(this.preExistingBuyerAgreement, resaleAuthorizationEntityDetail.preExistingBuyerAgreement) &&
+        Objects.equals(this.sourceAuthorization, resaleAuthorizationEntityDetail.sourceAuthorization) &&
         Objects.equals(this.dimensions, resaleAuthorizationEntityDetail.dimensions) &&
         Objects.equals(this.offerDetails, resaleAuthorizationEntityDetail.offerDetails) &&
         Objects.equals(this.terms, resaleAuthorizationEntityDetail.terms) &&
         Objects.equals(this.rules, resaleAuthorizationEntityDetail.rules) &&
         Objects.equals(this.createdDate, resaleAuthorizationEntityDetail.createdDate) &&
         Objects.equals(this.manufacturerLegalName, resaleAuthorizationEntityDetail.manufacturerLegalName) &&
-        Objects.equals(this.manufacturerAccountId, resaleAuthorizationEntityDetail.manufacturerAccountId);
+        Objects.equals(this.manufacturerAccountId, resaleAuthorizationEntityDetail.manufacturerAccountId) &&
+        Objects.equals(this.issuerAccountId, resaleAuthorizationEntityDetail.issuerAccountId) &&
+        Objects.equals(this.issuerLegalName, resaleAuthorizationEntityDetail.issuerLegalName);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, description, productId, productName, pricingModel, status, preExistingBuyerAgreement, dimensions, offerDetails, terms, rules, createdDate, manufacturerLegalName, manufacturerAccountId);
+    return Objects.hash(name, description, productId, productArn, productName, pricingModel, status, preExistingBuyerAgreement, sourceAuthorization, dimensions, offerDetails, terms, rules, createdDate, manufacturerLegalName, manufacturerAccountId, issuerAccountId, issuerLegalName);
   }
 
   @Override
@@ -511,10 +631,12 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    productArn: ").append(toIndentedString(productArn)).append("\n");
     sb.append("    productName: ").append(toIndentedString(productName)).append("\n");
     sb.append("    pricingModel: ").append(toIndentedString(pricingModel)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    preExistingBuyerAgreement: ").append(toIndentedString(preExistingBuyerAgreement)).append("\n");
+    sb.append("    sourceAuthorization: ").append(toIndentedString(sourceAuthorization)).append("\n");
     sb.append("    dimensions: ").append(toIndentedString(dimensions)).append("\n");
     sb.append("    offerDetails: ").append(toIndentedString(offerDetails)).append("\n");
     sb.append("    terms: ").append(toIndentedString(terms)).append("\n");
@@ -522,6 +644,8 @@ public class ResaleAuthorizationEntityDetail implements Serializable {
     sb.append("    createdDate: ").append(toIndentedString(createdDate)).append("\n");
     sb.append("    manufacturerLegalName: ").append(toIndentedString(manufacturerLegalName)).append("\n");
     sb.append("    manufacturerAccountId: ").append(toIndentedString(manufacturerAccountId)).append("\n");
+    sb.append("    issuerAccountId: ").append(toIndentedString(issuerAccountId)).append("\n");
+    sb.append("    issuerLegalName: ").append(toIndentedString(issuerLegalName)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -35,7 +35,11 @@ public enum UpdatePaymentScheduleTermCurrencyCode {
   
   GBP("GBP"),
   
-  JPY("JPY");
+  JPY("JPY"),
+  
+  CAD("CAD"),
+  
+  INR("INR");
 
   private String value;
 

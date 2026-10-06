@@ -15,7 +15,7 @@ package com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.changetypes.ResellerRole;
+import com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.changetypes.CreateUsingResaleAuthorizationResellerRole;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -26,17 +26,17 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
- * CreateResaleAuthorizationChangeDetail
+ * CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail
  */
 @JsonPropertyOrder({
-  CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_NAME,
-  CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_DESCRIPTION,
-  CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_PRODUCT_ID,
-  CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_RESELLER_ACCOUNT_ID,
-  CreateResaleAuthorizationChangeDetail.JSON_PROPERTY_RESELLER_ROLE
+  CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_NAME,
+  CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_DESCRIPTION,
+  CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_RESALE_AUTHORIZATION_ID,
+  CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_RESELLER_ACCOUNT_ID,
+  CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail.JSON_PROPERTY_RESELLER_ROLE
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
-public class CreateResaleAuthorizationChangeDetail implements Serializable {
+public class CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail implements Serializable {
   private static final long serialVersionUID = 1L;
 
   public static final String JSON_PROPERTY_NAME = "Name";
@@ -45,19 +45,19 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
   public static final String JSON_PROPERTY_DESCRIPTION = "Description";
   private String description;
 
-  public static final String JSON_PROPERTY_PRODUCT_ID = "ProductId";
-  private String productId;
+  public static final String JSON_PROPERTY_RESALE_AUTHORIZATION_ID = "ResaleAuthorizationId";
+  private String resaleAuthorizationId;
 
   public static final String JSON_PROPERTY_RESELLER_ACCOUNT_ID = "ResellerAccountId";
   private String resellerAccountId;
 
   public static final String JSON_PROPERTY_RESELLER_ROLE = "ResellerRole";
-  private ResellerRole resellerRole;
+  private CreateUsingResaleAuthorizationResellerRole resellerRole;
 
-  public CreateResaleAuthorizationChangeDetail() {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail() {
   }
 
-  public CreateResaleAuthorizationChangeDetail name(String name) {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail name(String name) {
     
     this.name = name;
     return this;
@@ -82,7 +82,7 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.name = name;
   }
 
-  public CreateResaleAuthorizationChangeDetail description(String description) {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail description(String description) {
     
     this.description = description;
     return this;
@@ -107,32 +107,32 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.description = description;
   }
 
-  public CreateResaleAuthorizationChangeDetail productId(String productId) {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail resaleAuthorizationId(String resaleAuthorizationId) {
     
-    this.productId = productId;
+    this.resaleAuthorizationId = resaleAuthorizationId;
     return this;
   }
 
   /**
-   * Get productId
-   * @return productId
+   * Get resaleAuthorizationId
+   * @return resaleAuthorizationId
    */
   @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  @JsonProperty(JSON_PROPERTY_RESALE_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getProductId() {
-    return productId;
+  public String getResaleAuthorizationId() {
+    return resaleAuthorizationId;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  @JsonProperty(JSON_PROPERTY_RESALE_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProductId(String productId) {
-    this.productId = productId;
+  public void setResaleAuthorizationId(String resaleAuthorizationId) {
+    this.resaleAuthorizationId = resaleAuthorizationId;
   }
 
-  public CreateResaleAuthorizationChangeDetail resellerAccountId(String resellerAccountId) {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail resellerAccountId(String resellerAccountId) {
     
     this.resellerAccountId = resellerAccountId;
     return this;
@@ -157,7 +157,7 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     this.resellerAccountId = resellerAccountId;
   }
 
-  public CreateResaleAuthorizationChangeDetail resellerRole(ResellerRole resellerRole) {
+  public CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail resellerRole(CreateUsingResaleAuthorizationResellerRole resellerRole) {
     
     this.resellerRole = resellerRole;
     return this;
@@ -167,18 +167,18 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
    * Get resellerRole
    * @return resellerRole
    */
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESELLER_ROLE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public ResellerRole getResellerRole() {
+  public CreateUsingResaleAuthorizationResellerRole getResellerRole() {
     return resellerRole;
   }
 
 
   @JsonProperty(JSON_PROPERTY_RESELLER_ROLE)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setResellerRole(ResellerRole resellerRole) {
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setResellerRole(CreateUsingResaleAuthorizationResellerRole resellerRole) {
     this.resellerRole = resellerRole;
   }
 
@@ -190,26 +190,26 @@ public class CreateResaleAuthorizationChangeDetail implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateResaleAuthorizationChangeDetail createResaleAuthorizationChangeDetail = (CreateResaleAuthorizationChangeDetail) o;
-    return Objects.equals(this.name, createResaleAuthorizationChangeDetail.name) &&
-        Objects.equals(this.description, createResaleAuthorizationChangeDetail.description) &&
-        Objects.equals(this.productId, createResaleAuthorizationChangeDetail.productId) &&
-        Objects.equals(this.resellerAccountId, createResaleAuthorizationChangeDetail.resellerAccountId) &&
-        Objects.equals(this.resellerRole, createResaleAuthorizationChangeDetail.resellerRole);
+    CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail createResaleAuthorizationUsingResaleAuthorizationChangeDetail = (CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail) o;
+    return Objects.equals(this.name, createResaleAuthorizationUsingResaleAuthorizationChangeDetail.name) &&
+        Objects.equals(this.description, createResaleAuthorizationUsingResaleAuthorizationChangeDetail.description) &&
+        Objects.equals(this.resaleAuthorizationId, createResaleAuthorizationUsingResaleAuthorizationChangeDetail.resaleAuthorizationId) &&
+        Objects.equals(this.resellerAccountId, createResaleAuthorizationUsingResaleAuthorizationChangeDetail.resellerAccountId) &&
+        Objects.equals(this.resellerRole, createResaleAuthorizationUsingResaleAuthorizationChangeDetail.resellerRole);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, description, productId, resellerAccountId, resellerRole);
+    return Objects.hash(name, description, resaleAuthorizationId, resellerAccountId, resellerRole);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateResaleAuthorizationChangeDetail {\n");
+    sb.append("class CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    resaleAuthorizationId: ").append(toIndentedString(resaleAuthorizationId)).append("\n");
     sb.append("    resellerAccountId: ").append(toIndentedString(resellerAccountId)).append("\n");
     sb.append("    resellerRole: ").append(toIndentedString(resellerRole)).append("\n");
     sb.append("}");

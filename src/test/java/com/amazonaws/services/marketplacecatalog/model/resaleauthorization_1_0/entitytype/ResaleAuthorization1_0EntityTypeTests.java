@@ -25,6 +25,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "  \"Name\": \"CanaryTestOpportunityBackFillCustomDimension\",\n" +
                 "  \"Description\": \"Canary test description\",\n" +
                 "  \"ProductId\": \"b199549a-6c5d-49a0-8217-607972c6f4f9\",\n" +
+                "  \"ProductArn\": \"arn:aws:aws-marketplace:us-east-1:123456789123:AWSMarketplace/SaaSProduct/b199549a-6c5d-49a0-8217-607972c6f4f9\",\n" +
                 "  \"ProductName\": \"Channel CAPI Integ Test Product (SaaS CCP)\",\n" +
                 "  \"PricingModel\": \"Contract\",\n" +
                 "  \"Status\": \"Active\",\n" +
@@ -32,6 +33,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "    \"AcquisitionChannel\": \"Unknown\",\n" +
                 "    \"PricingModel\": \"Unknown\"\n" +
                 "  },\n" +
+                "  \"SourceAuthorization\": \"arn:aws:aws-marketplace:us-east-1:123456789123:AWSMarketplace/ResaleAuthorization/resaleauthz-source123\",\n" +
                 "  \"Dimensions\": [{\n" +
                 "    \"Name\": \"Protected Resources\",\n" +
                 "    \"Description\": \"Additional 100 protected resources\",\n" +
@@ -126,6 +128,10 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "      \"ChargeAmount\": \"200.00\"\n" +
                 "    }]\n" +
                 "  }, {\n" +
+                "    \"Type\": \"ResaleNetPaymentTerm\",\n" +
+                "    \"Id\": \"term_id_placeholder\",\n" +
+                "    \"PaymentDuePeriod\": \"P60D\"\n" +
+                "  }, {\n" +
                 "    \"Type\": \"BuyerLegalTerm\",\n" +
                 "    \"Id\": \"term_id_placeholder\",\n" +
                 "    \"Documents\": [{\n" +
@@ -152,6 +158,15 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "        \"LegalName\": \"Buyer Account\"\n" +
                 "      }]\n" +
                 "    }\n" +
+                "  }, {\n" +
+                "    \"Type\": \"PartnerTargetingTerm\",\n" +
+                "    \"Id\": \"term_id_placeholder\",\n" +
+                "    \"PositiveTargeting\": {\n" +
+                "      \"PartnerAccounts\": [{\n" +
+                "        \"AwsAccountId\": \"987654321098\",\n" +
+                "        \"LegalName\": \"Partner Account\"\n" +
+                "      }]\n" +
+                "    }\n" +
                 "  }],\n" +
                 "  \"Rules\": [{\n" +
                 "    \"Type\": \"AvailabilityRule\",\n" +
@@ -163,11 +178,14 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "    \"Type\": \"PartnerTargetingRule\",\n" +
                 "    \"Id\": \"partner_targeting_rule_id_placeholder\",\n" +
                 "    \"ResellerAccountId\": \"123456789123\",\n" +
-                "    \"ResellerLegalName\": \"ChannelCAPICP.Inc\"\n" +
+                "    \"ResellerLegalName\": \"ChannelCAPICP.Inc\",\n" +
+                "    \"ResellerRole\": \"ChannelPartner\"\n" +
                 "  }],\n" +
                 "  \"CreatedDate\": \"2023-09-12T14:15:02.000Z\",\n" +
                 "  \"ManufacturerLegalName\": \"ChannelCAPI.Inc\",\n" +
-                "  \"ManufacturerAccountId\": \"123456789123\"\n" +
+                "  \"ManufacturerAccountId\": \"123456789123\",\n" +
+                "  \"IssuerAccountId\": \"111122223333\",\n" +
+                "  \"IssuerLegalName\": \"Test Issuer\"\n" +
                 "}";
 
         ResaleAuthorizationEntityDetail actualDetail = mapper.readValue(json, ResaleAuthorizationEntityDetail.class);
@@ -176,12 +194,14 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 .name("CanaryTestOpportunityBackFillCustomDimension")
                 .description("Canary test description")
                 .productId("b199549a-6c5d-49a0-8217-607972c6f4f9")
+                .productArn("arn:aws:aws-marketplace:us-east-1:123456789123:AWSMarketplace/SaaSProduct/b199549a-6c5d-49a0-8217-607972c6f4f9")
                 .productName("Channel CAPI Integ Test Product (SaaS CCP)")
                 .pricingModel("Contract")
                 .status("Active")
                 .preExistingBuyerAgreement(new PreExistingBuyerAgreement()
                         .acquisitionChannel("Unknown")
                         .pricingModel("Unknown"))
+                .sourceAuthorization("arn:aws:aws-marketplace:us-east-1:123456789123:AWSMarketplace/ResaleAuthorization/resaleauthz-source123")
                 .dimensions(Arrays.asList(
                         new Dimension()
                                 .name("Protected Resources")
@@ -271,6 +291,10 @@ public class ResaleAuthorization1_0EntityTypeTests {
                                                 .chargeDate("2019-05-01T00:00:00.000Z")
                                                 .chargeAmount("200.00"))),
                         new Term()
+                                .type("ResaleNetPaymentTerm")
+                                .id("term_id_placeholder")
+                                .paymentDuePeriod("P60D"),
+                        new Term()
                                 .type("BuyerLegalTerm")
                                 .id("term_id_placeholder")
                                 .documents(Collections.singletonList(new Document()
@@ -292,7 +316,14 @@ public class ResaleAuthorization1_0EntityTypeTests {
                                 .positiveTargeting(new PositiveTargeting()
                                         .buyerAccounts(Collections.singletonList(new BuyerAccount()
                                                 .awsAccountId("123456789123")
-                                                .legalName("Buyer Account"))))))
+                                                .legalName("Buyer Account")))),
+                        new Term()
+                                .type("PartnerTargetingTerm")
+                                .id("term_id_placeholder")
+                                .positiveTargeting(new PositiveTargeting()
+                                        .partnerAccounts(Collections.singletonList(new PartnerAccount()
+                                                .awsAccountId("987654321098")
+                                                .legalName("Partner Account"))))))
                 .rules(Arrays.asList(
                         new Rule()
                                 .type("AvailabilityRule")
@@ -304,10 +335,13 @@ public class ResaleAuthorization1_0EntityTypeTests {
                                 .type("PartnerTargetingRule")
                                 .id("partner_targeting_rule_id_placeholder")
                                 .resellerAccountId("123456789123")
-                                .resellerLegalName("ChannelCAPICP.Inc")))
+                                .resellerLegalName("ChannelCAPICP.Inc")
+                                .resellerRole("ChannelPartner")))
                 .createdDate("2023-09-12T14:15:02.000Z")
                 .manufacturerLegalName("ChannelCAPI.Inc")
-                .manufacturerAccountId("123456789123");
+                .manufacturerAccountId("123456789123")
+                .issuerAccountId("111122223333")
+                .issuerLegalName("Test Issuer");
 
         assertEquals(expectedDetail, actualDetail);
     }
