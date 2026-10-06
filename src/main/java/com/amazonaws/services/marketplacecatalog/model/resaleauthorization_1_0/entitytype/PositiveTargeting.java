@@ -16,6 +16,7 @@ package com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.
 import java.util.Objects;
 import java.util.Arrays;
 import com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.entitytype.BuyerAccount;
+import com.amazonaws.services.marketplacecatalog.model.resaleauthorization_1_0.entitytype.PartnerAccount;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -32,7 +33,8 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  * PositiveTargeting
  */
 @JsonPropertyOrder({
-  PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS
+  PositiveTargeting.JSON_PROPERTY_BUYER_ACCOUNTS,
+  PositiveTargeting.JSON_PROPERTY_PARTNER_ACCOUNTS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PositiveTargeting implements Serializable {
@@ -40,6 +42,9 @@ public class PositiveTargeting implements Serializable {
 
   public static final String JSON_PROPERTY_BUYER_ACCOUNTS = "BuyerAccounts";
   private List<BuyerAccount> buyerAccounts = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_PARTNER_ACCOUNTS = "PartnerAccounts";
+  private List<PartnerAccount> partnerAccounts = new ArrayList<>();
 
   public PositiveTargeting() {
   }
@@ -77,6 +82,39 @@ public class PositiveTargeting implements Serializable {
     this.buyerAccounts = buyerAccounts;
   }
 
+  public PositiveTargeting partnerAccounts(List<PartnerAccount> partnerAccounts) {
+    
+    this.partnerAccounts = partnerAccounts;
+    return this;
+  }
+
+  public PositiveTargeting addPartnerAccountsItem(PartnerAccount partnerAccountsItem) {
+    if (this.partnerAccounts == null) {
+      this.partnerAccounts = new ArrayList<>();
+    }
+    this.partnerAccounts.add(partnerAccountsItem);
+    return this;
+  }
+
+  /**
+   * Get partnerAccounts
+   * @return partnerAccounts
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PARTNER_ACCOUNTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<PartnerAccount> getPartnerAccounts() {
+    return partnerAccounts;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PARTNER_ACCOUNTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setPartnerAccounts(List<PartnerAccount> partnerAccounts) {
+    this.partnerAccounts = partnerAccounts;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -86,12 +124,13 @@ public class PositiveTargeting implements Serializable {
       return false;
     }
     PositiveTargeting positiveTargeting = (PositiveTargeting) o;
-    return Objects.equals(this.buyerAccounts, positiveTargeting.buyerAccounts);
+    return Objects.equals(this.buyerAccounts, positiveTargeting.buyerAccounts) &&
+        Objects.equals(this.partnerAccounts, positiveTargeting.partnerAccounts);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(buyerAccounts);
+    return Objects.hash(buyerAccounts, partnerAccounts);
   }
 
   @Override
@@ -99,6 +138,7 @@ public class PositiveTargeting implements Serializable {
     StringBuilder sb = new StringBuilder();
     sb.append("class PositiveTargeting {\n");
     sb.append("    buyerAccounts: ").append(toIndentedString(buyerAccounts)).append("\n");
+    sb.append("    partnerAccounts: ").append(toIndentedString(partnerAccounts)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -23,27 +23,15 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Gets or Sets PricingTermCurrencyCode
+ * Gets or Sets CreateUsingResaleAuthorizationResellerRole
  */
-public enum PricingTermCurrencyCode {
+public enum CreateUsingResaleAuthorizationResellerRole {
   
-  USD("USD"),
-  
-  AUD("AUD"),
-  
-  EUR("EUR"),
-  
-  GBP("GBP"),
-  
-  JPY("JPY"),
-  
-  CAD("CAD"),
-  
-  INR("INR");
+  CHANNEL_PARTNER("ChannelPartner");
 
   private String value;
 
-  PricingTermCurrencyCode(String value) {
+  CreateUsingResaleAuthorizationResellerRole(String value) {
     this.value = value;
   }
 
@@ -58,8 +46,8 @@ public enum PricingTermCurrencyCode {
   }
 
   @JsonCreator
-  public static PricingTermCurrencyCode fromValue(String value) {
-    for (PricingTermCurrencyCode b : PricingTermCurrencyCode.values()) {
+  public static CreateUsingResaleAuthorizationResellerRole fromValue(String value) {
+    for (CreateUsingResaleAuthorizationResellerRole b : CreateUsingResaleAuthorizationResellerRole.values()) {
       if (b.value.equals(value)) {
         return b;
       }

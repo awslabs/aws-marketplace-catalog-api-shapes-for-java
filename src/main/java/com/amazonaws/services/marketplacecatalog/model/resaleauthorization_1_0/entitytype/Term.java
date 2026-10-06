@@ -46,7 +46,8 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Term.JSON_PROPERTY_DURATION,
   Term.JSON_PROPERTY_PRICE,
   Term.JSON_PROPERTY_GRANTS,
-  Term.JSON_PROPERTY_SCHEDULE
+  Term.JSON_PROPERTY_SCHEDULE,
+  Term.JSON_PROPERTY_PAYMENT_DUE_PERIOD
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class Term implements Serializable {
@@ -84,6 +85,9 @@ public class Term implements Serializable {
 
   public static final String JSON_PROPERTY_SCHEDULE = "Schedule";
   private List<Schedule> schedule = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_PAYMENT_DUE_PERIOD = "PaymentDuePeriod";
+  private String paymentDuePeriod;
 
   public Term() {
   }
@@ -395,6 +399,31 @@ public class Term implements Serializable {
     this.schedule = schedule;
   }
 
+  public Term paymentDuePeriod(String paymentDuePeriod) {
+    
+    this.paymentDuePeriod = paymentDuePeriod;
+    return this;
+  }
+
+  /**
+   * Get paymentDuePeriod
+   * @return paymentDuePeriod
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PAYMENT_DUE_PERIOD)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getPaymentDuePeriod() {
+    return paymentDuePeriod;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_DUE_PERIOD)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setPaymentDuePeriod(String paymentDuePeriod) {
+    this.paymentDuePeriod = paymentDuePeriod;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -414,12 +443,13 @@ public class Term implements Serializable {
         Objects.equals(this.duration, term.duration) &&
         Objects.equals(this.price, term.price) &&
         Objects.equals(this.grants, term.grants) &&
-        Objects.equals(this.schedule, term.schedule);
+        Objects.equals(this.schedule, term.schedule) &&
+        Objects.equals(this.paymentDuePeriod, term.paymentDuePeriod);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, id, positiveTargeting, documents, maximumAgreementStartDate, currencyCode, rateCards, duration, price, grants, schedule);
+    return Objects.hash(type, id, positiveTargeting, documents, maximumAgreementStartDate, currencyCode, rateCards, duration, price, grants, schedule, paymentDuePeriod);
   }
 
   @Override
@@ -437,6 +467,7 @@ public class Term implements Serializable {
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    grants: ").append(toIndentedString(grants)).append("\n");
     sb.append("    schedule: ").append(toIndentedString(schedule)).append("\n");
+    sb.append("    paymentDuePeriod: ").append(toIndentedString(paymentDuePeriod)).append("\n");
     sb.append("}");
     return sb.toString();
   }

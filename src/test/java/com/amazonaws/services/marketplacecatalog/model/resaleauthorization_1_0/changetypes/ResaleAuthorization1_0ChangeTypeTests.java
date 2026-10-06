@@ -28,7 +28,8 @@ public class ResaleAuthorization1_0ChangeTypeTests {
                 .productId("ProductId")
                 .name("Name")
                 .description("Description")
-                .resellerAccountId("123456789012");
+                .resellerAccountId("123456789012")
+                .resellerRole(ResellerRole.DISTRIBUTOR);
 
         String actualJson = mapper.writeValueAsString(detail);
 
@@ -36,7 +37,8 @@ public class ResaleAuthorization1_0ChangeTypeTests {
                 "  \"ProductId\": \"ProductId\",\n" +
                 "  \"Name\": \"Name\",\n" +
                 "  \"Description\": \"Description\",\n" +
-                "  \"ResellerAccountId\": \"123456789012\"\n" +
+                "  \"ResellerAccountId\": \"123456789012\",\n" +
+                "  \"ResellerRole\": \"Distributor\"\n" +
                 "}";
 
         JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
@@ -295,6 +297,25 @@ public class ResaleAuthorization1_0ChangeTypeTests {
     }
 
     @Test
+    public void testUpdateNetPaymentTermsChangeDetail() throws Exception {
+        UpdateNetPaymentTermsChangeDetail detail = new UpdateNetPaymentTermsChangeDetail()
+                .terms(Collections.singletonList(new UpdateNetPaymentTerm()
+                        .type(ResaleNetPaymentTermType.RESALE_NET_PAYMENT_TERM)
+                        .paymentDuePeriod("P60D")));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"Terms\": [{\n" +
+                "    \"Type\": \"ResaleNetPaymentTerm\",\n" +
+                "    \"PaymentDuePeriod\": \"P60D\"\n" +
+                "  }]\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
     public void testReleaseResaleAuthorizationChangeDetail() throws Exception {
         ReleaseResaleAuthorizationChangeDetail detail = new ReleaseResaleAuthorizationChangeDetail();
 
@@ -312,6 +333,54 @@ public class ResaleAuthorization1_0ChangeTypeTests {
         String actualJson = mapper.writeValueAsString(detail);
 
         String expectedJson = "{}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
+    public void testCreateResaleAuthorizationUsingResaleAuthorizationChangeDetail() throws Exception {
+        CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail detail =
+                new CreateResaleAuthorizationUsingResaleAuthorizationChangeDetail()
+                        .resaleAuthorizationId("resaleauthz-1234567890abc")
+                        .name("Name")
+                        .description("Description")
+                        .resellerAccountId("123456789012")
+                        .resellerRole(CreateUsingResaleAuthorizationResellerRole.CHANNEL_PARTNER);
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"ResaleAuthorizationId\": \"resaleauthz-1234567890abc\",\n" +
+                "  \"Name\": \"Name\",\n" +
+                "  \"Description\": \"Description\",\n" +
+                "  \"ResellerAccountId\": \"123456789012\",\n" +
+                "  \"ResellerRole\": \"ChannelPartner\"\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
+    public void testUpdatePartnerTargetingTermsChangeDetail() throws Exception {
+        Set<String> accounts = new HashSet<>();
+        accounts.add("218196967966");
+
+        UpdatePartnerTargetingTermsChangeDetail detail = new UpdatePartnerTargetingTermsChangeDetail()
+                .terms(Collections.singletonList(new PartnerTargetingTerm()
+                        .type(PartnerTargetingTermType.PARTNER_TARGETING_TERM)
+                        .positiveTargeting(new PartnerPositiveTargeting()
+                                .partnerAccounts(accounts))));
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"Terms\": [{\n" +
+                "    \"Type\": \"PartnerTargetingTerm\",\n" +
+                "    \"PositiveTargeting\": {\n" +
+                "      \"PartnerAccounts\": [\"218196967966\"]\n" +
+                "    }\n" +
+                "  }]\n" +
+                "}";
 
         JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
     }

@@ -23,27 +23,15 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Gets or Sets PricingTermCurrencyCode
+ * Gets or Sets ResaleNetPaymentTermType
  */
-public enum PricingTermCurrencyCode {
+public enum ResaleNetPaymentTermType {
   
-  USD("USD"),
-  
-  AUD("AUD"),
-  
-  EUR("EUR"),
-  
-  GBP("GBP"),
-  
-  JPY("JPY"),
-  
-  CAD("CAD"),
-  
-  INR("INR");
+  RESALE_NET_PAYMENT_TERM("ResaleNetPaymentTerm");
 
   private String value;
 
-  PricingTermCurrencyCode(String value) {
+  ResaleNetPaymentTermType(String value) {
     this.value = value;
   }
 
@@ -58,8 +46,8 @@ public enum PricingTermCurrencyCode {
   }
 
   @JsonCreator
-  public static PricingTermCurrencyCode fromValue(String value) {
-    for (PricingTermCurrencyCode b : PricingTermCurrencyCode.values()) {
+  public static ResaleNetPaymentTermType fromValue(String value) {
+    for (ResaleNetPaymentTermType b : ResaleNetPaymentTermType.values()) {
       if (b.value.equals(value)) {
         return b;
       }
