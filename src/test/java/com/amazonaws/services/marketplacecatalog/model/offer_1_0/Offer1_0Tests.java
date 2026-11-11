@@ -787,6 +787,42 @@ public class Offer1_0Tests {
     }
 
     @Test
+    public void testCreateOfferUsingSubsidiaryAuthorizationChangeDetail() throws Exception {
+        CreateOfferUsingSubsidiaryAuthorizationChangeDetail detail =
+                new CreateOfferUsingSubsidiaryAuthorizationChangeDetail()
+                        .subsidiaryAuthorizationId("subauthz-1234567890123")
+                        .name("name");
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"SubsidiaryAuthorizationId\": \"subauthz-1234567890123\",\n" +
+                "  \"Name\": \"name\"\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
+    public void testCreateReplacementOfferUsingSubsidiaryAuthorizationChangeDetail() throws Exception {
+        CreateReplacementOfferUsingSubsidiaryAuthorizationChangeDetail detail =
+                new CreateReplacementOfferUsingSubsidiaryAuthorizationChangeDetail()
+                        .subsidiaryAuthorizationId("subauthz-1234567890123")
+                        .agreementId("agmt-12345")
+                        .name("name");
+
+        String actualJson = mapper.writeValueAsString(detail);
+
+        String expectedJson = "{\n" +
+                "  \"SubsidiaryAuthorizationId\": \"subauthz-1234567890123\",\n" +
+                "  \"AgreementId\": \"agmt-12345\",\n" +
+                "  \"Name\": \"name\"\n" +
+                "}";
+
+        JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.NON_EXTENSIBLE);
+    }
+
+    @Test
     public void testUpdateMarkupChangeDetail() throws Exception {
         UpdateMarkupChangeDetail detail = new UpdateMarkupChangeDetail()
                 .percentage("15.123456789");
