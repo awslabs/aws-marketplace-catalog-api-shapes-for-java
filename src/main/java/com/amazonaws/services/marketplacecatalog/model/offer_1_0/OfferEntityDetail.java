@@ -42,7 +42,8 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OfferEntityDetail.JSON_PROPERTY_PRE_EXISTING_AGREEMENT,
   OfferEntityDetail.JSON_PROPERTY_PRODUCT_ID,
   OfferEntityDetail.JSON_PROPERTY_RULES,
-  OfferEntityDetail.JSON_PROPERTY_TERMS
+  OfferEntityDetail.JSON_PROPERTY_TERMS,
+  OfferEntityDetail.JSON_PROPERTY_SUBSIDIARY_AUTHORIZATION_ID
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class OfferEntityDetail implements Serializable {
@@ -74,6 +75,9 @@ public class OfferEntityDetail implements Serializable {
 
   public static final String JSON_PROPERTY_TERMS = "Terms";
   private List<Term> terms = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_SUBSIDIARY_AUTHORIZATION_ID = "SubsidiaryAuthorizationId";
+  private String subsidiaryAuthorizationId;
 
   public OfferEntityDetail() {
   }
@@ -319,6 +323,31 @@ public class OfferEntityDetail implements Serializable {
     this.terms = terms;
   }
 
+  public OfferEntityDetail subsidiaryAuthorizationId(String subsidiaryAuthorizationId) {
+    
+    this.subsidiaryAuthorizationId = subsidiaryAuthorizationId;
+    return this;
+  }
+
+  /**
+   * Get subsidiaryAuthorizationId
+   * @return subsidiaryAuthorizationId
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SUBSIDIARY_AUTHORIZATION_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getSubsidiaryAuthorizationId() {
+    return subsidiaryAuthorizationId;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SUBSIDIARY_AUTHORIZATION_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSubsidiaryAuthorizationId(String subsidiaryAuthorizationId) {
+    this.subsidiaryAuthorizationId = subsidiaryAuthorizationId;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -336,12 +365,13 @@ public class OfferEntityDetail implements Serializable {
         Objects.equals(this.preExistingAgreement, offerEntityDetail.preExistingAgreement) &&
         Objects.equals(this.productId, offerEntityDetail.productId) &&
         Objects.equals(this.rules, offerEntityDetail.rules) &&
-        Objects.equals(this.terms, offerEntityDetail.terms);
+        Objects.equals(this.terms, offerEntityDetail.terms) &&
+        Objects.equals(this.subsidiaryAuthorizationId, offerEntityDetail.subsidiaryAuthorizationId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description, id, state, markupPercentage, name, preExistingAgreement, productId, rules, terms);
+    return Objects.hash(description, id, state, markupPercentage, name, preExistingAgreement, productId, rules, terms, subsidiaryAuthorizationId);
   }
 
   @Override
@@ -357,6 +387,7 @@ public class OfferEntityDetail implements Serializable {
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
     sb.append("    terms: ").append(toIndentedString(terms)).append("\n");
+    sb.append("    subsidiaryAuthorizationId: ").append(toIndentedString(subsidiaryAuthorizationId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -163,7 +163,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                 "    \"Id\": \"term_id_placeholder\",\n" +
                 "    \"PositiveTargeting\": {\n" +
                 "      \"PartnerAccounts\": [{\n" +
-                "        \"AwsAccountId\": \"987654321098\",\n" +
+                "        \"AwsAccountId\": \"123456789123\",\n" +
                 "        \"LegalName\": \"Partner Account\"\n" +
                 "      }]\n" +
                 "    }\n" +
@@ -322,7 +322,7 @@ public class ResaleAuthorization1_0EntityTypeTests {
                                 .id("term_id_placeholder")
                                 .positiveTargeting(new PositiveTargeting()
                                         .partnerAccounts(Collections.singletonList(new PartnerAccount()
-                                                .awsAccountId("987654321098")
+                                                .awsAccountId("123456789123")
                                                 .legalName("Partner Account"))))))
                 .rules(Arrays.asList(
                         new Rule()
